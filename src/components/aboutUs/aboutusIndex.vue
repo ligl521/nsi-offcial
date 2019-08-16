@@ -107,6 +107,8 @@ export default {
     .aboutus-com{
         .goToConnectUs{
             float: right;
+            background: rgb(44, 109, 175);
+            color: rgb(255, 255, 255);
         }
         .img-responsive{
             display: inline-block;

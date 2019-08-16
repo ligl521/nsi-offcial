@@ -4,8 +4,8 @@ module.exports = {
         index: "Home",
         aboutus: "About Us",
         aboutusChild: {
-            joinUs:'Join us',
-            connectUs:'Contact Us'
+            joinUs: 'Join us',
+            connectUs: 'Contact Us'
         },
         information: "News",
         event: "Events",
@@ -53,14 +53,14 @@ module.exports = {
         database: "DataBase",
         classOnline: "Class",
         databaseM: "DataBase",
-        mediaPartners:"Media Partners：Hilda Qin",
-        schoolProject:"School Project：Hunter Su",
-        researchCollaboration:"Research Collaboration：May Wu",
-        businessCooperation:"Business Cooperation：Una Zhang",
-        mediaPartnersEmail:"Email：qinqiaoyun@xinxueshuo.cn",
-        schoolProjectEmail:"Email：suhengliang@xinxueshuo.cn",
-        researchCollaborationEmail:"Email：wuyue@xinxueshuo.cn",
-        businessCooperationEmail:"Email：zhangziyu@xinxueshuo.cn",
+        mediaPartners: "Media Partners：Hilda Qin",
+        schoolProject: "School Project：Hunter Su",
+        researchCollaboration: "Research Collaboration：May Wu",
+        businessCooperation: "Business Cooperation：Cheng Jing",
+        mediaPartnersEmail: "Email：qinqiaoyun@xinxueshuo.cn",
+        schoolProjectEmail: "Email：suhengliang@xinxueshuo.cn",
+        researchCollaborationEmail: "Email：wuyue@xinxueshuo.cn",
+        businessCooperationEmail: "Email：chengjing@xinxueshuo.cn",
     },
     layoutgesFooter: {
         tel01: "Tel：",

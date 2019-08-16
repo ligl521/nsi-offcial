@@ -4,8 +4,8 @@ module.exports = {
         index: "首  页",
         aboutus: "关于我们",
         aboutusChild: {
-            joinUs:'加入我们',
-            connectUs:'联系我们'
+            joinUs: '加入我们',
+            connectUs: '联系我们'
         },
         information: "资讯中心",
         event: "会议活动",
@@ -73,7 +73,7 @@ module.exports = {
         researchChild: {
             magazine: "国际学校内参",
             report: "研究报告",
-            pisom: "国际学校高级管理研修班",
+            ipa: "国际学校高级管理研修班",
             classOnline: "国际学校职能岗位课程",
             apply: "课程报名",
             experts: "专家智库"
@@ -81,7 +81,7 @@ module.exports = {
         researchChild_Mob: {
             magazine: "国际学校内参",
             report: "研究报告",
-            pisom: "高级管理研修班",
+            ipa: "高级管理研修班",
             classOnline: "教育研究院",
             apply: "课程报名"
         },
@@ -101,14 +101,14 @@ module.exports = {
         classOnline: "在线课堂",
         databaseM: "四库全书",
 
-        mediaPartners:"媒体合作：Hilda Qin",
-        schoolProject:"学校项目：Hunter Su",
-        researchCollaboration:"研究合作：May Wu    ",
-        businessCooperation:"商务合作：Una Zhang",
-        mediaPartnersEmail:"邮箱：qinqiaoyun@xinxueshuo.cn",
-        schoolProjectEmail:"邮箱：suhengliang@xinxueshuo.cn",
-        researchCollaborationEmail:"邮箱：wuyue@xinxueshuo.cn",
-        businessCooperationEmail:"邮箱：zhangziyu@xinxueshuo.cn",
+        mediaPartners: "媒体合作：Hilda Qin",
+        schoolProject: "学校项目：Hunter Su",
+        researchCollaboration: "研究合作：May Wu    ",
+        businessCooperation: "商务合作：Cheng Jing",
+        mediaPartnersEmail: "邮箱：qinqiaoyun@xinxueshuo.cn",
+        schoolProjectEmail: "邮箱：suhengliang@xinxueshuo.cn",
+        researchCollaborationEmail: "邮箱：wuyue@xinxueshuo.cn",
+        businessCooperationEmail: "邮箱：chengjing@xinxueshuo.cn",
 
     },
     layoutgesFooter: {
@@ -135,7 +135,7 @@ module.exports = {
         aboutNSI2: "新学说",
         aboutNSIContent2: "北京新学说文化传媒有限公司是由国际学校行业专家共同打造的多边服务平台,以新媒体为载体、以行业研究为核心、以行业服务为宗旨。自成立以来一直致力于中国国际学校行业研究,对于中国国际学校有着深刻的理解。到目前为止,新学说已在自有媒体上发表了上干篇行业原创文章,二十余本深度行业报告新学说以“让中国没有办不好的国际学校”为使命,从投资建设,市场品牌、运营管理,学术保障,人才培养等多角度为国际学校提供全方位多层次的支持与服务,努力成为中国国际学校的最佳服务合作伙伴。新学说坚信:好的教育可以让世界更美好。新学说将继续奉行“踏踏实实搞硏究,认认真真做内容,实实在在提高服务品质“的价值观,期待通过我们的努力可以让学校更健康地发展,从而为社会提供更好的教育。",
         team: "团队介绍",
-        teamContent: "新学说 团队由众多位独特且富有才华的成员组成，致力于为数所国际学校提供全方位服务。努力将研究成果转化为实际可操作方案，为国际学校提供各种咨询式服务，例如前期建校咨询，课程设计，市场策划。",
+        teamContent: "新学说团队由众多位独特且富有才华的成员组成。致力于为近千所国际学校提供全方位服务；努力将研究成果转化为实际可操作方案；为国际学校提供多种咨询服务，如建校咨询，课程设计，品牌招生等。",
         partner: "合作伙伴",
         partnerContent: "新学说自创办以来，为数百个家喻户晓的品牌提供了深度定制的推广策略，始终专注于高质量的内容传播和创新的宣传服务。",
         connectUs: "联系我们"

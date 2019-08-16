@@ -82,7 +82,7 @@
                                                     </span>
                                                     <el-dropdown-menu slot="dropdown">
                                                         <el-dropdown-item>
-                                                            <a href="http://data.xinxueshuo.cn/nsi-class/admin/activity/meeting/vis2018.html" target="_blank"><img src="https://nsi.oss-cn-zhangjiakou.aliyuncs.com/nsi-official/image/layoutImg/vis2018.png" width="35" alt="">&nbsp;{{$t('layoutNav.eventChild.vis')}}</a>
+                                                            <a href="http://data.xinxueshuo.cn/nsi-event/2019Vis-activity/index.html" target="_blank"><img src="https://nsi.oss-cn-zhangjiakou.aliyuncs.com/nsi-official/image/layoutImg/vis2018.png" width="35" alt="">&nbsp;{{$t('layoutNav.eventChild.vis')}}</a>
                                                         </el-dropdown-item>
                                                         <el-dropdown-item>
                                                             <!-- <router-link :to="{path:'/event/lotus'}">&nbsp;<span class="iconfont icon-huiyi1 logoFont"></span>{{$t('layoutNav.eventChild.lotus')}}</router-link> -->
@@ -121,7 +121,7 @@
                                                     </span>
                                                     <el-dropdown-menu slot="dropdown">
                                                         <el-dropdown-item>
-                                                            <router-link :to="{path:'/research/pisom'}">{{$t('layoutNav.researchChild.pisom')}}</router-link>
+                                                            <router-link :to="{path:'/research/ipa'}">{{$t('layoutNav.researchChild.ipa')}}</router-link>
                                                         </el-dropdown-item>
                                                         <el-dropdown-item>
                                                             <a href="http://class.xinxueshuo.cn" target="_blank">{{$t('layoutNav.researchChild.classOnline')}}</a>

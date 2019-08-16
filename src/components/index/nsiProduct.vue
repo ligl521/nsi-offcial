@@ -5,6 +5,16 @@
                 <div class="col-md-3 col-xs-6">
                     <div class="productBox">
                         <div class="product-logo text-center">
+                            <a href="http://data.xinxueshuo.cn/nsi-event/2019Vis-activity/index.html" target="_blank"><img src="https://nsi.oss-cn-zhangjiakou.aliyuncs.com/nsi-official/image/layoutImg/vis2018.png" width="65" alt=""></a>
+                        </div>
+                        <div class="product-name text-center">
+                            <p><a href="http://data.xinxueshuo.cn/nsi-event/2019Vis-activity/index.html" target="_blank" class="name">VIS2019国际学校发展大会&nbsp;<span class="iconfont icon-yuanjiantou"></span></a></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 col-xs-6">
+                    <div class="productBox">
+                        <div class="product-logo text-center">
                             <a href="https://www.xinxueshuo.cn/#/news/latest" target="_blank"><span class="iconfont icon-zixun" style="font-size:50px"></span><br></a>
                         </div>
                         <div class="product-name text-center">
@@ -41,19 +51,7 @@
                         </div> -->
                     </div>
                 </div>
-                <div class="col-md-3 col-xs-6">
-                    <div class="productBox">
-                        <div class="product-logo text-center">
-                            <a href="http://data.xinxueshuo.cn/nsi-class/admin/activity/meeting/vis2018_pc.html" target="_blank"><img src="https://nsi.oss-cn-zhangjiakou.aliyuncs.com/nsi-official/image/layoutImg/vis2018.png" width="65" alt=""></a>
-                        </div>
-                        <div class="product-name text-center">
-                            <p><a href="http://data.xinxueshuo.cn/nsi-class/admin/activity/meeting/vis2018_pc.html" target="_blank" class="name">VIS2018国际学校发展大会&nbsp;<span class="iconfont icon-yuanjiantou"></span></a></p>
-                        </div>
-                        <!-- <div class="bg">
-                            <a href="http://data.xinxueshuo.cn/nsi-class/admin/activity/meeting/vis2018_pc.html">VIS2018国际学校发展大会</a>
-                        </div> -->
-                    </div>
-                </div>
+                
             </div>
         </div>
     </div>

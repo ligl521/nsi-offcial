@@ -49,6 +49,14 @@ export default {
             isMobile:false,
             eventList:[
                 {
+                    title:"2019VIS国际学校发展大会",
+                    imgSrc:require("../../images/2019vis.jpg"),
+                    imgSrcM:require("../../images/2019vis.jpg"),
+                    url:"http://data.xinxueshuo.cn/nsi-event/2019Vis-activity/index.html",
+                    time:"2019.11.09-2019.11.11"
+                    
+                },
+                {
                     title:"2018VIS国际学校发展大会",
                     imgSrc:"https://nsi.oss-cn-zhangjiakou.aliyuncs.com/nsi-official/image/event/eventBanner03.jpg",
                     imgSrcM:'https://nsi.oss-cn-zhangjiakou.aliyuncs.com/nsi-official/image/event/eventBanner03.jpg',
@@ -75,7 +83,7 @@ export default {
                    imgSrc:'https://nsi.oss-cn-zhangjiakou.aliyuncs.com/nsi-official/image/event/eventBanner05.jpg',
                    imgSrcM:'https://nsi.oss-cn-zhangjiakou.aliyuncs.com/nsi-official/image/event/eventM01.jpg',
                    url:"http://data.xinxueshuo.cn/nsi-event/event/vis/vis201702/vis201702.html",
-                   time:"2017.5.20-2017.5.21"
+                   time:"2017.05.20-2017.05.21"
                 },
                 {
                    title:"2016VIS国际学校发展大会",
@@ -288,12 +296,11 @@ export default {
               background-color:#c2a77f
             }
           }
-          // .timeLogo{
-          //   position: relative;
-          //   top: 0px;
-          // }
+          .timeLogo{
+            font-size: 12px;
+          }
           .apply-time{
-            font-size: 15px;
+            font-size: 14px;
             margin-bottom: 15px;
             color: #666;
             @media (max-width: 768px) {

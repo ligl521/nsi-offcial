@@ -123,7 +123,7 @@ const routes = [{
         children: [{
                 path: 'index',
                 component: aboutusIndex
-            },{
+            }, {
                 path: 'joinus',
                 component: joinUs
             },
@@ -150,7 +150,7 @@ const routes = [{
                 path: 'report',
                 component: report
             }, {
-                path: 'pisom',
+                path: 'ipa',
                 component: advancedClass
             }, {
                 path: 'apply',
