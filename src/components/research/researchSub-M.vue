@@ -4,7 +4,7 @@
             <div class="swiper-container eventSwiper" id="researchSwiper">
                 <div class="swiper-wrapper">
                     <div class="swiper-slide text-center pisomBox">
-                        <router-link :to="{path:'/research/pisom'}"><img width="75" class="classLogo pisom" src="../../images/IPA.jpg" alt=""><br/>{{$t('layoutNav.researchChild_Mob.pisom')}}</router-link>
+                        <router-link :to="{path:'/research/ipa'}"><img width="75" class="classLogo pisom" src="../../images/IPA.jpg" alt=""><br/>{{$t('layoutNav.researchChild_Mob.ipa')}}</router-link>
                     </div>
                     <div class="swiper-slide text-center">
                         <a href="https://www.xinxueshuo.cn/nsi-shop/dist/index.html#/" target="'_'"><img width="25" height="31" class="classLogo" src="https://nsi.oss-cn-zhangjiakou.aliyuncs.com/nsi-official/image/layoutImg/classLogo.png" alt=""><br/>{{$t('layoutNav.researchChild_Mob.classOnline')}}</a>

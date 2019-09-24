@@ -53,7 +53,38 @@ export default {
                     imgSrc:require("../../images/2019vis.jpg"),
                     imgSrcM:require("../../images/2019vis.jpg"),
                     url:"http://data.xinxueshuo.cn/nsi-event/2019Vis-activity/index.html",
-                    time:"2019.11.09-2019.11.11"
+                    time:"2019.11.09-11.11"
+                    
+                },
+                {
+                    title:"FIT国际教师风采大赛",
+                    imgSrc:"https://nsi.oss-cn-zhangjiakou.aliyuncs.com/nsi-event/FIT2019/slogo.jpg",
+                    imgSrcM:"https://nsi.oss-cn-zhangjiakou.aliyuncs.com/nsi-event/FIT2019/slogo.jpg",
+                    url:"http://data.xinxueshuo.cn/nsi-event/event/FIT/FIT2019/FIT2019.html",
+                    time:"2019.09.07"
+                    
+                },
+                {
+                    title:"大湾区办学研讨会",
+                    imgSrc:"https://nsi.oss-cn-zhangjiakou.aliyuncs.com/nsi-official/image/activity/wan.jpg",
+                    imgSrcM:"https://nsi.oss-cn-zhangjiakou.aliyuncs.com/nsi-official/image/activity/wan.jpg",
+                    url:"https://mp.weixin.qq.com/s/AZW1YXCJyw2awk4UnWB0iA",
+                    time:"2019.05.18"
+                    
+                },
+                {
+                    title:"西北地区国际教育高峰论坛",
+                    imgSrc:"https://nsi.oss-cn-zhangjiakou.aliyuncs.com/nsi-official/image/activity/onerode.jpg",
+                    imgSrcM:"https://nsi.oss-cn-zhangjiakou.aliyuncs.com/nsi-official/image/activity/onerode.jpg",
+                    url:"https://mp.weixin.qq.com/s/1A-03Rq3PDf3ytgtsIVcZw",
+                    time:"2019.07.18"
+                },
+                {
+                    title:"人力资源专业课",
+                    imgSrc:"https://nsi.oss-cn-zhangjiakou.aliyuncs.com/nsi-official/image/activity/hr.jpg",
+                    imgSrcM:"https://nsi.oss-cn-zhangjiakou.aliyuncs.com/nsi-official/image/activity/hr.jpg",
+                    url:"https://mp.weixin.qq.com/s/AZW1YXCJyw2awk4UnWB0iA",
+                    time:"2019.06.14-6.16"
                     
                 },
                 {
@@ -61,7 +92,7 @@ export default {
                     imgSrc:"https://nsi.oss-cn-zhangjiakou.aliyuncs.com/nsi-official/image/event/eventBanner03.jpg",
                     imgSrcM:'https://nsi.oss-cn-zhangjiakou.aliyuncs.com/nsi-official/image/event/eventBanner03.jpg',
                     url:"http://data.xinxueshuo.cn/nsi-class/admin/activity/meeting/visM.html",
-                    time:"2018.11.09-2018.11.11"
+                    time:"2018.11.09-11.11"
                     
                 },
                 // {
@@ -76,28 +107,28 @@ export default {
                    imgSrc:"https://nsi.oss-cn-zhangjiakou.aliyuncs.com/ArticlePic/activity002.jpg",
                    imgSrcM:'https://nsi.oss-cn-zhangjiakou.aliyuncs.com/nsi-official/image/event/eventM02.jpg',
                    url:"http://data.xinxueshuo.cn/nsi-event/event/vis/vis2017/vis2017.html",
-                   time:"2017.11.09-2017.11.11"
+                   time:"2017.11.09-11.11"
                 },
                 {
                    title:"2017国际学校投融资分会",
                    imgSrc:'https://nsi.oss-cn-zhangjiakou.aliyuncs.com/nsi-official/image/event/eventBanner05.jpg',
                    imgSrcM:'https://nsi.oss-cn-zhangjiakou.aliyuncs.com/nsi-official/image/event/eventM01.jpg',
                    url:"http://data.xinxueshuo.cn/nsi-event/event/vis/vis201702/vis201702.html",
-                   time:"2017.05.20-2017.05.21"
+                   time:"2017.05.20-05.21"
                 },
                 {
                    title:"2016VIS国际学校发展大会",
                    imgSrc:"https://img1.gtimg.com/18/1854/185463/18546304_980x1200_0.jpg",
                    imgSrcM:"https://img1.gtimg.com/18/1854/185463/18546304_980x1200_0.jpg",
                    url:"http://data.xinxueshuo.cn/nsi-event/event/vis/vis2016/vis2016.html",
-                   time:"2016.11.09-2016.11.11"
+                   time:"2016.11.09-11.11"
                 },
                 {
                    title:"2015VIS国际学校发展大会",
                    imgSrc:"https://img1.gtimg.com/edu/pics/hv1/85/77/1990/129419470.jpg",
                    imgSrcM:"https://img1.gtimg.com/edu/pics/hv1/85/77/1990/129419470.jpg",
                    url:"http://data.xinxueshuo.cn/nsi-event/event/vis/vis2015/vis2015.html",
-                   time:"2015.11.09-2015.11.11"
+                   time:"2015.11.09-11.11"
                 }
             ]
         }
@@ -305,6 +336,7 @@ export default {
             color: #666;
             @media (max-width: 768px) {
               margin-bottom: 10px;
+            //   height:40px;
             }
           }
         }

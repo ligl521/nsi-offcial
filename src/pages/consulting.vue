@@ -56,6 +56,33 @@ export default {
     methods:{
         fetchDate(){
             this.axios({
+                method:"get",
+                url: '/article/detail.do',
+                params:{
+                    articleId:20286
+                }
+            }).then((res)=>{
+                this.lists.push(res.data.data)
+            })
+            this.axios({
+                method:"get",
+                url: '/article/detail.do',
+                params:{
+                    articleId:20239
+                }
+            }).then((res)=>{
+                this.lists.push(res.data.data)
+            })
+            this.axios({
+                method:"get",
+                url: '/article/detail.do',
+                params:{
+                    articleId:20310
+                }
+            }).then((res)=>{
+                this.lists.push(res.data.data)
+            })
+            this.axios({
                 method:"get",  
                 url: '/article/detail.do',
                 params:{

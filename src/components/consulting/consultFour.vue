@@ -33,6 +33,35 @@ export default {
     },
     methods:{
          fetchDate(){
+             console.log(1111)
+             this.axios({
+                method:"get",
+                url: '/article/detail.do',
+                params:{
+                    articleId:20286
+                }
+            }).then((res)=>{
+                this.lists.push(res.data.data)
+            })
+            this.axios({
+                method:"get",
+                url: '/article/detail.do',
+                params:{
+                    articleId:20239
+                }
+            }).then((res)=>{
+                this.lists.push(res.data.data)
+            })
+            this.axios({
+                method:"get",
+                url: '/article/detail.do',
+                params:{
+                    articleId:20310
+                }
+            }).then((res)=>{
+                this.lists.push(res.data.data)
+            })
+            
             this.axios({
                 method:"get",
                 url: '/article/detail.do',
@@ -75,14 +104,11 @@ export default {
             })
             // console.log(this.lists)
         },
-        toDetail(id){
+        toDetail(id){ 
             // console.log(id)
             let routeData =this.$router.resolve({name:"detailNews",params:{id:id}})
             window.open(routeData.href, '_blank');
         }
-    },
-    mounted(){
-        
     },
     created(){
         this.fetchDate();

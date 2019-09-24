@@ -73,14 +73,14 @@ export default {
                     imgSrc:require("../../images/area/浙江.jpg"),
                     imgSrcM:require("../../images/area/浙江.jpg"),
                     url:"https://mp.weixin.qq.com/s/iPgWVA-d2Xg3sg4-4bHxkA",
-                    time:"2018.09.14 13:00-18:00"
+                    time:"2018.09.14"
                     
                 },{
                    title:"山东研讨会",
                    imgSrc:require("../../images/area/山东.jpg"),
                    imgSrcM:require("../../images/area/山东.jpg"),
                    url:"https://mp.weixin.qq.com/s/rZa04-7XYiCdwqErc9XurA",
-                   time:"2018.02.02 13:30"
+                   time:"2018.02.02"
                 },{
                    title:"上海研讨会",
                    imgSrc:require("../../images/area/上海.jpg"),
@@ -92,7 +92,7 @@ export default {
                    imgSrc:require("../../images/area/江苏.jpg"),
                    imgSrcM:require("../../images/area/江苏.jpg"),
                    url:"https://mp.weixin.qq.com/s/wTjFOWGbdgOeMhPzAN35Tw",
-                   time:"2018.07.13 13:30-17:30"
+                   time:"2018.07.13"
                 },{
                    title:"湖北研讨会",
                    imgSrc:require("../../images/area/湖北.jpg"),
@@ -107,7 +107,7 @@ export default {
                     imgSrc:require("../../images/seminar/市场招生.jpg"),
                     imgSrcM:require("../../images/seminar/市场招生.jpg"),
                     url:"https://mp.weixin.qq.com/s/PIKw-Tr3hOE1ViIATmruxg",
-                    time:"2019.01.12 10:00-16:00"
+                    time:"2019.01.12"
                 },{
                     title:"教师发展研讨会",
                     imgSrc:require("../../images/seminar/教师发展.jpg"),
@@ -125,13 +125,13 @@ export default {
                     imgSrc:require("../../images/seminar/幼教新政.jpg"),
                     imgSrcM:require("../../images/seminar/幼教新政.jpg"),
                     url:"https://mp.weixin.qq.com/s/Pst_Y-RtpRsozyBH8eS4XQ",
-                    time:"2018.11.17 20:00-21:00"
+                    time:"2018.11.17"
                 },{
                     title:"《民促法》意见公告线上研讨会",
                     imgSrc:require("../../images/seminar/民促法.jpg"),
                     imgSrcM:require("../../images/seminar/民促法.jpg"),
                     url:"https://mp.weixin.qq.com/s/98sVbjgcjfw1cAigCI2sZA",
-                    time:"2018.04.21-2018.04.24"
+                    time:"2018.04.21-04.24"
                 },
             ]
         }
