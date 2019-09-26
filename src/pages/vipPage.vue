@@ -5,7 +5,7 @@
         </div>
         <!-- 会员权益简介 -->
         <!-- 媒体部提供 -->
-        <div class="container ptpb30" style="padding-bottom:0">
+        <div class="container ptpb30">
             <div class="row">
                 <div class="col-md-12">
                     <h4 class="vip-title">媒体特权</h4>
@@ -389,7 +389,7 @@ export default {
         }
         .ptpb30{
             padding-top: 30px;
-            padding-bottom: 30px;
+            // padding-bottom: 30px;
         }
         .pt30{
             padding-top: 30px;
@@ -471,7 +471,7 @@ export default {
             width: 100%;
             border-color: #f2f2f2;
             background: #f9f9f9;
-            padding: 20px;
+            padding: 20px 20px 10px 20px;
             border-width: 1px;
             border-style: solid;
             @include transitionAnimate();
@@ -820,8 +820,8 @@ export default {
             width: 100%;
             a{
                 display: block;
-                width: 80%;
-                margin: 0 auto;
+                width: 55%;
+                margin: 10px auto;
                 font-size: 18px;
                 background-color: #203671;
                 color: #f3ce89;

@@ -193,7 +193,7 @@ export default {
                         .mol{
                             display:block;
                             position: relative;
-                            left: -20px;
+                            left: 0px;
                         }
                         .pc{
                             display:none;
