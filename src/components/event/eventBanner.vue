@@ -62,44 +62,28 @@ export default {
         swiperInit(){
             const self=this
             new Swiper('#eventBanner',{
-                 notNextTick: true,
-                 autoplay: {
-                    delay:3000,
-                    disableOnInteraction: false,
-                },
+                notNextTick: true,
+                autoplay:3000,
                 loop: true,
                 effect : 'fade',
                 speed:600,
                 grabCursor : true,
                 // 如果需要分页器
-                pagination: {
-                    el: '.swiper-pagination',
-                    clickable: true,
-                },
-                navigation: {
-                    nextEl: '.swiper-button-next',
-                    prevEl: '.swiper-button-prev',
-                },
+                pagination:  '.swiper-pagination',
+                prevButton:'.swiper-button-prev',
+                nextButton:'.swiper-button-next',
             })
             new Swiper('#eventBannerMob',{
                  notNextTick: true,
-                 autoplay: {
-                    delay:3000,
-                    disableOnInteraction: false,
-                },
+                 autoplay:3000,
                 loop: true,
                 effect : 'fade',
                 speed:600,
                 grabCursor : true,
                 // 如果需要分页器
-                pagination: {
-                    el: '.swiper-pagination',
-                    clickable: true,
-                },
-                navigation: {
-                    nextEl: '.swiper-button-next',
-                    prevEl: '.swiper-button-prev',
-                },
+                pagination:'.swiper-pagination',
+               prevButton:'.swiper-button-prev',
+                nextButton:'.swiper-button-next',
             })
         }
     },

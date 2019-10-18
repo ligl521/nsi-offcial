@@ -63,15 +63,15 @@
         <!-- 会员卡 -->
         <div class="vipBanner">
             <div class="container vipCardList">
-            <div class="row">
-                <div class="col-md-12">
-                    <div class="vipCardTitle">
-                        <h3>加入新学说会员</h3>
-                        <h4>掌握一手资讯、权威数据，运筹帷幄</h4>
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="vipCardTitle">
+                            <h3>加入新学说会员</h3>
+                            <h4>掌握一手资讯、权威数据，运筹帷幄</h4>
+                        </div>
                     </div>
                 </div>
-            </div>
-            <div class="row vipCardContainer">
+                <div class="row vipCardContainer">
                     <div class="col-md-3 cardBox" v-for="(item,index) in vipList" :key="item">
                         <div class="card" :style="'border-top: 3px solid'+ item.vipColor">
                             <div class="cardContent text-canter">
@@ -93,6 +93,7 @@
                 </div>
             </div>
         </div>
+        <div style="clear:both"></div>
         <div class="payBox animated" :class="currentActiveClass" v-if="isShow">
             <div class="payBox-content">
                 <div class="content-header">
@@ -421,7 +422,6 @@ export default {
         }
         .vipCardList{
             padding: 45px 20px;
-            margin-bottom: 300px;
             @media (min-width: 1200px) {
                 width: 1265px;
             }
@@ -524,7 +524,8 @@ export default {
             background: url('https://nsi.oss-cn-zhangjiakou.aliyuncs.com/nsi-official/image/vip/banner02.jpg');
             background-position: center 0;
             background-size: cover;
-            max-height: 430px;
+            height: 430px;
+            margin-bottom: 300px;
             .vipCardContainer{
                 position: relative;
                 top: 50px;

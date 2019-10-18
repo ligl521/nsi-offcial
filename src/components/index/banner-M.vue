@@ -39,23 +39,13 @@ export default {
       swiperInit(){
         const self=this
         new Swiper('#indexBannerM', {
-              notNextTick: true,
-              autoplay: {
-                delay:3000,
-                disableOnInteraction: false,
-            },
+            notNextTick: true,
+            autoplay:3000,
             loop: true,
             speed:600,
             grabCursor : true,
             // 如果需要分页器
-            pagination: {
-                el: '.swiper-pagination',
-                clickable: true,
-            },
-            // navigation: {
-            //     nextEl: '.swiper-button-next',
-            //     prevEl: '.swiper-button-prev',
-            // },
+            pagination: '.swiper-pagination',
             observer:true,//修改swiper自己或子元素时，自动初始化swiper
             observeParents:true,//修改swiper的父元素时，自动初始化swiper
             on:{

@@ -19,7 +19,7 @@ import 'swiper/dist/css/swiper.css'
 import Swiper from 'swiper'
 import BigBanner from './BigBanner'
 import SmallBannerTop from './smallBannerTop'
-import SmallBannerBottom from './smallBannerBottom'
+import SmallBannerBottom from './smallBannerBottom' 
 export default {
   components:{
     BigBanner,
@@ -51,31 +51,20 @@ export default {
       swiperInit(){
           const self=this
           new Swiper('#indexBigBanner',{
-              notNextTick: true,
-              autoplay: {
-                delay:3000,
-                disableOnInteraction: false,
-              },
+            //   notNextTick: true,
+              autoplay:3000,
               loop: true,
               effect : 'fade',
               speed:600,
-              grabCursor : true,
+            //   grabCursor : true,
               // 如果需要分页器
-              pagination: {
-                  el: '.swiper-pagination',
-                  clickable: true,
-              },
-              // navigation: {
-              //     nextEl: '.swiper-button-next',
-              //     prevEl: '.swiper-button-prev',
-              // },
+             pagination:  '.swiper-pagination',
+             prevButton:'.swiper-button-prev',
+            nextButton:'.swiper-button-next',
           })
           new Swiper('#indexBannerTop', {
               notNextTick: true,
-              autoplay: {
-                delay:4000,
-                disableOnInteraction: false,
-            },
+              autoplay:4000,
             loop: true,
             effect : 'fade',
             speed:600,

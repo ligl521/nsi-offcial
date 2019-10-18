@@ -11,8 +11,8 @@
                                 </div>
                             </div>
                             <div class="swiper-pagination"  slot="pagination"></div>
-                            <div class="swiper-button-prev" slot="button-prev"><span class="iconfont icon-arrow-left"></span></div>
-                            <div class="swiper-button-next" slot="button-next"><span class="iconfont icon-youjiantou"></span></div>
+                            <!-- <div class="swiper-button-prev" slot="button-prev"><span class="iconfont icon-arrow-left"></span></div>
+                            <div class="swiper-button-next" slot="button-next"><span class="iconfont icon-youjiantou"></span></div> -->
                         </div>
                          <div class="slide-bar">
                             <p class="slidebar2"><span class="bigWord">{{$t('news.newsOne')}}</span><br/><span>{{$t('news.newsTwo')}}</span><br/><span>{{$t('news.newsThree')}}</span><br/><span>{{$t('news.newsFour')}}</span></p>
@@ -83,23 +83,15 @@ export default {
         swiperInit(){
             const self=this
             new Swiper('#newsbanner', {
-                 notNextTick: true,
-                 autoplay: {
-                    delay:5000,
-                    disableOnInteraction: false,
-                },
+                notNextTick: true,
+                autoplay: 5000,
                 loop: true,
                 speed:600,
                 grabCursor : true,
                 // 如果需要分页器
-                pagination: {
-                    el: '.swiper-pagination',
-                    clickable: true,
-                },
-                navigation: {
-                    nextEl: '.swiper-button-next',
-                    prevEl: '.swiper-button-prev',
-                },
+                // pagination:  '.swiper-pagination',
+                // prevButton:'.swiper-button-prev',
+                // nextButton:'.swiper-button-next',
                 observer:true,//修改swiper自己或子元素时，自动初始化swiper
                 observeParents:true,//修改swiper的父元素时，自动初始化swiper
                 on:{
