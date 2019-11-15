@@ -88,6 +88,9 @@ export default {
                 resistanceRatio:0.7,
                 observer:true,//修改swiper自己或子元素时，自动初始化swiper
                 observeParents:true,//修改swiper的父元素时，自动初始化swiper
+                // onTransitionStart: function(swiper){
+                //    self.newsBannerIndex=this.realIndex
+                // },
                 on:{
                     slideChangeTransitionStart:function(swiper){
                         _this.activeNav=this.realIndex
@@ -159,7 +162,7 @@ export default {
                 color: #666;
             }
             .router-link-active{
-                font-size: 20px !important;
+                // font-size: 20px !important;
                 font-weight: 600;
                 padding-bottom: 0 !important;
                 margin-top: 0;

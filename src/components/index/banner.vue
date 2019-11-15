@@ -89,7 +89,7 @@ export default {
   }
     .container{
       // position: relative;
-        box-shadow: 0 12px 24px 0 rgba(7,17,27,.2);
+        box-shadow: 0 0px 24px 0 rgba(7,17,27,.2);
         overflow: hidden;
         .pr0{
           padding-right: 0;

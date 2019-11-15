@@ -17,11 +17,13 @@
                     </div>
                     <div class="row pt50 twoNews">
                         <!-- 两则新闻概要 -->
-                        <div class="col-md-6 col-xs-6" v-for="(news,index) in recentNews" :key="index" v-if="index<2">
+                        <div class="col-md-6 col-xs-6 newsList" v-for="(news,index) in recentNews" :key="index" v-if="index<6">
                             <div class="row">
                                 <div class="col-md-6">
                                     <div class="news-content">
-                                        <img :src="news.coverImage+'?x-oss-process=image/resize,m_fixed,h_170,w_270'" alt="" width="100%" height="200px" class="news-img">
+                                        <a :href="news.articleUrl" class="news-title" target="_blank">
+                                            <img :src="news.coverImage+'?x-oss-process=image/resize,m_fixed,h_170,w_270'" alt="" width="100%" height="200px" class="news-img">
+                                        </a>
                                     </div>
                                 </div>
                                 <div class="col-md-6">
@@ -35,14 +37,13 @@
                             </div>
                         </div>
                     </div>
-                    <div class="fourNews">
+                    <!-- 四条新闻标题 -->
+                    <!-- <div class="fourNews">
                       <div class="row mt30">
-                          <!-- 四条新闻标题 -->
                           <div class="col-md-6" v-for="(news,index) in recentNews" :key="index" v-if="index>=2&&index<9">
                               <div class="newsInfo">
                                   <div class="row">
                                     <div class="col-md-10">
-                                      <!-- <p class="multiline newsInfo-title"><a href="javascript:;" class="newsInfo-detail" @click="toDetail(news.id)">{{"• "+news.title}}</a></p> -->
                                       <p class="multiline newsInfo-title"><a :href="news.articleUrl" class="newsInfo-detail" target="_blank">{{"• "+news.title}}</a></p>
                                     </div>
                                     <div class="col-md-2">
@@ -52,7 +53,7 @@
                               </div>
                           </div>
                       </div>
-                    </div>
+                    </div> -->
                     <!-- 新闻移动端 -->
                     <news-info-m :showFourNews="recentNews" class="showInMobile mt20"></news-info-m>
                     <div class="row">
@@ -235,14 +236,23 @@ export default {
   }
   .activitiesBox {
     display: none;
+    // .row{
+    //     width:485px;
+    // }
+    
   }
+}
+.othersActivities{
+    .row{
+        width:485px !important;
+    }
 }
 .others {
   padding-left: 0;
   padding-right: 0;
 }
 .pt50 {
-  padding-top: 50px;
+  padding-top: 30px;
   @media (max-width: 768px) {
     padding-top: 15px;
   }
@@ -263,7 +273,7 @@ export default {
   margin-top: 30px;
 }
 .mt50 {
-  margin-top: 50px;
+  margin-top: 30px;
 }
 .multiline {
   overflow: hidden;
@@ -301,11 +311,11 @@ export default {
   .learnMore {
     display: inline-block;
     color: #777;
-    padding: 4px 18px;
+    padding: 10px 25px;
     border-radius: 20px;
     border: 1px solid #eee;
     background-color: #eee;
-    margin: 15px 0 25px;
+    margin: 15px 0 0;
     @include transitionAnimate();
     &:hover {
       background: #dadada;
@@ -319,27 +329,28 @@ export default {
     padding-top: 50px !important;
   }
 }
+
 /* 最新动态 */
 .index-title {
   position: relative;
-  top: -15px;
+//   top: -15px;
 }
 
 .line {
   display: block;
   position: absolute;
-  width: 400px;
+  width: 480px;
   height: 1px;
   background-color: #222;
   top: 30px;
 }
 
 .left-line {
-  left: 50px;
+  left: 0px;
 }
 
 .right-line {
-  right: 50px;
+  right: 0px;
 }
 .news-content {
   @media (max-width: 768px) {
@@ -358,9 +369,25 @@ export default {
 }
 .twoNews,
 .fourNews {
+    margin-left:0;
+    margin-right:0;
   @media (max-width: 768px) {
     display: none;
   }
+  a{
+      &:hover{
+          text-decoration: none;
+      }
+  }
+}
+.newsList{
+    border:1px solid #ccc;
+    width: 49%;
+    height: 140px;
+    margin: 10px 0;
+    &:nth-child(even){
+        margin-left:20px;
+    }
 }
 .newestPlpr0 {
   padding-left: 0;
@@ -370,18 +397,26 @@ export default {
 .news-img {
   display: inline-block;
   width: 100%;
-  height: 170px;
+  height: 140px;
   background-color: #ccc;
+  position: relative;
+  left: -15px;
+  top: -1px;
   @media (max-width: 768px) {
     height: 120px;
   }
 }
+.newsBox{
+    position: relative;
+    left: -30px;
+    top: 10px;
+}
 .news-title {
   font-weight: 700;
   font-size: 17px;
-  color: #3a899e;
+  color:#2c6daf;
   /* height: 38px;
-        max-height: 36px; */
+max-height: 36px; */
   line-height: 1.5;
 }
 .news-articel {

@@ -48,7 +48,7 @@ import { setTimeout } from 'timers';
 export default {
     data () {
         return {
-        newsBannerIndex:0,
+        newsBannerIndex:-1,
         bannerInfo:[],
         news:[this.$t('news.newsOne'),this.$t('news.newsTwo'),this.$t('news.newsThree'),this.$t('news.newsFour'),this.$t('news.overviewNews'),this.$t('news.policyNews'),this.$t('news.schoolNews'),this.$t('news.tmtNews'),this.$t('news.personNews')]
       }
@@ -94,12 +94,13 @@ export default {
                 // nextButton:'.swiper-button-next',
                 observer:true,//修改swiper自己或子元素时，自动初始化swiper
                 observeParents:true,//修改swiper的父元素时，自动初始化swiper
-                on:{
-                    transitionStart:function(swiper){
-                        self.newsBannerIndex=this.realIndex
-                        // console.log(self.newsBannerIndex)
-                    },
-                }
+                onTransitionStart: function(swiper){
+                    if(self.newsBannerIndex>3){
+                         self.newsBannerIndex=0
+                    }else{
+                        self.newsBannerIndex++
+                    }
+                },
             })
         }
     },
@@ -276,11 +277,8 @@ export default {
                 color: #666;
                 display: inline-block;
                 background: #F0F0F0;
-                border-radius: 100px;
-                width: 100px;
-                height: 40px;
-                overflow: hidden;
-                line-height: 40px;
+                border-radius: 20px;
+                padding: 10px 20px;
                 text-align: center;
                 -webkit-transition: all 0.3s ease 0s;
                 -ms-transition: all 0.3s ease 0s;

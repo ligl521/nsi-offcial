@@ -96,7 +96,7 @@ module.exports = {
         phone: "手机：15010927730",
         address: "地址：北京市朝阳区曙光西里时间国际A座1501",
         weChat: "微信公众号",
-        weibo: "国际教育研究院",
+        weibo: "教育研究院",
         database: "国际学校四库全书",
         classOnline: "在线课堂",
         databaseM: "四库全书",

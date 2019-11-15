@@ -315,9 +315,7 @@ export default {
             font-size: 14px;
             font-weight: 200;
             color: #fff;
-            padding: 0 22px;
-            height: 33px;
-            line-height: 33px;
+            padding: 10px 25px;
             text-align: center;
             &:link{
               text-decoration: none;

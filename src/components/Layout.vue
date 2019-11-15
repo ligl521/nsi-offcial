@@ -12,7 +12,7 @@
                                     <a href="javascript:;" title="搜索"><span class="iconfont icon-sousuo search" @click="searchResult"></span></a>
                                     <el-dropdown @command="handleCommand" placement="top" trigger="click">
                                         <span class="el-dropdown-link">
-                                          <img class="activelogo" :src="logoActive" alt="" width="30">&nbsp;{{countryActive}}<i class="el-icon-arrow-down el-icon--right"></i>
+                                          <img class="activelogo" :src="logoActive" alt="" width="40">&nbsp;{{countryActive}}<i class="el-icon-arrow-down el-icon--right"></i>
                                         </span>
                                         <el-dropdown-menu slot="dropdown">
                                             <el-dropdown-item v-for="(logo,index) in logos" :key="index" :command="logo">
@@ -172,7 +172,7 @@
           <div class="container">
             <div class="row">
               <div class="col-md-4">
-                <h3 class="contact">联系我们&nbsp;<span>Contact</span></h3>
+                <h4 class="contact">联系我们&nbsp;<span>Contact</span></h4>
                 <ul class="contact-info">
                   <li>{{$t('layoutFooter.tel')}}</li>
                   <li>{{$t('layoutFooter.email')}}</li>
@@ -225,13 +225,13 @@
                         </div>
                          <div class="col-md-2 col-xs-2 col-md-offset-1 text-center noPr15">
                             <div class="wechatBox">
-                                <h6 class="aboutUs">{{this.$t('layoutFooter.weChat')}}</h6>
+                                <h4 class="aboutUs">{{this.$t('layoutFooter.weChat')}}</h4>
                                 <img src="https://nsi.oss-cn-zhangjiakou.aliyuncs.com/nsi-official/image/layoutImg/wechat_QR.png" alt="" width="110" height="110">
                             </div>
                         </div>
                         <div class="col-md-2 col-xs-2 col-xs-offset-1 text-center noPr15">
                             <div class="wechatBox weiboBox">
-                                <h6 class="aboutUs">{{this.$t('layoutFooter.weibo')}}</h6>
+                                <h4 class="aboutUs">{{this.$t('layoutFooter.weibo')}}</h4>
                                 <img src="https://nsi.oss-cn-zhangjiakou.aliyuncs.com/nsi-official/image/layoutImg/shop.jpg" alt="" width="110" height="110">
                             </div>
                         </div>
@@ -439,10 +439,15 @@ export default {
         @media (max-width: 768px) {
             padding: 8px 0 0;
         }
+        .logo{
+            margin-left: -25px;
+        }
     }
 
     .nav-bg{
-        background-color: $official-color;
+        // background-color: $official-color;
+        background-color: rgb(33,80,137);
+    // border-color: #20528f;
         // background-image: url('../assets/img/NationalDay/nav-bg.jpg');
         z-index: 999;
         position: relative;
@@ -450,9 +455,10 @@ export default {
     }
     .navbar{
         margin-bottom: 0;
-        background-color: $official-color;
+        background-color: rgb(33,80,137);
+        // background-color: $official-color;
         // background-image: url('../assets/img/NationalDay/nav-bg.jpg');
-        border-color: $official-color;
+        border-color: rgb(33,80,137);
         // border-color: $nationDay-Color;
     }
     .navbar-default .navbar-nav li a{
@@ -536,16 +542,16 @@ export default {
     .selectLang{
         position: absolute;
         right: 15px;
-        top: 15px;
+        top: 12px;
         .search{
             font-size: 30px;
             position: relative;
-            right: 20px;
+            right: 5px;
             top: 8px;
             display: inline-block;
-            width: 50px;
-            height: 50px;
-            line-height: 50px;
+            width: 45px;
+            height: 45px;
+            line-height: 45px;
             text-align: center;
             @media (max-width: 768px) {
                 display: none;
@@ -565,8 +571,7 @@ export default {
             border: none;
             box-shadow: 0 4px 8px rgba(0, 0, 0, 0.28);
             border-radius: 50%;
-            position: relative;
-            top: -1px;
+            margin-right:5px;
         }
     }
     .el-dropdown-menu{
@@ -585,7 +590,7 @@ export default {
     /* footer */
     .footer{
       padding: 20px 0;
-      background-color: $official-footerColor;
+      background-color:rgb(33,80,137);
     }
     .footer{
       color: #FFF;
@@ -593,19 +598,15 @@ export default {
       z-index: 99;
     }
     .footer>.container{
-        padding-left: 0;
-        padding-left: 0;
+      padding-left: 0;
+      padding-left: 0;
     }
     .footer .contact{
-      // font-weight: 700;
-      color: #FFF;
-      font-size: 18px;
-    //   font-family: -webkit-pictograph,'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      margin-bottom: 25px;
     }
     .footer .contact>span{
       font-weight: normal;
       font-size: 14px;
-    //   font-family: "微软雅黑",Arial, Helvetica, sans-serif;
       letter-spacing: 1px;
     }
     .contact-info{
@@ -614,13 +615,13 @@ export default {
     }
     .contact-info>li{
       line-height: 2;
-      color: $official-footerFontColor;
-    //   font-family: Arial, Helvetica, sans-serif
+      color: #fff;
     }
     .footer-bottom{
-      padding: 20px 0;
+      padding: 15px 0;
       position: relative;
-      background-color: #2f2f2f;
+      border-top: 1px solid #959fa8;
+      background-color: rgb(33,80,137);
       @media (max-width:768px) {
           margin-top: 20px;
       }
@@ -630,26 +631,23 @@ export default {
         padding-right:0;
     }
     .footer-company{
-      font-size: 20px;
-      color: #969696;
-      letter-spacing: 1px;
-      // margin-right: 30px;
+      font-size: 16px;
+      color: #fff;
     }
     .company-en{
-      font-size: 18px;
+      font-size: 14px;
     }
     .copyright{
-      padding-top: 15px;
-      font-size: 13px;
-      color: #969696;
+        padding-top: 10px;
+        font-size: 14px;
+        color: #fff;
       p{
         margin-bottom: 0;
       }
     }
     .aboutUs{
-        font-weight: 700;
-        margin: 20px 0 10px 0;
-        color: $official-otherColor;
+        font-size: 18px;
+        margin-bottom: 25px;
     }
    .aboutUs-info>li>a{
         color: $official-footerFontColor;
@@ -669,13 +667,12 @@ export default {
       }
     }
     .weiboBox{
-      padding-left: 20px;
+      padding-left: 10px;
       h6{
         margin-bottom: 15px;
       }
     }
     .blogroll{
-      margin-top: 25px;
       margin-bottom: 25px;
       span{
           font-size: 14px;
