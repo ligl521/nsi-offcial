@@ -21,7 +21,7 @@
                       <div class="col-md-5 pr0">
                         <div class="researchInfo">
                             <h5 class="research-title">{{list.title}}</h5>
-                            <p class="apply-time"><span class="iconfont icon-shijian timeLogo"></span> {{list.time}}</p>
+                            <p class="apply-time">{{list.time}}</p>
                             <a :href="list.url" target="_blank" class="toApply">了解详情</a>
                         </div>
                       </div>
@@ -31,7 +31,7 @@
         </div>
 
         <div class="container">
-            <div class="row">
+            <div class="row" style="margin-bottom: 40px;">
                 <h2 class="title">专题研讨会</h2>
                 <div class="col-md-6 col-xs-6 mb30" v-for="(list,index) in seminarList" :key="index">
                     <div class="row">
@@ -48,7 +48,7 @@
                       <div class="col-md-5 pr0">
                         <div class="researchInfo">
                             <h5 class="research-title">{{list.title}}</h5>
-                            <p class="apply-time"><span class="iconfont icon-shijian timeLogo"></span> {{list.time}}</p>
+                            <p class="apply-time">{{list.time}}</p>
                             <a :href="list.url" target="_blank" class="toApply">了解详情</a>
                         </div>
                       </div>
@@ -310,26 +310,25 @@ export default {
         }
         .toApply{
             display: inline-block;
-            background: #b89561;
+            background: #3c7ac6;
             box-shadow: 0 4px 8px 0 rgba(28, 31, 33, 0.2);
             border-radius: 24px;
             font-size: 14px;
             font-weight: 200;
             color: #fff;
-            padding: 0 22px;
-            height: 33px;
-            line-height: 33px;
+            padding: 10px 25px;
             text-align: center;
+            margin-top:20px;
             &:link{
               text-decoration: none;
             }
             &:hover{
               text-decoration: none;
-              background-color:#c2a77f
+              background-color:#215089;
             }
         }
         .apply-time{
-            font-size: 15px;
+            font-size: 16px;
             margin-bottom: 15px;
             color: #666;
             @media (max-width: 768px) {

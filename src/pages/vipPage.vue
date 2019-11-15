@@ -15,7 +15,7 @@
                 </div>
             </div>
             <div class="row ptpb30">
-                <div class="col-md-3 col-xs-6" v-for="(item,index) in vipItem" :class="{'pr7M':(index%2==0),'pl7M':(index%2!=0)}" :key="item">
+                <div class="col-md-3 col-xs-6" v-for="(item,index) in vipItem" :class="{'pr7M':(index%2==0),'pl7M':(index%2!=0)}" :key="index">
                     <a class="vipItem" href="javascript:;">
                         <div class="row">
                             <div class="col-md-7">
@@ -43,7 +43,7 @@
                 </div>
             </div>
             <div class="row ptpb30">
-                <div class="col-md-3 col-xs-6" v-for="(item,index) in vipItem01" :key="item" :class="{'pr7M':(index%2==0),'pl7M':(index%2!=0)}">
+                <div class="col-md-3 col-xs-6" v-for="(item,index) in vipItem01" :key="index" :class="{'pr7M':(index%2==0),'pl7M':(index%2!=0)}">
                     <a class="vipItem" href="javascript:;">
                         <div class="row">
                             <div class="col-md-7">
@@ -72,7 +72,7 @@
                     </div>
                 </div>
                 <div class="row vipCardContainer">
-                    <div class="col-md-3 cardBox" v-for="(item,index) in vipList" :key="item">
+                    <div class="col-md-3 cardBox" v-for="(item,index) in vipList" :key="index">
                         <div class="card" :style="'border-top: 3px solid'+ item.vipColor">
                             <div class="cardContent text-canter">
                                 <!-- <img src="../assets/img/vip/vip01.jpg" alt="" width="200"> -->
@@ -422,6 +422,7 @@ export default {
         }
         .vipCardList{
             padding: 45px 20px;
+            margin-top: 60px;
             @media (min-width: 1200px) {
                 width: 1265px;
             }
@@ -525,7 +526,10 @@ export default {
             background-position: center 0;
             background-size: cover;
             height: 430px;
-            margin-bottom: 300px;
+            margin-bottom: 260px;
+            @media(max-width: 768px) {
+                display: none;
+            }
             .vipCardContainer{
                 position: relative;
                 top: 50px;

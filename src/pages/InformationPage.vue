@@ -99,7 +99,7 @@ export default {
           opacity: 0;
         }
         .pt60{
-            padding-top: 60px;
+            padding-top: 30px;
             @media (max-width: 768px) {
                 padding-top: 0;
             }
@@ -130,7 +130,7 @@ export default {
             bottom: -10px;
             left: 0;
             content: "";
-            background: #333;
+            background: #215089;
             width: 100%;
             height: 3px;
             -webkit-transition: all 1s ease 0s;
@@ -146,7 +146,7 @@ export default {
           .router-link-active {
               text-decoration: none;
               font-weight: 600;
-              color: #333;
+              color: #215089;
               ~.newsnavLine{
                 transform: rotateY(0);
               }
@@ -163,7 +163,7 @@ export default {
             &:hover{
               text-decoration: none;
               font-weight: 600;
-              color: #333;
+              color: #215089;
             }
           }
         }

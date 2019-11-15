@@ -6,7 +6,7 @@
                     <h3 class="title">专家智库</h3>
                 </div>
             </div>
-            <div class="row">
+            <div class="row" style="margin-bottom: 40px;">
                 <div class="col-md-3 col-xs-6" v-for="(experts,index) in expertsList" :key="index" :class="{'pr7':index%2==0,'pl7':index%2!=0}">
                     <div class="expertsBox">
                         <div class="imgBox text-center">

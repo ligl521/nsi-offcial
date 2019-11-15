@@ -735,6 +735,8 @@ export default {
         @media (max-width: 768px) {
             height: 35px;
             width: 135px;
+            position: relative;
+            left: 45px;
         }
       }
     }

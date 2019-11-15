@@ -213,6 +213,7 @@ export default {
                 font-size: 16px;
                 letter-spacing: 2px;
                 border-radius: 5px;
+                    margin-bottom: 40px;
             }
             .erweima{
                 position: absolute;
