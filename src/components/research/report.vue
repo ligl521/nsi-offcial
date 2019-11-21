@@ -5,7 +5,6 @@
             <div class="row">
                 <div class="col-md-12">
                     <div class="internal">
-                        <!-- <h1 class="title">内参<span class="year">2017</span></h1> -->
                         <h1 class="title">报告</h1>
                     </div>
                 </div>
@@ -13,9 +12,9 @@
             <div class="row">
                 <div class="col-md-3 col-xs-6" v-for="(list,index) in internalReferList" :key="index">
                     <div class="internalRefer-book">
-                            <a href="javascript:;" @click="toDownload(list.fileUrl)" class="internalRefer-box" slot="reference" :style="{'background-image':'url('+list.imageUrl+')'}">
-                            </a>
-                        <h4 :title="list.bookName" class="bookName" @click="openTips">{{list.fileName.split(".")[0]}}</h4>
+                        <a href="javascript:;"  @click="toDownload(list.fileUrl)" class="internalRefer-box" slot="reference" :style="{'background-image':'url('+list.imageUrl+')'}">
+                        </a>
+                        <h4 :title="list.bookName" @click="toDownload(list.fileUrl)" class="bookName">{{list.fileName.split(".")[0]}}</h4>
                     </div>
                 </div>
             </div>
@@ -38,6 +37,7 @@ export default {
              pageNum:1,
             // 内参
             internalReferList:[],
+            pptList:[],
             isShow:false
         } 
     },
@@ -58,7 +58,7 @@ export default {
                 duration:3000
             });
         },
-         // 判断微信浏览器
+        //  // 判断微信浏览器
         isWechat(){
             var ua = navigator.userAgent.toLowerCase();
             if(ua.match(/MicroMessenger/i)=="micromessenger"){
@@ -72,6 +72,7 @@ export default {
                 return true
             }
         },
+       
         toDownload(url){
              // 为ios微信浏览器
             if(this.isWechat()&&this.isIOS()&&url.indexOf('.zip')>-1){
@@ -87,14 +88,11 @@ export default {
                 window.open(url)
             }
         },
+    //    enterDownload(){
+    //        this.$router.push({path: './download'})
+    //    },
         buyFull(){
             window.open("https://www.xinxueshuo.cn/nsi-shop/dist/index.html#/", '_blank')
-            // if(screen.width<=768){
-            //     this.isShow=false
-            //     window.open("https://www.xinxueshuo.cn/nsi-shop/dist/index.html#/", '_blank')
-            // }else{
-            //     this.isShow=true
-            // }
         },
         isShowBox(){
             this.isShow=false
@@ -106,16 +104,14 @@ export default {
     beforeMount(){
         const params = new URLSearchParams();
         params.append('pageNum', this.pageNum,);
-        params.append('pageSize', 8);
+        params.append('pageSize', 30);
         params.append('type', '报告');
         this.axios({
              method: 'post',
              url: '/manager/resource/list.do',
              data:params
-        }).then((res)=>{
-            // console.log(res)
+        }).then((res)=>{ 
             this.internalReferList=res.data.data.list
-            // console.log(this.internalReferList)
         })
     }
 }
@@ -141,11 +137,11 @@ export default {
                 font-family: PingFangSC-Semibold;
                 font-size: 48px;
                 color: #c8c8c8;
-                letter-spacing: 10px;
                 line-height: 48px;
                 height: 50px;
                 position: relative;
                 margin-bottom: 40px;
+                letter-spacing: 10px;
                 @media (max-width: 768px) {
                     font-size: 30px;
                     margin-bottom: 15px;
@@ -161,6 +157,32 @@ export default {
                     line-height: 20px;
                 }
             }
+        }
+        .pptImg{
+            display: inline-block;
+            width: 100%;
+            min-height: 345px;
+            box-shadow: 0 5px 10px #ccc;
+            background-color: #e4e4e4;
+            background-size: 100% 100%;
+            transition: all 0.3s ease 0s;
+            @media (max-width: 768px) {
+                    min-height: 232px;
+                }
+            &:hover{
+                box-shadow: 0 15px 15px 0 rgba(15, 37, 64, 0.2);
+                text-decoration: none;
+                z-index: 2;
+            }
+        }
+        .pptName{
+            color: #a3a3a3;
+            font-size: 20px;
+            margin-top: 20px;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            min-height: 45px;
+            max-height: 45px;
         }
         .internalRefer-book{
             width: 100%;
@@ -211,7 +233,7 @@ export default {
                 font-size: 16px;
                 letter-spacing: 2px;
                 border-radius: 5px;
-                margin-bottom: 40px;
+                margin-bottom: 30px;
             }
         }
         .erweima{

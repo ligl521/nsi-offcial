@@ -27,6 +27,8 @@ import eventLotus from '../components/event/eventLotus.vue'
 import eventApply from '../components/event/eventApply.vue'
 import periodical from '../components/research/periodical.vue'
 import report from '../components/research/report.vue'
+import visPptDownload from '../components/research/visPptDownload.vue'
+import download from '../components/research/download.vue'
 import advancedClass from '../components/research/advancedClass.vue'
 import researchApply from '../components/research/researchApply.vue'
 import researchIndex from '../components/research/researchIndex.vue'
@@ -148,8 +150,14 @@ const routes = [{
                 component: periodical
             }, {
                 path: 'report',
-                component: report
-            }, {
+                component: report,
+            },{
+                path: 'visPptDownload',
+                component: visPptDownload,
+            },{
+                path: 'download',
+                component: download
+            },{
                 path: 'ipa',
                 component: advancedClass
             }, {
