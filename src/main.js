@@ -18,7 +18,7 @@ Vue.use(VueI18n)
 Vue.config.productionTip = false
 
 // 罗震
-// axios.defaults.baseURL = "http://192.168.0.20:8080/nsi-1.0"
+// axios.defaults.baseURL = "http://192.168.0.13:8080/nsi-1.0"
 
 // 生产
 axios.defaults.baseURL = "https://data.xinxueshuo.cn/nsi-1.0"
