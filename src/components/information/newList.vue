@@ -52,7 +52,7 @@ export default {
     },
     filters:{
         formatDate(time,option){
-            time = Date.parse(time)
+            // time = Date.parse(time)
             const d = new Date(time);
             const now = Date.now();
             const diff = (now - d) / 1000;
@@ -99,6 +99,7 @@ export default {
             const params = new URLSearchParams();
             params.append('pageNum', this.pageNum);
             params.append('pageSize', 8);
+            params.append("siftType", "新闻")
             this.axios({
                 method: 'post',
                 url: '/article/list.do',
@@ -133,6 +134,7 @@ export default {
         const params = new URLSearchParams();
         params.append('pageNum', this.pageNum,);
         params.append('pageSize', 16);
+        params.append("siftType", "新闻")
         this.axios({
              method: 'post',
              url: '/article/list.do',

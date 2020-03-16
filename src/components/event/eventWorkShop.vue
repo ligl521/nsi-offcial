@@ -4,6 +4,32 @@
             <img src="../../images/yan.jpg" alt="" class="img-responsive">
         </div>
         <div class="container">
+            <div class="row" style="margin-bottom: 40px;">
+                <h2 class="title">专题研讨会</h2>
+                <div class="col-md-6 col-xs-6 mb30" v-for="(list,index) in seminarList" :key="index">
+                    <div class="row">
+                      <div class="col-md-7 pl0 pr0">
+                        <a class="event-list" :href="list.url" target="_blank">
+                            <div v-if="isMobile" class="event-box" :style="{'background-image':'url('+list.imgSrcM+')'}">
+                                <h3 class="event-box-title" :title="list.title">{{list.title}}</h3>
+                            </div>
+                            <div v-else class="event-box" :style="{'background-image':'url('+list.imgSrc+')'}">
+                                <h3 class="event-box-title" :title="list.title">{{list.title}}</h3>
+                            </div>
+                        </a>
+                      </div>
+                      <div class="col-md-5 pr0">
+                        <div class="researchInfo">
+                            <h5 class="research-title">{{list.title}}</h5>
+                            <p class="apply-time">{{list.time}}</p>
+                            <a :href="list.url" target="_blank" class="toApply">了解详情</a>
+                        </div>
+                      </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container">
             <div class="row">
                 <h2 class="title">地区研讨会</h2>
                 <div class="col-md-6 col-xs-6 mb30" v-for="(list,index) in areaList" :key="index">
@@ -30,32 +56,7 @@
             </div>
         </div>
 
-        <div class="container">
-            <div class="row" style="margin-bottom: 40px;">
-                <h2 class="title">专题研讨会</h2>
-                <div class="col-md-6 col-xs-6 mb30" v-for="(list,index) in seminarList" :key="index">
-                    <div class="row">
-                      <div class="col-md-7 pl0 pr0">
-                        <a class="event-list" :href="list.url" target="_blank">
-                            <div v-if="isMobile" class="event-box" :style="{'background-image':'url('+list.imgSrcM+')'}">
-                                <h3 class="event-box-title" :title="list.title">{{list.title}}</h3>
-                            </div>
-                            <div v-else class="event-box" :style="{'background-image':'url('+list.imgSrc+')'}">
-                                <h3 class="event-box-title" :title="list.title">{{list.title}}</h3>
-                            </div>
-                        </a>
-                      </div>
-                      <div class="col-md-5 pr0">
-                        <div class="researchInfo">
-                            <h5 class="research-title">{{list.title}}</h5>
-                            <p class="apply-time">{{list.time}}</p>
-                            <a :href="list.url" target="_blank" class="toApply">了解详情</a>
-                        </div>
-                      </div>
-                    </div>
-                </div>
-            </div>
-        </div>
+        
 
 
     </div>
@@ -69,12 +70,17 @@ export default {
             isMobile:false,
             areaList:[
                 {
+                   title:"西北地区国际教育高峰论坛",
+                   imgSrc:require("../../images/area/西安.jpg"),
+                   imgSrcM:require("../../images/area/西安.jpg"),
+                   url:"https://mp.weixin.qq.com/s?__biz=MzA4MDg0Mzc0Mw==&mid=2651365294&idx=1&sn=50dd1de8296c02b70b4b479b042e90bc&chksm=8462391eb315b0080ef4006057d116529abf26467dd64c6cf80a356bf75fe4af595d8f576773&mpshare=1&scene=1&srcid=0113gXAjA5qFrefWoywD4P1k&sharer_sharetime=1578910530635&sharer_shareid=01b9ebf75bc29b8fa1658e0fbeef188c&key=7c352ecdd99aea7296a1b04b593bdf2569404d235869bbc222e1cd93bf79727e53c2b0f0a6e66fd8fc2fa05544db716c9bac32bdbc320119d7ae916c441aebce4e01e3feb6317f22f249b58535523661&ascene=1&uin=MTE1ODcxOTgzOQ%3D%3D&devicetype=Windows+10&version=62070158&lang=zh_CN&exportkey=Aw7AFIMiqZ15%2FTANKaotKL0%3D&pass_ticket=%2FwAqckXKJCteowTJV9pC3SCujhu1rFPiM%2Bun6kkQvwGZ%2Bli5QirYeFhh6LOYU%2FJc",
+                   time:"2019.07.19"
+                },{
                     title:"浙江研讨会",
                     imgSrc:require("../../images/area/浙江.jpg"),
                     imgSrcM:require("../../images/area/浙江.jpg"),
                     url:"https://mp.weixin.qq.com/s/iPgWVA-d2Xg3sg4-4bHxkA",
                     time:"2018.09.14"
-                    
                 },{
                    title:"山东研讨会",
                    imgSrc:require("../../images/area/山东.jpg"),

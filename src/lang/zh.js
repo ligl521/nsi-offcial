@@ -76,14 +76,17 @@ module.exports = {
             ipa: "国际学校高级管理研修班",
             classOnline: "国际学校职能岗位课程",
             apply: "课程报名",
-            experts: "专家智库"
+            experts: "专家智库",
+            mac2020: "市场招生课"
         },
         researchChild_Mob: {
             magazine: "国际学校内参",
             report: "研究报告",
             ipa: "高级管理研修班",
             classOnline: "教育研究院",
-            apply: "课程报名"
+            apply: "课程报名",
+            experts: "专家智库",
+            mac2020: "市场招生课"
         },
         consult: "咨询服务",
         ges: "G E S",
@@ -91,7 +94,7 @@ module.exports = {
     },
     // 底部
     layoutFooter: {
-        tel: "联系电话：010-52468286",
+        tel: "联系：010-52468286",
         email: "邮箱：info@xinxueshuo.cn",
         phone: "手机：15010927730",
         address: "地址：北京市朝阳区曙光西里时间国际A座1501",

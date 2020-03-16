@@ -57,6 +57,14 @@ export default {
                     
                 },
                 {
+                    title:"国际学校戏剧教育研讨会",
+                    imgSrc:require("../../images/edu.png"),
+                    imgSrcM:require("../../images/edu.png"),
+                    url:"https://mp.weixin.qq.com/s?__biz=MzA4MDg0Mzc0Mw==&mid=2651367532&idx=1&sn=9d83167501533129df7d055fe61fa3b2&chksm=84620edcb31587ca3ede0cff484703c2207416b34210b65c1997eff1ad67bf012a0bbae6f920&token=1899427316&lang=zh_CN#rd",
+                    time:"2020.01.10"
+                    
+                },
+                {
                     title:"FIT国际教师风采大赛",
                     imgSrc:"https://nsi.oss-cn-zhangjiakou.aliyuncs.com/nsi-event/FIT2019/slogo.jpg",
                     imgSrcM:"https://nsi.oss-cn-zhangjiakou.aliyuncs.com/nsi-event/FIT2019/slogo.jpg",

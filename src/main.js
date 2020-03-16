@@ -18,7 +18,7 @@ Vue.use(VueI18n)
 Vue.config.productionTip = false
 
 // 罗震
-// axios.defaults.baseURL = "http://192.168.0.13:8080/nsi-1.0"
+// axios.defaults.baseURL = "http://high.natapp1.cc/nsi-1.0"
 
 // 生产
 axios.defaults.baseURL = "https://data.xinxueshuo.cn/nsi-1.0"
@@ -33,6 +33,16 @@ const i18n = new VueI18n({
         'zh': require('./lang/zh'),
         'en': require('./lang/en')
     }
+})
+//跳转到顶部
+router.beforeEach((to, from, next) => {    
+    // chrome
+    document.body.scrollTop = 0
+    // firefox
+    document.documentElement.scrollTop = 0
+    // safari
+    window.pageYOffset = 0
+    next()
 })
 
 //  百度统计

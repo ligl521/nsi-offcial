@@ -116,7 +116,7 @@ export default {
            }
        }
        .list-content-box{
-           min-height: 100px !important;
+           height: 80px !important;
            h3{
                max-height: 75px !important;
                a{

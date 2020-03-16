@@ -138,6 +138,9 @@
                                                          <el-dropdown-item>
                                                             <router-link :to="{path:'/research/experts'}">{{$t('layoutNav.researchChild.experts')}}</router-link>
                                                         </el-dropdown-item>
+                                                        <el-dropdown-item>
+                                                            <router-link :to="{path:'/research/mac2020'}">{{$t('layoutNav.researchChild.mac2020')}}</router-link>
+                                                        </el-dropdown-item>
                                                     </el-dropdown-menu>
                                                 </el-dropdown>
                                             </li>
@@ -172,7 +175,7 @@
           <div class="container">
             <div class="row">
               <div class="col-md-4">
-                <h4 class="contact">联系我们&nbsp;<span>Contact</span></h4>
+                <h4 class="contact">联系我们&nbsp;<span>Contact Us：</span></h4>
                 <ul class="contact-info">
                   <li>{{$t('layoutFooter.tel')}}</li>
                   <li>{{$t('layoutFooter.email')}}</li>
@@ -185,7 +188,7 @@
                         <div class="col-md-6">
                             <div class="row">
                                 <div class="col-md-12">
-                                    <h4 class="blogroll">链接 <span>Links</span></h4>
+                                    <h4 class="blogroll">链接 <span>Links：</span></h4>
                                     <div class="shareHref">
                                         <a href="http://data.xinxueshuo.cn" target="_blank"><img src="https://nsi.oss-cn-zhangjiakou.aliyuncs.com/nsi-official/image/layoutImg/database.png" alt=""></a>
                                         <a href="http://class.xinxueshuo.cn" target="_blank"><img src="https://nsi.oss-cn-zhangjiakou.aliyuncs.com/nsi-official/image/layoutImg/class.png" alt=""></a>
@@ -249,7 +252,9 @@
               </div>
               <div class="col-md-12 text-center">
                 <div class="copyright">
-                  <p>Copyright © 2018 xinxueshuo.cn All Rights Reserved 京ICP备 16031987号-1</p>
+                  <p>Copyright © 2018 xinxueshuo.cn All Rights Reserved 
+                     <a href="http://beian.miit.gov.cn" target="_blank" class="jingNumber">京ICP备 16031987号-1</a>
+                  </p>
                 </div>
               </div>
             </div>
@@ -338,6 +343,12 @@ export default {
     $nationDay-footerColor:#ce343c;
     $nationDay-footerFontColor:#db7378;
     $nationDay-otherColor:#d3656a;
+    .jingNumber{
+        color: #337ab7;
+        &:hover{
+            color:#fff;
+        }
+    }
     .fontLogo{
         font-size: 25px !important;
         position: relative;

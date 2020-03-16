@@ -33,6 +33,8 @@ import advancedClass from '../components/research/advancedClass.vue'
 import researchApply from '../components/research/researchApply.vue'
 import researchIndex from '../components/research/researchIndex.vue'
 import experts from '../components/research/experts.vue'
+import mac2020 from '../components/research/mac2020.vue'
+import classCatalog from '../components/research/classCatalog.vue'
 
 import consultOne from '../components/consulting/consultOne.vue'
 import consultTwo from '../components/consulting/consultTwo.vue'
@@ -166,6 +168,14 @@ const routes = [{
             }, {
                 path: 'experts',
                 component: experts
+            }, {
+                path: 'mac2020',
+                component:mac2020
+
+            },{
+                path: 'classCatalog',
+                component:classCatalog
+
             }
         ]
     }, {

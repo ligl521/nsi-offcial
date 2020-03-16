@@ -61,7 +61,6 @@
                 .articleType {
                     position: absolute;
                     display: block;
-                    width: 44px;
                     top: 10px;
                     left: 10px;
                     font-style: normal;
@@ -76,7 +75,6 @@
         .list-content-box {
             padding: 15px 10px 0;
             background: #FFF;
-            // min-height: 215px;
             min-height: 145px;
             @media (max-width: 768px) {
                 min-height: 90px;
