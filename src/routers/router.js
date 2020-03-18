@@ -35,6 +35,8 @@ import researchIndex from '../components/research/researchIndex.vue'
 import experts from '../components/research/experts.vue'
 import mac2020 from '../components/research/mac2020.vue'
 import classCatalog from '../components/research/classCatalog.vue'
+import videoList from '../components/research/videoList.vue'
+import video from '../components/research/video.vue'
 
 import consultOne from '../components/consulting/consultOne.vue'
 import consultTwo from '../components/consulting/consultTwo.vue'
@@ -171,11 +173,16 @@ const routes = [{
             }, {
                 path: 'mac2020',
                 component:mac2020
-
             },{
                 path: 'classCatalog',
                 component:classCatalog
 
+            },{
+                path: 'videoList',
+                component:videoList
+            },{
+                path: 'video',
+                component:video
             }
         ]
     }, {

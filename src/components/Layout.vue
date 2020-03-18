@@ -141,6 +141,9 @@
                                                         <el-dropdown-item>
                                                             <router-link :to="{path:'/research/mac2020'}">{{$t('layoutNav.researchChild.mac2020')}}</router-link>
                                                         </el-dropdown-item>
+                                                        <el-dropdown-item>
+                                                            <router-link :to="{path:'/research/videoList'}">{{$t('layoutNav.researchChild.videoList')}}</router-link>
+                                                        </el-dropdown-item>
                                                     </el-dropdown-menu>
                                                 </el-dropdown>
                                             </li>

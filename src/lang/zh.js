@@ -77,7 +77,8 @@ module.exports = {
             classOnline: "国际学校职能岗位课程",
             apply: "课程报名",
             experts: "专家智库",
-            mac2020: "市场招生课"
+            mac2020: "市场招生课",
+            videoList:"越谈直播回放"
         },
         researchChild_Mob: {
             magazine: "国际学校内参",
