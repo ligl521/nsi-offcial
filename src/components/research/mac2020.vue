@@ -40,9 +40,9 @@
             <div class="formIntroduce">
                 <div class="container formOne">
                     <div class="row">
-                        <div class="col-md-5 col-xs-6">国际化学校行业人才三维分类</div>
+                        <div class="col-md-5 col-xs-7">国际化学校行业人才三维分类</div>
                         <div class="col-md-2 centerPart">f</div>
-                        <div class="col-md-5 col-xs-6">课程培养层次</div>
+                        <div class="col-md-5 col-xs-5">课程培养层次</div>
                     </div>
                 </div>
                 <div class="container formTwo">
@@ -84,10 +84,10 @@
                 <div class="rightContent">
                     <span class="courseLine"></span>
                     <span class="courseTitle">市场招生策略篇</span>
-                    <p>《新建校定位：市场定位、品牌定位、产品定位》- 李远</p>
-                    <p>《如何科学管理市场目标：定目标、玩方法、抓过程、等结果》- 张楠</p>
-                    <p>《2020，信心胜过一切——新谈K12学校招生策略》- 陈泽芳</p>
-                    <p>《疫情之下市场招生的坚守与变革》- 童晓白</p>
+                    <p>新建校定位：市场定位、品牌定位、产品定位 - 李远</p>
+                    <p>如何科学管理市场目标：定目标、玩方法、抓过程、等结果 - 张楠</p>
+                    <p>2020，信心胜过一切——新谈K12学校招生策略 - 陈泽芳</p>
+                    <p>疫情之下市场招生的坚守与变革 - 童晓白</p>
                 </div>
                 <div class="clear"></div>
             </div>
@@ -98,11 +98,11 @@
                 <div class="leftContent">
                     <span class="courseTitle">市场招生战略篇</span>
                     <span class="courseLine"></span>
-                    <p>《如何改变现有市场招生策略应对线上教育的崛起》- 乔拯克</p>
-                    <p>《特殊时期如何开展有效招生推广》- 吴峥</p>
-                    <p>《有限市场预算下的市场招生工作如何增效》- 乔拯克</p>
-                    <p>《如何锻造市场招生队伍战斗力》- 许凌可</p>
-                    <p>《国际化学校宣传中视频内容的策划与制作》- 许凌可</p>
+                    <p>如何改变现有市场招生策略应对线上教育的崛起 - 乔拯克</p>
+                    <p>特殊时期如何开展有效招生推广 - 吴峥</p>
+                    <p>有限市场预算下的市场招生工作如何增效 - 乔拯克</p>
+                    <p>如何锻造市场招生队伍战斗力 - 许凌可</p>
+                    <p>国际化学校宣传中视频内容的策划与制作 - 许凌可</p>
                 </div>
                 <div class="clear"></div>
             </div>
@@ -113,9 +113,9 @@
                 <div class="rightContent">
                     <span class="courseLine"></span>
                     <span class="courseTitle">品牌与公共关系篇</span>
-                    <p>《集团化品牌管理的为与不为》- 童晓白</p>
-                    <p>《策划自媒体话题性品牌推广》- 吴峥</p>
-                    <p>《家校关系管理如何高效提升新招率和留存率》- 吴越</p>
+                    <p>集团化品牌管理的为与不为 - 童晓白</p>
+                    <p>策划自媒体话题性品牌推广 - 吴峥</p>
+                    <p>家校关系管理如何高效提升新招率和留存率 - 吴越</p>
                 </div>
                 <div class="clear"></div>
 
@@ -328,7 +328,7 @@ export default {
         left: 50%;
         transform: translateX(-50%);
         @media (max-width:768px) {
-            bottom:-4px;
+            bottom:0px;
         }
         .buyNow{
             p{
@@ -409,6 +409,9 @@ export default {
                     font-size:16px;
                     font-weight:400;
                     color:#333;
+                    @media (max-width: 768px) {
+                        font-size:14px;
+                    }
                 }
             }
             
@@ -429,10 +432,12 @@ export default {
             border-radius: 8px 8px 0 0;
             background: #175081;
             color:#fff;
-            .col-xs-6{
+            @media  (max-width: 768px) {
+                border-radius:0px;
+            }
+            .col-xs-7{
                 @media (max-width: 768px) {
                     padding:0 !important;
-                    font-size: 12px;
                 }
             }
             .centerPart{
@@ -476,6 +481,9 @@ export default {
             border-radius: 0 0 8px 8px;
             background: #6A97C4;
             color:#fff;
+            @media  (max-width: 768px) {
+                border-radius:0px;
+            }
             .centerPart{
                 background:#2889DD;
                 @media (max-width: 768px) {
@@ -522,8 +530,8 @@ export default {
         padding:10px;
         position:relative;
         @media (max-width: 768px) {
-            width:90%;
-            height:200px;
+            width:95%;
+            height:220px;
         }
         .leftImg{
             float:left;
@@ -568,16 +576,13 @@ export default {
                 color:#000;
                 margin-bottom:10px;
                 display:inline-block;
-                @media (max-width: 768px) {
-                    font-size:16px;
-                }
             }
             p{
                 font-size:16px;
                 font-weight:400;
                 color:#333;
                 @media (max-width: 768px) {
-                    font-size:12px;
+                    font-size: 14px;
                 }
             }
         }
@@ -607,7 +612,7 @@ export default {
             text-align: right;
             @media (max-width: 768px) {
                 width: 100%;
-                right: 10px;
+                right: 5px;
             }
             .courseLine{
                 width: 3px;
@@ -624,16 +629,13 @@ export default {
                 color:#000;
                 margin-bottom:10px;
                 display:inline-block;
-                @media (max-width: 768px) {
-                    font-size:16px;
-                }
             }
             p{
                 font-size:16px;
                 font-weight:400;
                 color:#333;
                 @media (max-width: 768px) {
-                    font-size:12px;
+                    font-size: 14px;
                 }
             }
         }
@@ -712,6 +714,10 @@ export default {
                 color:rgba(51,51,51,1);
                 max-height: 70px;
                 height: 50px;
+                @media (max-width: 768px) {
+                    font-size:14px;
+                    height:40px;
+                }
             }
         }
     }  
@@ -758,7 +764,7 @@ export default {
                 text-align: center;
                 margin-bottom:20px;
                 @media (max-width: 768px) {
-                    margin-bottom:10px;
+                    margin-bottom:0px;
                 }
                 img{
                     padding-bottom:20px;
@@ -773,16 +779,13 @@ export default {
                         font-weight:600;
                         color:rgba(0,0,0,1);
                         margin-bottom:5px;
-                        @media (max-width: 768px) {
-                            font-size:14px;
-                        }
                     }
                     &:last-of-type{
                         font-size:16px;
                         font-weight:400;
                         color:rgba(51,51,51,1);
                         @media (max-width: 768px) {
-                            font-size:12px;
+                            font-size:14px;
                         }
                     }
                 }
@@ -900,35 +903,35 @@ export default {
             p{
                 border: 1px solid #666666;
                 border-radius: 8px;
-                width: 150px;
-                height: 30px;
-                line-height: 30px;
+                width: 166px;
+                height: 34px;
+                line-height: 34px;
                 margin: 10px auto;
-                font-size: 14px;
+                font-size: 16px;
             }
         }
         .bottomContent{
             background:#133E79;
             color:#fff;
-            border-radius:8px;
+            margin-top:40px; 
             .contentBox{
                 padding:15px;
                 .content{
                     .titleLine{
                         width: 3px;
-                        height: 12px;
+                        height: 15px;
                         background: white;
                         opacity: 1;
                         display: inline-block;
                         position:relative;
-                        top:2px;
+                        top:1px;
                     }
                     .title{
-                        font-size:14px;
+                        font-size:16px;
                         font-weight:600;
                     }
                     .desc{
-                        font-size:12px;
+                        font-size:14px;
                         font-weight:400;
                         margin:3px 0 5px 7px;
                     }
