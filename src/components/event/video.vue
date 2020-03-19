@@ -5,8 +5,8 @@
                 <div class="col-md-12">
                     <div class="internal">
                         <el-breadcrumb separator-class="el-icon-arrow-right">
-                            <el-breadcrumb-item :to="{ path: '/research/videoList' }">《越谈》直播回放</el-breadcrumb-item>
-                            <el-breadcrumb-item :to="{ path: '/research/video' }">{{vidioTitile}}</el-breadcrumb-item>
+                            <el-breadcrumb-item :to="{ path: '/event/videoList' }">《越谈》直播回放</el-breadcrumb-item>
+                            <el-breadcrumb-item :to="{ path: '/event/video' }">{{vidioTitile}}</el-breadcrumb-item>
                         </el-breadcrumb>
                     </div>
                 </div>
