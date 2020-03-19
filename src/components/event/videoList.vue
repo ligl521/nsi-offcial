@@ -4,17 +4,17 @@
             <div class="row">
                 <div class="col-md-12">
                     <div class="internal">
-                        <h1 class="title">越谈</h1>
+                        <h1 class="title">《越谈》直播回放</h1>
                     </div>
                 </div>
             </div>
             <div class="row">
                 <div class="col-md-6 col-xs-12 internalRefer" v-for="(list,index) in videoList" :key="index">
-                    <div class="internalRefer-book">
+                    <div @click="videoBtn(list.id)" class="internalRefer-book">
                         <h3>{{list.vidioTitile}}</h3>
                         <div class="internalRefer-felx">
                             <h4>嘉宾：{{list.guest}}</h4>
-                            <h4 @click="videoBtn(list.id)" class="playback">直播回放</h4>
+                            <h4  class="playback">直播回放</h4>
                         </div>
                     </div>
                 </div>
@@ -52,14 +52,20 @@ export default {
     .periodical-com{
         background-color: #fafafa;
         padding-bottom: 140px;
+        .internal{
+            margin-top: 40px;
+            margin-bottom: 30px;
+        }
         .internalRefer{
-            margin-bottom: 20px;
+            margin-bottom: 30px;
             .internalRefer-book{
-                width: 100%;
-                padding:10px;
+                width: 100%;    
+                padding:20px;
                 background-color: #fff;
                 border-radius: 10px;
+                cursor:pointer;
                 h3{
+                    margin-top: 0;
                     margin-bottom: 20px;
                     height: 70px;
                     line-height: 34px;
@@ -74,16 +80,25 @@ export default {
                     display: flex;
                     justify-content: space-between;
                     color: rgb(131, 131, 131);
+                    h4{
+                        margin: 0;
+                    }
                     .playback{
                         padding: 6px 10px;
-                        margin-top: 4px;
                         background-color: #215089;
                         border-radius: 8px;
                         cursor:pointer;
                         color: #fff;
+                        font-size: 16px;
+                        margin-top: -6px;
                     }
                 }
             }
         }
+    }
+    @media (max-width:768px) {
+      .periodical-com{
+         padding-bottom: 30px; 
+      }             
     }
 </style>

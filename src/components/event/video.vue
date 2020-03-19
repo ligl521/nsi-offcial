@@ -4,18 +4,20 @@
             <div class="row">
                 <div class="col-md-12">
                     <div class="internal">
-                        <h1 class="title">越谈</h1>
+                        <el-breadcrumb separator-class="el-icon-arrow-right">
+                            <el-breadcrumb-item :to="{ path: '/research/videoList' }">《越谈》直播回放</el-breadcrumb-item>
+                            <el-breadcrumb-item :to="{ path: '/research/video' }">{{vidioTitile}}</el-breadcrumb-item>
+                        </el-breadcrumb>
                     </div>
                 </div>
             </div>
             <div class="row">
-                <div class="col-md-6 col-xs-12 internalRefer">
+                <div class="col-md-12 col-xs-12 internalRefer">
                     <div class="internalRefer-book">
                         <video :src="videoMp4" style="width:100%"  autoplay  enable-danmu  controls></video>
                         <h3>{{vidioTitile}}</h3>
                         <div class="internalRefer-felx">
                             <h4>嘉宾：{{guest}}</h4>
-                            <!-- <h4 @click="enterDownload(list.id)" class="playback">直播回放</h4> -->
                         </div> 
                     </div>
                 </div>
@@ -34,7 +36,6 @@ export default {
         } 
     },
     created(){
-    //  this.videoDetails(this.$route.query.id)
     },
     methods:{
       videoDetails(){
@@ -45,7 +46,7 @@ export default {
              url: '/playback/detail.do',
              params:{courseId:ID}
         }).then((res)=>{ 
-            that.videoMp4 =  res.data.data.mvAddress,
+            that.videoMp4 =  res.data.data.mvAddress.replace( "http://nsi-oss.xinxueshuo.cn","https://nsi.oss-cn-zhangjiakou.aliyuncs.com")
             that.vidioTitile =  res.data.data.vidioTitile,
             that.guest =  res.data.data.guest
             console.log(res.data.data)
@@ -62,6 +63,16 @@ export default {
     .periodical-com{
         background-color: #fafafa;
         padding-bottom: 40px;
+        .internal{
+            margin-top: 40px;
+            margin-bottom: 30px;
+            .el-breadcrumb{
+                font-size: 20px;
+                @media (max-width:768px) {
+                    display: none;
+                }
+            }
+        }
         .internalRefer{
             margin-bottom: 20px;
             .internalRefer-book{
@@ -84,14 +95,6 @@ export default {
                     display: flex;
                     justify-content: space-between;
                     color: rgb(131, 131, 131);
-                    .playback{
-                        padding: 6px 10px;
-                        margin-top: 4px;
-                        background-color: #215089;
-                        border-radius: 8px;
-                        cursor:pointer;
-                        color: #fff;
-                    }
                 }
             }
         }

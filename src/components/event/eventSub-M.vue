@@ -13,6 +13,9 @@
                     <div class="swiper-slide text-center">
                         <router-link :to="{path:'/event/subject'}"><span class="iconfont icon-zhuanti fontlogo"></span><br/>{{$t('layoutNav.eventChild.subject')}}</router-link>
                     </div>
+                    <div class="swiper-slide text-center">
+                        <router-link :to="{path:'/event/videoList'}"><img width="35" style="margin-top: 8px;padding-bottom: 6px;" :src="imgSrc" alt=""><br/>{{$t('layoutNav.eventChild.videoList')}}</router-link>
+                    </div>
                      <!-- <div class="swiper-slide text-center">
                         <router-link :to="{path:'/event/apply'}"><span class="iconfont icon-baoming fontlogo"></span><br/>{{$t('layoutNav.eventChild.apply')}}</router-link>
                     </div> -->
@@ -27,7 +30,8 @@ import Swiper from 'swiper'
 export default {
     data(){
         return{
-            layoutNav:[this.$t('layoutNav.eventChild.vis'),this.$t('layoutNav.eventChild.lotus'),this.$t('layoutNav.eventChild.subject'),this.$t('layoutNav.eventChild.apply')]
+            imgSrc:require("../../images/logo_yue.png"),
+            layoutNav:[this.$t('layoutNav.eventChild.vis'),this.$t('layoutNav.eventChild.lotus'),this.$t('layoutNav.eventChild.subject'),this.$t('layoutNav.eventChild.apply'),this.$t('layoutNav.eventChild.videoList'),]
         }
     },
     methods:{

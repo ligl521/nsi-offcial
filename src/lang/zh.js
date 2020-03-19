@@ -13,7 +13,8 @@ module.exports = {
             vis: "VIS国际学校发展大会",
             lotus: "新荷学校大会",
             subject: "地区/专题研讨会",
-            apply: "参会报名"
+            apply: "参会报名",
+            videoList:'越谈直播回放'
         },
         // lotusContent: {
         //     lotusIntroTitle: '为什么创办新荷国际学校',
@@ -78,7 +79,6 @@ module.exports = {
             apply: "课程报名",
             experts: "专家智库",
             mac2020: "市场招生课",
-            videoList:"越谈直播回放"
         },
         researchChild_Mob: {
             magazine: "国际学校内参",
