@@ -70,6 +70,7 @@ export default {
                 font-size: 20px;
                 @media (max-width:768px) {
                     display: none;
+                    height: 0;
                 }
             }
         }
@@ -95,6 +96,25 @@ export default {
                     display: flex;
                     justify-content: space-between;
                     color: rgb(131, 131, 131);
+                }
+            }
+        }
+    }
+    @media (max-width:768px) {
+        .periodical-com{
+            padding-bottom: 20px; 
+            .internalRefer{
+            margin-bottom: 20px;
+            padding: 0 5px;
+                .internalRefer-book{
+                    width: 100%;    
+                    padding:6px;
+                    background-color: #fff;
+                    h3{
+                        margin-bottom: 10px;
+                        font-size: 22px;
+                        margin-top: 10px;
+                    }
                 }
             }
         }

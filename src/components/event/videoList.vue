@@ -98,7 +98,27 @@ export default {
     }
     @media (max-width:768px) {
       .periodical-com{
-         padding-bottom: 30px; 
+         padding-bottom: 20px; 
+         .internal{
+            margin-top: 30px;
+            margin-bottom:20px;
+        }
+         .title{
+             font-size: 28px;
+             color: rgb(131, 131, 131);
+        }
+        .internalRefer{
+            margin-bottom: 20px;
+            .internalRefer-book{
+                width: 100%;    
+                padding:10px;
+                background-color: #fff;
+                h3{
+                    margin-bottom: 10px;
+                    font-size: 22px;
+                }
+            }
+        }
       }             
     }
 </style>
