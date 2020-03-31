@@ -24,11 +24,18 @@
 </template>
 
 <script>
+import wxShareInit from '../../assets/js/weChatShare01'
 export default {
     data(){
         return{
             pageNum:1,
             videoList:[], // 直播回放
+            wxShareInfo: {
+                title: "【越谈】+【越姐麻辣说】| 直播回顾",
+                imgUrl:"https://data.xinxueshuo.cn/upImage/upInstitutionImg/100062/100062-logo.jpg",
+                href: window.location.href,
+                desc:"《越谈》，面向国际学校从业者。《越姐麻辣说》，面向国际学校家长群体"
+            },
         } 
     },
     methods:{
@@ -44,6 +51,10 @@ export default {
             console.log(res.data.data.list)
             this.videoList=res.data.data.list
         })
+         // 微信分享
+        if(wxShareInit.isWeixinBrowser()){
+            setTimeout(wxShareInit.wxReady(this.wxShareInfo),500)
+        }
     }
 }
 </script>
@@ -75,6 +86,9 @@ export default {
                     line-clamp: 2;
                     -webkit-line-clamp: 2;
                     -webkit-box-orient: vertical;
+                    @media (max-width:768px) {
+                        font-size:18px !important;
+                    }
                 }
                 .internalRefer-felx{
                     display: flex;
