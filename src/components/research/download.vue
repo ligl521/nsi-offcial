@@ -278,6 +278,8 @@ export default {
             margin: 0 auto 10px;
             width: 92%;
             cursor: pointer;
+            max-height: 55px;
+            min-height: 55px;
         }
     }
     .swiper-father{
