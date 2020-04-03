@@ -77,6 +77,7 @@ export default {
             const _this=this;
             var swiperM=new Swiper('#swiperM', {
                 notNextTick: true,
+                loop:false,
                 freeMode:true,
                 freeModeMomentumRatio : 5,
                 freeModeMomentum:true,

@@ -41,7 +41,8 @@ export default {
     methods:{
         eventSubInit(){
             var eventSwiper=new Swiper("#researchSwiper",{
-                notNextTick: true,
+                notNextTick: false,
+                loop:false,
                 freeMode:true,
                 freeModeMomentumRatio : 5,
                 freeModeMomentum:true,
@@ -49,11 +50,15 @@ export default {
                 slidesPerView : 4,
                 slideToClickedSlide: true,
                 resistanceRatio:0.4,
+                observer:true, 
+                observeParents:true,
             })
         }
     },
     mounted(){
-        this.eventSubInit()
+        this.$nextTick(()=>{
+            this.eventSubInit()
+        })
     }
 }
 </script>

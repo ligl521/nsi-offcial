@@ -131,6 +131,9 @@ export default {
             border-radius: 5px;
             width: 25%;
             background:#f1f1f1;
+            &:hover{
+                cursor: pointer;
+            }
             @media (max-width:768px) {
                 background:#fafafa;
                 border-bottom:1px solid #eee;

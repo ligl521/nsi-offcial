@@ -29,6 +29,7 @@ import periodical from '../components/research/periodical.vue'
 import report from '../components/research/report.vue'
 import visPptDownload from '../components/research/visPptDownload.vue'
 import download from '../components/research/download.vue'
+import ncdownload from '../components/research/ncdownload.vue'
 import advancedClass from '../components/research/advancedClass.vue'
 import researchApply from '../components/research/researchApply.vue'
 import researchIndex from '../components/research/researchIndex.vue'
@@ -167,6 +168,9 @@ const routes = [{
             },{
                 path: 'download',
                 component: download
+            },,{
+                path: 'ncdownload',
+                component: ncdownload
             },{
                 path: 'ipa',
                 component: advancedClass

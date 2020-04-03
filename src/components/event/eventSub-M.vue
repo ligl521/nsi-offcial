@@ -38,6 +38,7 @@ export default {
         eventSubInit(){
             var eventSwiper=new Swiper("#eventSwiper",{
                 notNextTick: true,
+                loop:false,
                 freeMode:true,
                 freeModeMomentumRatio : 5,
                 freeModeMomentum:true,

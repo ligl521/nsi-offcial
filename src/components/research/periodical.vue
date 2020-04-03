@@ -13,9 +13,9 @@
             <div class="row">
                 <div class="col-md-3 col-xs-6" v-for="(list,index) in internalReferList" :key="index">
                     <div class="internalRefer-book">
-                            <a href="javascript:;" @click="toDownload(list.fileUrl)" class="internalRefer-box" slot="reference" :style="{'background-image':'url('+list.imageUrl+')'}">
+                            <a href="javascript:;" @click="enterDownload(list.id)" class="internalRefer-box" slot="reference" :style="{'background-image':'url('+list.imageUrl+')'}">
                             </a>
-                        <h4 :title="list.bookName" class="bookName" @click="openTips">{{list.fileName.split(".")[0]}}</h4>
+                        <h4 :title="list.bookName" class="bookName" @click="enterDownload(list.id)">{{list.fileName.split(".")[0]}}</h4>
                     </div>
                 </div>
             </div>
@@ -42,66 +42,16 @@ export default {
         } 
     },
     methods:{
-        openTips(){
-            // this.$notify.info({
-            //     title: '提示',
-            //     message: '点击即可下载期刊&报告电子版',
-            //     duration: 0,
-            //     offset: 150
-            // });
-        const h = this.$createElement;
-        this.$notify({
-                title: '温馨提示',
-                message: h('i', { style: 'color: #20528f'}, '点击书面即可下载'),
-                offset: 150,
-                type:'info',
-                duration:3000
-            });
-        },
-        // 判断微信浏览器
-        isWechat(){
-            var ua = navigator.userAgent.toLowerCase();
-            if(ua.match(/MicroMessenger/i)=="micromessenger"){
-                return true
-            }
-        },
-        // 判断ios
-        isIOS(){
-            var u = navigator.userAgent,version = '';
-            if(u.indexOf('Mac OS X') > -1){
-                return true
-            }
-        },
-        toDownload(url){
-            // 为ios微信浏览器
-            if(this.isWechat()&&this.isIOS()&&url.indexOf('.zip')>-1){
-                const h = this.$createElement;
-                this.$notify({
-                    title: '温馨提示',
-                    message: h('i', { style: 'color: #20528f'}, '请在Safari浏览器打开下载'),
-                    offset: 150,
-                    type:'info',
-                    duration:3000
-                });
-            }else{
-                window.open(url)
-            }
-        },
+        
+        enterDownload(id){
+           this.$router.push({path: './ncdownload',query:{id:id}})
+       },
         buyFull(){
             window.open("https://www.xinxueshuo.cn/nsi-shop/dist/index.html#/", '_blank')
-            // if(screen.width<=768){
-            //     this.isShow=false
-            //     window.open("https://www.xinxueshuo.cn/nsi-shop/dist/index.html#/", '_blank')
-            // }else{
-            //     this.isShow=true
-            // }
         },
         isShowBox(){
             this.isShow=false
         }
-    },
-    mounted(){
-        this.openTips()
     },
     beforeMount(){
         const params = new URLSearchParams();
@@ -113,9 +63,7 @@ export default {
              url: '/manager/resource/list.do',
              data:params
         }).then((res)=>{
-            // console.log(res)
             this.internalReferList=res.data.data.list
-            // console.log(this.internalReferList)
         })
     }
 }
