@@ -277,7 +277,6 @@ export default {
     },
     data(){
         return{
-            imgSrc:require("../images/logo_yue.png"),
             searchBarFixed:false,
             switchFlag:true,
             logoActive:"https://nsi.oss-cn-zhangjiakou.aliyuncs.com/nsi-official/image/layoutImg/zh.png",

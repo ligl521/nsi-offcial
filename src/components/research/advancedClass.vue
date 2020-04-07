@@ -2,7 +2,7 @@
     <div class="advanced-com">
        <div v-show="isPcOrMob=='pc'" class="advanced-pc">
           <div>
-              <img class="mainPage" src="../../images/advanced.jpg">
+              <img class="mainPage" src="http://nsi-official.oss-cn-zhangjiakou.aliyuncs.com/images/高级管理研修班/advanced.jpg">
           </div> 
           <div class="enroll">
               <p @click="enrollNow">立即报名</p>
@@ -21,7 +21,7 @@
                 </div>
                 <div class="row classItem">
                     <div class="col-md-6">
-                        <img class="item-img" src="../../images/h.jpg">
+                        <img class="item-img" src="http://nsi-official.oss-cn-zhangjiakou.aliyuncs.com/images/高级管理研修班/h.jpg">
                     </div>
                     <div class="col-md-6 disItem">
                         <h4 class="item-title01">新学说国际学校高级管理研修班-海外班</h4>
@@ -79,7 +79,7 @@
                         <p class="item02">与地方学校深入探讨交流，针对性解决运营管理中常见问题</p>
                     </div>
                     <div class="col-md-6">
-                        <img class="item-img" src="../../images/g.jpg">
+                        <img class="item-img" src="http://nsi-official.oss-cn-zhangjiakou.aliyuncs.com/images/高级管理研修班/g.jpg">
                     </div>                  
                 </div>
                 <h2 class="text-center title-main">新学说国际学校高级管理研修班-国内班课程主题概览</h2>
@@ -183,7 +183,7 @@
                 // align-items: center;
                 flex-direction: column;
                 min-height: 250px;
-                background-image: url('../../images/b.jpg');
+                background-image: url('http://nsi-official.oss-cn-zhangjiakou.aliyuncs.com/images/高级管理研修班/b.jpg');
                 background-size:140% 100%;
                 background-position: -110px 0px;
                 background-repeat: no-repeat;

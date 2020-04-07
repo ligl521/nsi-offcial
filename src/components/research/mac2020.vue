@@ -12,7 +12,7 @@
                     title="提示"
                     center>
                     <div class="dialogBox">
-                        <img src="../../images/market/scan.png" alt="">
+                        <img src="http://nsi-official.oss-cn-zhangjiakou.aliyuncs.com/images/市场招生课/scan.png" alt="">
                         <p>请扫码添加助教微信<br>或联系小新：15010927730</p>
                     </div>
                 </el-dialog>
@@ -23,14 +23,14 @@
                 <div class="row">
                     <div class="col-md-6 col-xs-6 enrollmentTargetBox">
                         <div class="enrollmentTarget">
-                            <img src="../../images/market/招生对象.png" alt="">
+                            <img src="http://nsi-official.oss-cn-zhangjiakou.aliyuncs.com/images/市场招生课/招生对象.png" alt="">
                             <p class="enrollmentTargetTitle">招生对象</p>
                             <p class="enrollmentTargetContent">市场招生人员<br>校方运营高管</p>
                         </div>
                     </div>
                     <div class="col-md-6 col-xs-6 enrollmentTargetBox">
                         <div class="enrollmentTarget">
-                            <img src="../../images/market/培养目标.png" alt="">
+                            <img src="http://nsi-official.oss-cn-zhangjiakou.aliyuncs.com/images/市场招生课/培养目标.png" alt="">
                             <p class="enrollmentTargetTitle">培养目标</p>
                             <p class="enrollmentTargetContent">国际化学校<br>复合型管理人才</p>
                         </div>
@@ -79,7 +79,7 @@
             </div>
             <div class="courseBox">
                 <div class="leftImg">
-                    <img src="../../images/market/市场招生策略篇.png" alt="">
+                    <img src="http://nsi-official.oss-cn-zhangjiakou.aliyuncs.com/images/市场招生课/市场招生策略篇.png" alt="">
                 </div>
                 <div class="rightContent">
                     <span class="courseLine"></span>
@@ -93,7 +93,7 @@
             </div>
             <div class="courseBox">
                 <div class="rightImg">
-                    <img src="../../images/market/市场招生战略篇.png" alt="">
+                    <img src="http://nsi-official.oss-cn-zhangjiakou.aliyuncs.com/images/市场招生课/市场招生战略篇.png" alt="">
                 </div>
                 <div class="leftContent">
                     <span class="courseTitle">市场招生战略篇</span>
@@ -108,7 +108,7 @@
             </div>
             <div class="courseBox">
                 <div class="leftImg">
-                    <img src="../../images/market/品牌与公共关系篇.png" alt="">
+                    <img src="http://nsi-official.oss-cn-zhangjiakou.aliyuncs.com/images/市场招生课/品牌与公共关系篇.png" alt="">
                 </div>
                 <div class="rightContent">
                     <span class="courseLine"></span>
@@ -138,56 +138,56 @@
                     <div class="row">
                         <div class="col-md-3 col-xs-6">
                             <div class="lecturerBox">
-                                <img src="../../images/market/李远.png">
+                                <img src="http://nsi-official.oss-cn-zhangjiakou.aliyuncs.com/images/市场招生课/李远.png">
                                 <p class="lecturerName">李远</p>
                                 <p class="lecturerPost">雅力教育副总裁兼阿德科特学校总校长</p>
                             </div>
                         </div>
                         <div class="col-md-3 col-xs-6">
                             <div class="lecturerBox">
-                                <img src="../../images/market/张南.png">
+                                <img src="http://nsi-official.oss-cn-zhangjiakou.aliyuncs.com/images/市场招生课/张南.png">
                                 <p class="lecturerName">张楠</p>
                                 <p class="lecturerPost">雅力教育副总裁</p>
                             </div>
                         </div>
                         <div class="col-md-3 col-xs-6">
                             <div class="lecturerBox">
-                                <img src="../../images/market/陈泽芳.png">
+                                <img src="http://nsi-official.oss-cn-zhangjiakou.aliyuncs.com/images/市场招生课/陈泽芳.png">
                                 <p class="lecturerName">陈泽芳</p>
                                 <p class="lecturerPost">华南师范大学附属外国语学校总校长</p>
                             </div>
                         </div>
                         <div class="col-md-3 col-xs-6">
                             <div class="lecturerBox">
-                                <img src="../../images/market/许凌可.png">
+                                <img src="http://nsi-official.oss-cn-zhangjiakou.aliyuncs.com/images/市场招生课/许凌可.png">
                                 <p class="lecturerName">许凌可</p>
                                 <p class="lecturerPost">德普外国语学校副校长</p>
                             </div>
                         </div>
                         <div class="col-md-3 col-xs-6">
                             <div class="lecturerBox">
-                                <img src="../../images/market/吴峥.png">
+                                <img src="http://nsi-official.oss-cn-zhangjiakou.aliyuncs.com/images/市场招生课/吴峥.png">
                                 <p class="lecturerName">吴峥</p>
                                 <p class="lecturerPost">建业教育集团副总裁</p>
                             </div>
                         </div>
                         <div class="col-md-3 col-xs-6">
                             <div class="lecturerBox">
-                                <img src="../../images/market/吴越.png">
+                                <img src="http://nsi-official.oss-cn-zhangjiakou.aliyuncs.com/images/市场招生课/吴越.png">
                                 <p class="lecturerName">吴越</p>
                                 <p class="lecturerPost">新学说 CEO</p>
                             </div>
                         </div>
                         <div class="col-md-3 col-xs-6">
                             <div class="lecturerBox">
-                                <img src="../../images/market/童晓白.png">
+                                <img src="http://nsi-official.oss-cn-zhangjiakou.aliyuncs.com/images/市场招生课/童晓白.png">
                                 <p class="lecturerName">童晓白</p>
                                 <p class="lecturerPost">义格教育市场招生总监</p>
                             </div>
                         </div>
                         <div class="col-md-3 col-xs-6">
                             <div class="lecturerBox">
-                                <img src="../../images/market/乔拯克.png">
+                                <img src="http://nsi-official.oss-cn-zhangjiakou.aliyuncs.com/images/市场招生课/乔拯克.png">
                                 <p class="lecturerName">乔拯克</p>
                                 <p class="lecturerPost">教育集团总经理助理</p>
                             </div>
@@ -210,17 +210,17 @@
                 <div class="container containerBox">
                     <div class="row">
                         <div class="col-md-4 col-xs-4 arrangementBox">
-                            <img src="../../images/market/课程时间.png" alt="">
+                            <img src="http://nsi-official.oss-cn-zhangjiakou.aliyuncs.com/images/市场招生课/课程时间.png" alt="">
                             <p>课程时间</p>
                             <p>2020.3.20-2020.4.25<br>每周五、六各一次</p>
                         </div>
                         <div class="col-md-4 col-xs-4 arrangementBox">
-                            <img src="../../images/market/授课形式.png" alt="">
+                            <img src="http://nsi-official.oss-cn-zhangjiakou.aliyuncs.com/images/市场招生课/授课形式.png" alt="">
                             <p>授课形式</p>
                             <p>线上视频直播<br>也可回放学习</p>
                         </div>
                         <div class="col-md-4 col-xs-4 arrangementBox">
-                            <img src="../../images/market/质量保证.png" alt="">
+                            <img src="http://nsi-official.oss-cn-zhangjiakou.aliyuncs.com/images/市场招生课/质量保证.png" alt="">
                             <p>质量保证</p>
                             <p>适量作业安排<br>颁发毕业证书</p>
                         </div>
@@ -229,7 +229,7 @@
             </div>
             <div class="scan">
                 <div class="leftContent">
-                    <img src="../../images/market/scan.png" alt="">
+                    <img src="http://nsi-official.oss-cn-zhangjiakou.aliyuncs.com/images/市场招生课/scan.png" alt="">
                     <p>扫码添加助教微信</p>
                 </div>
                 <div class="rightContent">
@@ -254,7 +254,7 @@
             </div>
             <div class="scan-com">
                 <div class="topContent">
-                    <img src="../../images/market/scan.png" alt="">
+                    <img src="http://nsi-official.oss-cn-zhangjiakou.aliyuncs.com/images/市场招生课/scan.png" alt="">
                     <p>扫码添加助教微信</p>
                 </div>
                 <div class="bottomContent">
@@ -315,7 +315,7 @@ export default {
 <style lang="scss" scoped>
 .banner{
     height: 430px;
-    background-image: url("../../images/market/banner.jpg");
+    background-image: url("http://nsi-official.oss-cn-zhangjiakou.aliyuncs.com/images/市场招生课/banner.jpg");
     background-position: center center;
     background-size: cover;
     position: relative;

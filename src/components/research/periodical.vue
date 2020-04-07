@@ -25,7 +25,7 @@
             <div class="erweima" :class="isShow ? 'show':'hide'">
                 <span class="title">国际教育研究院</span>
                 <span class="close"  @click="isShowBox">×</span>
-                <img src="../../images/erweima.png" alt="" class="img-responsive">
+                <img src="http://nsi-official.oss-cn-zhangjiakou.aliyuncs.com/images/erweima.png" alt="" class="img-responsive">
             </div>
         </div>
     </div>

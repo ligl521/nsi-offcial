@@ -30,7 +30,6 @@ import Swiper from 'swiper'
 export default {
     data(){
         return{
-            imgSrc:require("../../images/logo_yue.png"),
             layoutNav:[this.$t('layoutNav.eventChild.vis'),this.$t('layoutNav.eventChild.lotus'),this.$t('layoutNav.eventChild.subject'),this.$t('layoutNav.eventChild.apply'),this.$t('layoutNav.eventChild.videoList'),]
         }
     },

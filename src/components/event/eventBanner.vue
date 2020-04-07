@@ -34,11 +34,11 @@ export default {
       return {
           bannerInfo:[
             {
-                coverImage:require('../../images/vis.jpg'),
-                coverImageMob:require('../../images/vismob.jpg')
+                coverImage:"http://nsi-official.oss-cn-zhangjiakou.aliyuncs.com/images/会议活动/vis.jpg",
+                coverImageMob:"http://nsi-official.oss-cn-zhangjiakou.aliyuncs.com/images/会议活动/vismob.jpg"
             },{
-                coverImage:require('../../images/yan.jpg'),
-                coverImageMob:require('../../images/yan.jpg')
+                coverImage:"http://nsi-official.oss-cn-zhangjiakou.aliyuncs.com/images/地区专题研讨会/yan.jpg",
+                coverImageMob:"http://nsi-official.oss-cn-zhangjiakou.aliyuncs.com/images/地区专题研讨会/yan.jpg"
             }]
       }
     },

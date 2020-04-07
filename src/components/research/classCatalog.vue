@@ -12,7 +12,7 @@
                     title="提示"
                     center>
                     <div class="dialogBox">
-                        <img src="../../images/market/scan.png" alt="">
+                        <img src="http://nsi-official.oss-cn-zhangjiakou.aliyuncs.com/images/市场招生课/scan.png" alt="">
                         <p>请扫码添加助教微信<br>或联系小新：15010927730</p>
                     </div>
                 </el-dialog>
@@ -48,10 +48,10 @@
                     </div>
                 </el-tab-pane>
                 <el-tab-pane label="课程介绍" name="second">
-                    <img src="../../images/market/classInt.jpg" alt="" width="100%">
+                    <img src="http://nsi-official.oss-cn-zhangjiakou.aliyuncs.com/images/市场招生课/classInt.jpg" alt="" width="100%">
                 </el-tab-pane>
                 <el-tab-pane label="讲师介绍" name="third">
-                    <img src="../../images/market/lecturerInt.jpg" alt="" width="100%">
+                    <img src="http://nsi-official.oss-cn-zhangjiakou.aliyuncs.com/images/市场招生课/lecturerInt.jpg" alt="" width="100%">
                 </el-tab-pane>
             </el-tabs>
         </div>
@@ -79,7 +79,7 @@ export default {
 .banner{
     width: 100%;
     height: 430px;
-    background-image: url("../../images/market/classBanner.jpg");
+    background-image: url("http://nsi-official.oss-cn-zhangjiakou.aliyuncs.com/images/市场招生课/classBanner.jpg");
     background-position: center center;
     background-size: cover;
     position: relative;

@@ -134,7 +134,7 @@
             <!-- 研究院入口 -->
             <div class="erweimaBox" :class="isShow ? 'show':'hide'">
                 <span class="close"  @click="isShowBox">×</span>
-                <img src="../images/erweima.png" alt="">
+                <img src="http://nsi-official.oss-cn-zhangjiakou.aliyuncs.com/images/erweima.png" alt="">
                 <p>国际教育研究院</p>
                 <p><span class="iconfont icon-weixin"></span>微信扫一扫</p>
             </div>
