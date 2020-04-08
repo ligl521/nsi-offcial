@@ -245,7 +245,7 @@ export default {
     // 灿灿早报
     const canNews = new URLSearchParams();
     canNews.append("pageNum", 1);
-    canNews.append("pageSize", 8);
+    canNews.append("pageSize", 2);
     canNews.append("siftType", "灿灿早报")
     this.axios({
       method: "post",
@@ -382,7 +382,7 @@ export default {
 .line {
   display: block;
   position: absolute;
-  width: 480px;
+  width: 40%;
   height: 1px;
   background-color: #222;
   top: 30px;

@@ -41,7 +41,7 @@ export default {
     methods:{
         eventSubInit(){
             var eventSwiper=new Swiper("#researchSwiper",{
-                notNextTick: false,
+                notNextTick: true,
                 loop:false,
                 freeMode:true,
                 freeModeMomentumRatio : 5,

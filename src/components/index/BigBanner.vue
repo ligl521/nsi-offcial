@@ -28,7 +28,6 @@ export default {
 <style lang="scss">
     /* banner */
     #indexBigBanner{
-        min-height: 358px;
         background-color: #eee;
         .swiper-button-prev{
             left: 30px;
