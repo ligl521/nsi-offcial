@@ -2,7 +2,7 @@
     <div class="newsList-com" v-loading="loading">
         <div class="container">
             <div class="row">
-                <div class="col-md-3 list" v-for="(list,index) in newsList" :key="index">
+                <div class="col-xs-3 list" v-for="(list,index) in newsList" :key="index">
                     <div class="list-box">
                         <div class="list-img-box">
                             <!-- <a href="javascript:;" class="img-box"><img :src="list.coverImage" alt="" height="270" @click="toDetail(list.id)"><i class="articleType">{{list.articleCat|articleType}}</i></a> -->
@@ -24,10 +24,10 @@
                         </div>
                     </div>
                 </div>
-                <news-list-m class="col-md-12 showInMobile" :loadNews="newsList"></news-list-m>
+                <news-list-m class="col-xs-12 showInMobile" :loadNews="newsList"></news-list-m>
             </div>
             <div class="row mt20">
-                <div class="col-md-12 text-center">
+                <div class="col-xs-12 text-center">
                     <a href="javascript:;" class="loadMore" @click="addMore">{{addMoreHtml}}</a>
                 </div>
             </div>

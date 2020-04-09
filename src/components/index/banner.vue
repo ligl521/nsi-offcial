@@ -2,10 +2,10 @@
   <div class="bg banner-com">
       <div class="container">
           <div class="row p7">
-              <div class="col-md-9 pr7 pl0">
+              <div class="col-xs-9 pr7 pl0">
                   <big-banner :bannerInfo="bannerInfoFa"/>
               </div>
-              <div class="col-md-3 pl0 pr0">
+              <div class="col-xs-3 pl0 pr0">
                 <small-banner-top class="bannerTop mb7" :bannerInfo="bannerInfoFa"/>
                 <small-banner-bottom class="bannerBottom" :bannerInfo="bannerInfoFa"/>
               </div>
@@ -84,7 +84,7 @@ export default {
     margin-top: 0;
     .bannerTop,
     .bannerBottom{
-      display: none
+      display: none;
     }
   }
     .container{

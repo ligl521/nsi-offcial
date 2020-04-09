@@ -108,6 +108,7 @@ export default {
             margin-top: 50px;
         }
       .news-nav{
+        min-width:1100px !important;
         padding-left: 0;
         list-style: none;
         padding-top: 30px;

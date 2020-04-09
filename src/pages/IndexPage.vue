@@ -17,16 +17,16 @@
                     </div>
                     <div class="row pt50 twoNews">
                         <!-- 两则新闻概要 -->
-                        <div class="col-md-6 col-xs-6 newsList" v-for="(news,index) in recentNews" :key="index" v-if="index<6">
+                        <div class="col-xs-6 newsList" v-for="(news,index) in recentNews" :key="index" v-if="index<6">
                             <div class="row">
-                                <div class="col-md-6">
+                                <div class="col-xs-6">
                                     <div class="news-content">
                                         <a :href="news.articleUrl" class="news-title" target="_blank">
                                             <img :src="news.coverImage+'?x-oss-process=image/resize,m_fixed,h_170,w_270'" alt="" width="100%" height="200px" class="news-img">
                                         </a>
                                     </div>
                                 </div>
-                                <div class="col-md-6">
+                                <div class="col-xs-6">
                                     <div class="newsBox">
                                         <!-- <h5 class="mt0 multiline"><a href="javascript:;" class="news-title" @click="toDetail(news.id)">{{news.title}}</a></h5> -->
                                         <h5 class="mt0 multiline"><a :href="news.articleUrl" class="news-title" target="_blank">{{news.title}}</a></h5>
@@ -56,17 +56,17 @@
                     </div>
                     <div class="row pt50 twoNews">
                         <!-- 两则新闻概要 -->
-                        <div class="col-md-6 col-xs-6 newsList" v-for="(news,index) in canNews" :key="index" v-if="index<2">
+                        <div class="col-xs-6 newsList" v-for="(news,index) in canNews" :key="index" v-if="index<2">
                           <!-- <div class="container"> -->
                             <div class="row">
-                                <div class="col-md-6">
+                                <div class="col-xs-6">
                                     <div class="news-content">
                                         <a :href="news.articleUrl" class="news-title" target="_blank">
                                             <img :src="news.coverImage+'?x-oss-process=image/resize,m_fixed,h_170,w_270'" alt="" width="100%" height="200px" class="news-img">
                                         </a>
                                     </div>
                                 </div>
-                                <div class="col-md-6">
+                                <div class="col-xs-6">
                                     <div class="newsBox">
                                         <h5 class="mt0 multiline"><a :href="news.articleUrl" class="news-title" target="_blank">{{news.title}}</a></h5>
                                         <p class="news-articel multiline" :title="news.summary">{{news.summary}}</p>
@@ -96,34 +96,37 @@
                     </div>
                     <!-- 活动概要 -->
                     <div class="activitiesBox pt50">
-                      <div class="row">
-                        <div class="col-md-6">
-                            <div class="activities-current animated fadeInLeft" v-for="currentEvent in activitiesCurrent" v-if="currentEvent.content06==currentSerialNum" :key="currentEvent.content06">
-                                <h1 class="activitiesTitle"><a :href="currentEvent.content07" target="_blank">{{currentEvent.content02}}</a></h1>
-                                <h1 class="activities-zh"><a :href="currentEvent.content07" target="_blank">{{currentEvent.content01}}</a></h1>
-                                <p class="activities-info">{{currentEvent.content03}}</p>
-                                <p class="activities-info bottomLine">{{currentEvent.content04}}</p>
-                                <p class="activities-article multiline">{{currentEvent.textcontent01}}</p>
-                            </div>
-                        </div>
-                        <div class="col-md-5 col-md-offset-1">
-                          <div class="othersActivities">
-                            <div class="row">
-                              <div class="col-md-6 col-xs-6 plpr0" v-for="(activities,index) in activitiesCurrent" @mouseenter="active(index)" :key="index">
-                                <a :href="activities.content07" target="_blank">
-                                  <div class="othersBox" :class="'othersBox0'+(index+1)" :style="{'background-image':'url('+activities.content05+')'}">
-                                    <!-- <div class="othersBox-bg"></div> -->
-                                    <div class="othersBox-content">
-                                      <p>{{activities.content01}}</p>
-                                      <p>{{activities.content03}}</p>
-                                    </div>
-                                  </div>
-                                </a>
+                      <div class="container">
+                        <div class="row">
+                          <div class="col-xs-6">
+                              <div class="activities-current animated fadeInLeft" v-for="currentEvent in activitiesCurrent" v-if="currentEvent.content06==currentSerialNum" :key="currentEvent.content06">
+                                  <h1 class="activitiesTitle"><a :href="currentEvent.content07" target="_blank">{{currentEvent.content02}}</a></h1>
+                                  <h1 class="activities-zh"><a :href="currentEvent.content07" target="_blank">{{currentEvent.content01}}</a></h1>
+                                  <p class="activities-info">{{currentEvent.content03}}</p>
+                                  <p class="activities-info bottomLine">{{currentEvent.content04}}</p>
+                                  <p class="activities-article multiline">{{currentEvent.textcontent01}}</p>
                               </div>
+                          </div>
+                          <div class="col-xs-5 col-xs-offset-1">
+                            <div class="othersActivities">
+                                <div class="row">
+                                  <div class="col-xs-6 plpr0" v-for="(activities,index) in activitiesCurrent" @mouseenter="active(index)" :key="index">
+                                    <a :href="activities.content07" target="_blank">
+                                      <div class="othersBox" :class="'othersBox0'+(index+1)" :style="{'background-image':'url('+activities.content05+')'}">
+                                        <!-- <div class="othersBox-bg"></div> -->
+                                        <div class="othersBox-content">
+                                          <p>{{activities.content01}}</p>
+                                          <p>{{activities.content03}}</p>
+                                        </div>
+                                      </div>
+                                    </a>
+                                  </div>
+                                </div>
                             </div>
                           </div>
                         </div>
                       </div>
+
                     </div>
 
                     
@@ -134,7 +137,7 @@
             <!-- 研究院入口 -->
             <div class="erweimaBox" :class="isShow ? 'show':'hide'">
                 <span class="close"  @click="isShowBox">×</span>
-                <img src="http://nsi-official.oss-cn-zhangjiakou.aliyuncs.com/images/erweima.png" alt="">
+                <img src="https://nsi-official.oss-cn-zhangjiakou.aliyuncs.com/images/erweima.png" alt="">
                 <p>国际教育研究院</p>
                 <p><span class="iconfont icon-weixin"></span>微信扫一扫</p>
             </div>
@@ -284,7 +287,7 @@ export default {
 }
 .othersActivities{
     .row{
-        width:485px !important;
+        // width:485px !important;
     }
 }
 .others {
@@ -427,9 +430,9 @@ export default {
     width: 49%;
     height: 140px;
     margin: 10px 0;
-    &:nth-child(even){
-        margin-left:20px;
-    }
+    // &:nth-child(even){
+    //     margin-left:20px;
+    // }
 }
 .newestPlpr0 {
   padding-left: 0;
@@ -542,7 +545,7 @@ max-height: 36px; */
   font-size: 16px;
 }
 .othersBox {
-  height: 250px;
+  height: 200px;
   background: #ccc;
   position: relative;
   transition: all 0.3s ease;

@@ -32,7 +32,7 @@
             <div class="nav-bg searchBar isFixed navPC" id="searchBar">
                 <div class="container plpr0 navContainer ">
                     <div class="row">
-                        <div class="col-md-12 plpr0">
+                        <div class="col-xs-12 plpr0 navWidth">
                             <nav class="navbar navbar-default">
                                 <div class="container-fluid">
                                     <!-- Brand and toggle get grouped for better mobile display -->
@@ -460,7 +460,9 @@ export default {
             margin-left: -25px;
         }
     }
-
+    .navWidth{
+        min-width:1100px !important;
+    }
     .nav-bg{
         // background-color: $official-color;
         background-color: rgb(33,80,137);
@@ -784,6 +786,7 @@ export default {
         padding-left: 15px;
         padding-right: 1px;
     }
+    
     .content{
         padding-top: 52px;
         @media (max-width:768px) {

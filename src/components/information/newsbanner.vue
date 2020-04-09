@@ -152,7 +152,6 @@ export default {
             border-radius: 2px;
             transition: all .3s;
             box-shadow: 0 12px 24px 0 rgba(7, 17, 27, 0.4);
-            min-height: 400px;
             background-color: #eee;
             @media (max-width: 768px) {
                 min-height:180px;
