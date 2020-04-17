@@ -44,7 +44,7 @@
             <div class="container">
                 <div class="row">
                     <div class="col-md-12">
-                        <div class="swiperBook">
+                        <div class="swiperBook swiper-container">
                             <div class="swiper-wrapper">
                                 <div class="swiper-slide" v-for="(item,index) in bookImgList" :key="index">
                                     <img :src="item.imageUrl" alt="" style="opacity:1" @click="enterBook(item.id)">
@@ -106,7 +106,7 @@ export default {
                     message: h('i', { style: 'color: #20528f'}, '请在Safari浏览器打开下载'),
                     offset: 150,
                     type:'info',
-                    duration:3000
+                    duration:5000
                 });
             }else{
                 window.open(url)
