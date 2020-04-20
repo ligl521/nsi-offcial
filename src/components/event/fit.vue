@@ -1,5 +1,18 @@
 <template>
     <div class="fit">
+        <div class="introduce">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-6 col-xs-12">
+                        <img src="../../images/fit/logoPic.jpg" alt="">
+                    </div>
+                    <div class="col-md-6 col-xs-12 introduceDetail">
+                        <h2>FIT国际学校风采大赛</h2>
+                        <p>2019年9月7日，20位来自全国各地的国际学校的教师，出现在2019FIT国际教师风采大赛的决赛现场。上午9点，一场见证国际学校教师们用心浇灌未来的巅峰对决，在北京人艺菊隐剧场上演。</p>
+                    </div>
+                </div>
+            </div>
+        </div>
         <div class="review">
             <div class="title">
                 <span class="lineLeft"></span>
@@ -88,24 +101,10 @@
                                     <p>王鹏</p>
                                     <p class="hrline"></p>
                                     <p>君诚国际学校</p>
-                                </div>
-                                <div class="detail">
-                                    <span class="iconfont icon-xiangqing-"></span>
-                                    <span>详情</span>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-md-3 col-xs-6">
-                            <div class="memberDetail">
-                                <img src="https://nsi.oss-cn-zhangjiakou.aliyuncs.com/nsi-event/FIT2019/wangpeng.jpg" alt="">
-                                <div class="message">
-                                    <p>王鹏</p>
-                                    <p class="hrline"></p>
-                                    <p>君诚国际学校</p>
-                                </div>
-                                <div class="detail">
-                                    <span class="iconfont icon-xiangqing-"></span>
-                                    <span>详情</span>
+                                    <div class="detail">
+                                        <span class="iconfont icon-xiangqing-"></span>
+                                        <span>详情</span>
+                                    </div>
                                 </div>
                             </div>
                         </div>
@@ -116,24 +115,10 @@
                                     <p>王鹏</p>
                                     <p class="hrline"></p>
                                     <p>君诚国际学校</p>
-                                </div>
-                                <div class="detail">
-                                    <span class="iconfont icon-xiangqing-"></span>
-                                    <span>详情</span>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-md-3 col-xs-6">
-                            <div class="memberDetail">
-                                <img src="https://nsi.oss-cn-zhangjiakou.aliyuncs.com/nsi-event/FIT2019/wangpeng.jpg" alt="">
-                                <div class="message">
-                                    <p>王鹏</p>
-                                    <p class="hrline"></p>
-                                    <p>君诚国际学校</p>
-                                </div>
-                                <div class="detail">
-                                    <span class="iconfont icon-xiangqing-"></span>
-                                    <span>详情</span>
+                                    <div class="detail">
+                                        <span class="iconfont icon-xiangqing-"></span>
+                                        <span>详情</span>
+                                    </div>
                                 </div>
                             </div>
                         </div>
@@ -144,24 +129,10 @@
                                     <p>王鹏</p>
                                     <p class="hrline"></p>
                                     <p>君诚国际学校</p>
-                                </div>
-                                <div class="detail">
-                                    <span class="iconfont icon-xiangqing-"></span>
-                                    <span>详情</span>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-md-3 col-xs-6">
-                            <div class="memberDetail">
-                                <img src="https://nsi.oss-cn-zhangjiakou.aliyuncs.com/nsi-event/FIT2019/wangpeng.jpg" alt="">
-                                <div class="message">
-                                    <p>王鹏</p>
-                                    <p class="hrline"></p>
-                                    <p>君诚国际学校</p>
-                                </div>
-                                <div class="detail">
-                                    <span class="iconfont icon-xiangqing-"></span>
-                                    <span>详情</span>
+                                    <div class="detail">
+                                        <span class="iconfont icon-xiangqing-"></span>
+                                        <span>详情</span>
+                                    </div>
                                 </div>
                             </div>
                         </div>
@@ -172,10 +143,10 @@
                                     <p>王鹏</p>
                                     <p class="hrline"></p>
                                     <p>君诚国际学校</p>
-                                </div>
-                                <div class="detail">
-                                    <span class="iconfont icon-xiangqing-"></span>
-                                    <span>详情</span>
+                                    <div class="detail">
+                                        <span class="iconfont icon-xiangqing-"></span>
+                                        <span>详情</span>
+                                    </div>
                                 </div>
                             </div>
                         </div>
@@ -186,13 +157,56 @@
                                     <p>王鹏</p>
                                     <p class="hrline"></p>
                                     <p>君诚国际学校</p>
-                                </div>
-                                <div class="detail">
-                                    <span class="iconfont icon-xiangqing-"></span>
-                                    <span>详情</span>
+                                    <div class="detail">
+                                        <span class="iconfont icon-xiangqing-"></span>
+                                        <span>详情</span>
+                                    </div>
                                 </div>
                             </div>
                         </div>
+                        <div class="col-md-3 col-xs-6">
+                            <div class="memberDetail">
+                                <img src="https://nsi.oss-cn-zhangjiakou.aliyuncs.com/nsi-event/FIT2019/wangpeng.jpg" alt="">
+                                <div class="message">
+                                    <p>王鹏</p>
+                                    <p class="hrline"></p>
+                                    <p>君诚国际学校</p>
+                                    <div class="detail">
+                                        <span class="iconfont icon-xiangqing-"></span>
+                                        <span>详情</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-3 col-xs-6">
+                            <div class="memberDetail">
+                                <img src="https://nsi.oss-cn-zhangjiakou.aliyuncs.com/nsi-event/FIT2019/wangpeng.jpg" alt="">
+                                <div class="message">
+                                    <p>王鹏</p>
+                                    <p class="hrline"></p>
+                                    <p>君诚国际学校</p>
+                                    <div class="detail">
+                                        <span class="iconfont icon-xiangqing-"></span>
+                                        <span>详情</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-3 col-xs-6">
+                            <div class="memberDetail">
+                                <img src="https://nsi.oss-cn-zhangjiakou.aliyuncs.com/nsi-event/FIT2019/wangpeng.jpg" alt="">
+                                <div class="message">
+                                    <p>王鹏</p>
+                                    <p class="hrline"></p>
+                                    <p>君诚国际学校</p>
+                                    <div class="detail">
+                                        <span class="iconfont icon-xiangqing-"></span>
+                                        <span>详情</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
                     </div>
                 </div>
             </div>
@@ -259,30 +273,42 @@
             <div class="content">
                 <div class="container">
                     <div class="row">
-                        <div class="col-md-3 col-xs-4 memberPic">
+                        <div class="col-md-4 col-xs-4 memberPic">
                             <img src="https://nsi.oss-cn-zhangjiakou.aliyuncs.com/nsi-event/FIT2019/wangpeng.jpg" alt="">
                         </div>
-                        <div class="col-md-9 col-xs-8">
-                            <p>王鹏</p>
-                            <p>荣获第一届FIT国际教师风采大赛精英教师奖称号。学为人师。</p>
+                        <div class="col-md-8 col-xs-8">
+                            <p class="memberTitle">王鹏</p>
+                            <p class="memberContent">荣获第一届FIT国际教师风采大赛精英教师奖称号。学为人师。</p>
+                            <div class="detail">
+                                <span class="iconfont icon-xiangqing-"></span>
+                                <span>查看详情</span>
+                            </div>
                         </div>
                     </div>
                     <div class="row">
-                        <div class="col-md-3 col-xs-4 memberPic">
+                        <div class="col-md-4 col-xs-4 memberPic">
                             <img src="https://nsi.oss-cn-zhangjiakou.aliyuncs.com/nsi-event/FIT2019/wangpeng.jpg" alt="">
                         </div>
-                        <div class="col-md-9 col-xs-8">
-                            <p>王鹏</p>
-                            <p>荣获第一届FIT国际教师风采大赛精英教师奖称号。学为人师。</p>
+                        <div class="col-md-8 col-xs-8">
+                            <p class="memberTitle">王鹏</p>
+                            <p class="memberContent">荣获第一届FIT国际教师风采大赛精英教师奖称号。学为人师。荣获第一届FIT国际教师风采大赛精英教师奖称号。学为人师荣获第一届FIT国际教师风采大赛精英教师奖称号。学为人师</p>
+                            <div class="detail">
+                                <span class="iconfont icon-xiangqing-"></span>
+                                <span>查看详情</span>
+                            </div>
                         </div>
                     </div>
                     <div class="row">
-                        <div class="col-md-3 col-xs-4 memberPic">
+                        <div class="col-md-4 col-xs-4 memberPic">
                             <img src="https://nsi.oss-cn-zhangjiakou.aliyuncs.com/nsi-event/FIT2019/wangpeng.jpg" alt="">
                         </div>
-                        <div class="col-md-9 col-xs-8">
-                            <p>王鹏</p>
-                            <p>荣获第一届FIT国际教师风采大赛精英教师奖称号。学为人师。</p>
+                        <div class="col-md-8 col-xs-8">
+                            <p class="memberTitle">王鹏</p>
+                            <p class="memberContent">荣获第一届FIT国际教师风采大赛精英教师奖称号。学为人师。</p>
+                            <div class="detail">
+                                <span class="iconfont icon-xiangqing-"></span>
+                                <span>查看详情</span>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -306,6 +332,49 @@
     @media (max-width:768px) {
         width:100%;
     }
+    .introduce{
+        margin-top:30px;
+         @media (max-width:768px) {
+            margin-top:10px;
+        }
+        .container{
+            width:100%;
+            position:relative;
+            img{
+                width:100%;
+                height:auto;
+            }
+            .introduceDetail{
+                text-align: center;
+                position: absolute;
+                top: 50%;
+                transform: translateY(-50%);
+                right: 0;
+                @media (max-width:768px) {
+                    position: static;
+                    top: 0;
+                    transform: translateY(0);
+                }   
+                h2{
+                    margin:20px 0;
+                    @media (max-width:768px) {
+                        margin:10px 0;
+                        font-size: 24px;
+                        font-weight: 600;
+                    }
+                }
+                p{
+                    font-size:20px;
+                    text-align: left;
+                    line-height:2;
+                    @media (max-width:768px) {
+                        font-size:16px;
+                        line-height:20px;
+                    }
+                }
+            }
+        }
+    }
     .review{
         .title{
             text-align: center;
@@ -316,24 +385,27 @@
             }
             .lineLeft{
                 width: 35%;
-                // height:3px;
                 display:inline-block;
                 vertical-align: middle;
-                // background: linear-gradient(90deg,#fff,#b2aeae);
-                // filter: progid:dximagetransform.microsoft.gradient(gradientType="1",startColorStr="#ffffffff",endC olorStr="#c1a773");
                 border-bottom:4px dotted #ccc;
+                @media (max-width:768px) {
+                    width:25%;
+                }
             }
             .titleName{
                 display:inline-block;
                 margin:0 20px;
+                font-size: 24px;
+                vertical-align: middle;
             }
             .lineRight{
                 width:35%;
                 display:inline-block;
                 vertical-align: middle;
                 border-bottom:4px dotted #ccc;
-                // background: linear-gradient(90deg,#b2aeae,#fff);
-                // filter: progid:dximagetransform.microsoft.gradient(gradientType="1",startColorStr="#ffffffff",endC olorStr="#c1a773");
+                @media (max-width:768px) {
+                    width:25%;
+                }
             }
         }
         .content{
@@ -341,50 +413,74 @@
             background-repeat: no-repeat;
             background-size: 100% 100%;
             padding:15px 0;
-            min-width:1150px;
-            .picFrame {
+            // min-width:1180px;
+            @media (max-width:768px) {
+                min-width:100%;
+            }
+            .container{
+                width:100%;
                 position: relative;
-                img {
-                    display: inline-block;
-                    max-width: 100%;
-                    height: auto;
-                }
-                .toPlay {
-                    position: absolute;
-                    left: 50%;
-                    margin-left: -35px;
-                    top: 50%;
-                    margin-top: -50px;
-                    font-size: 70px;
-                    color: #e0e0e0;
-                    opacity: .9;
-                }
-            }
-            .modal{
-                z-index: 99999;
-                margin-top:30px;
-                .modal-body iframe{
-                    width: 100%;
-                    height: 450px;
-                }
-            }
-            .rightList{
-                .rightContent{
-                    color:#fff;
-                    .row{
-                        margin-top:35px;
+                .picFrame {
+                    position: relative;
+                    img {
+                        display: inline-block;
+                        max-width: 100%;
+                        height: auto;
                     }
-                    img{
-                        height:auto;
-                        width:125px;
-                        @media (max-width:768px) {
-                            height:80px;
-                            width:110px;
+                    .toPlay {
+                        position: absolute;
+                        left: 50%;
+                        margin-left: -35px;
+                        top: 50%;
+                        margin-top: -50px;
+                        font-size: 70px;
+                        color: #e0e0e0;
+                        opacity: .9;
+                    }
+                }
+                .modal{
+                    z-index: 99999;
+                    margin-top:30px;
+                    .modal-body iframe{
+                        width: 100%;
+                        height: 450px;
+                    }
+                }
+                .rightList{
+                    position: absolute;
+                    right: 10px;
+                    top: 50%;
+                    transform: translateY(-50%);
+                    @media (max-width:768px) {
+                        position: static;
+                        top: 0;
+                        transform: translateY(0);
+                    }
+                    .rightContent{
+                        color:#fff;
+                        .row{
+                            padding:16px 0;
+                            @media (max-width:768px) {
+                                margin-top:15px;
+                                padding:0;
+                            }
+                        }
+                        img{
+                            height:auto;
+                            width:125px;
+                            @media (max-width:768px) {
+                                height:80px;
+                                width:110px;
+                            }
+                        }
+                        span{
+                            display:inline-block;
+                            margin-left:10px;
                         }
                     }
                 }
-                
             }
+            
         }
     }
     .repecharge{
@@ -397,62 +493,70 @@
             }
             .lineLeft{
                 width: 35%;
-                height:3px;
                 display:inline-block;
                 vertical-align: middle;
-                background: linear-gradient(90deg,#fff,#b2aeae);
-                filter: progid:dximagetransform.microsoft.gradient(gradientType="1",startColorStr="#ffffffff",endC olorStr="#c1a773");
+                border-bottom:4px dotted #ccc;
                 @media (max-width:768px) {
-                    width: 30%;
+                    width: 25%;
                 }
             }
             .titleName{
                 display:inline-block;
                 margin:0 20px;
+                font-size: 24px;
+                vertical-align: middle;
             }
             .lineRight{
-                width:35%;
-                height:3px;
+                width: 35%;
                 display:inline-block;
                 vertical-align: middle;
-                background: linear-gradient(90deg,#b2aeae,#fff);
-                filter: progid:dximagetransform.microsoft.gradient(gradientType="1",startColorStr="#ffffffff",endC olorStr="#c1a773");
+                border-bottom:4px dotted #ccc;
                 @media (max-width:768px) {
-                    width: 30%;
+                    width: 25%;
                 }
             }
         }
         .content{
-            .memberDetail{
-                text-align: center;
-                img{
-                    width:150px;
-                    height:auto;
-                }
-                .message{
-                    width:150px;
-                    margin:0 auto;
-                    .hrline{
-                        border-bottom:2px solid #ccc;
-                    }
-                    p{
-                        margin:5px 0;
-                        text-align: left;
-                        &:first-of-type{
-                            font-size: 20px;
-                            font-weight: 600;
-                        }
-                        &:last-of-type{
-                            font-size: 16px;
+            .container{
+                width:100%;
+                .memberDetail{
+                    text-align: center;
+                    img{
+                        width:150px;
+                        height:auto;
+                        @media (max-width:768px) {
+                            width:135px;
                         }
                     }
-                }
-                .detail{
-                    width:150px;
-                    float:right;
-                    margin:5px 0 20px;
+                    .message{
+                        width:150px;
+                        margin:0 auto;
+                        @media (max-width:768px) {
+                            width:135px;
+                        }
+                        .hrline{
+                            border-bottom:2px solid #ccc;
+                        }
+                        p{
+                            margin:5px 0;
+                            text-align: left;
+                            &:first-of-type{
+                                font-size: 20px;
+                                font-weight: 600;
+                            }
+                            &:last-of-type{
+                                font-size: 16px;
+                            }
+                        }
+                        .detail{
+                            float:right;
+                            margin:5px 0 20px;
+                        }
+                    }
+                    
                 }
             }
+            
             
         }
     }
@@ -460,52 +564,69 @@
         background-image: url("../../images/fit/judgeBg.jpg");
         background-repeat: no-repeat;
         background-size: 100% 100%;
-        padding:15px 0;
         margin-top:20px;
+        @media (max-width:768px) {
+            min-width:100%;
+        }
         .title{
             text-align: center;
-            margin:50px 0;
+            padding:40px 0;
             font-size: 20px;
             color:#fff;
             @media (max-width:768px) {
-                margin:20px 0;
+                padding:20px 0;
             }
             .lineLeft{
                 width: 35%;
-                height:3px;
                 display:inline-block;
                 vertical-align: middle;
-                background: linear-gradient(90deg,#fff,#b2aeae);
-                filter: progid:dximagetransform.microsoft.gradient(gradientType="1",startColorStr="#ffffffff",endC olorStr="#c1a773");
+                border-bottom:4px dotted #ccc;
+                @media (max-width:768px) {
+                    width:25%;
+                }
             }
             .titleName{
                 display:inline-block;
                 margin:0 20px;
+                font-size: 24px;
+                vertical-align: middle;
             }
             .lineRight{
                 width:35%;
-                height:3px;
                 display:inline-block;
                 vertical-align: middle;
-                background: linear-gradient(90deg,#b2aeae,#fff);
-                filter: progid:dximagetransform.microsoft.gradient(gradientType="1",startColorStr="#ffffffff",endC olorStr="#c1a773");
+                border-bottom:4px dotted #ccc;
+                @media (max-width:768px) {
+                    width:25%;
+                }
             }
         }
         .content{
             text-align: center;
-            img{
-                width:120px;
-                height:120px;
-                border-radius: 50%;
-                @media (max-width:768px) {
-                    width:100px;
-                    height:100px;
+            .container{
+                width:100%;
+                img{
+                    width:120px;
+                    height:120px;
+                    border-radius: 50%;
+                    @media (max-width:768px) {
+                        width:100px;
+                        height:100px;
+                    }
+                }
+                p{
+                    margin:10px 0;
+                    color:#fff;
+                    &:first-of-type{
+                        font-size: 20px;
+                    }
+                    &:last-of-type{
+                        margin-bottom:25px;
+                        font-size:16px;
+                    }
                 }
             }
-            p{
-                margin:10px 0;
-                color:#fff;
-            }
+            
         }
     }
     .thirdMember{
@@ -517,46 +638,77 @@
                 margin:20px 0;
             }
             .lineLeft{
-                width: 35%;
-                height:3px;
+                width: 30%;
                 display:inline-block;
                 vertical-align: middle;
-                background: linear-gradient(90deg,#fff,#b2aeae);
-                filter: progid:dximagetransform.microsoft.gradient(gradientType="1",startColorStr="#ffffffff",endC olorStr="#c1a773");
+                border-bottom:4px dotted #ccc;
                 @media (max-width:768px) {
-                    width: 20%;
+                    display:none;
                 }
             }
             .titleName{
                 display:inline-block;
                 margin:0 20px;
+                font-size: 24px;
+                vertical-align: middle;
             }
             .lineRight{
-                width:35%;
-                height:3px;
+                width:30%;
                 display:inline-block;
                 vertical-align: middle;
-                background: linear-gradient(90deg,#b2aeae,#fff);
-                filter: progid:dximagetransform.microsoft.gradient(gradientType="1",startColorStr="#ffffffff",endC olorStr="#c1a773");
+                border-bottom:4px dotted #ccc;
                 @media (max-width:768px) {
-                    width: 20%;
+                    display:none;
                 }
             }
         }
         .content{
-            .row{
-                margin-top:20px;
-            }
-            .memberPic{
-                text-align: center;
-                img{
-                    width:200px;
-                    height:auto;
+            .container{
+                width:100%;
+                .row{
+                    margin-top:30px;
                     @media (max-width:768px) {
-                        width:100px;
+                        margin-top:15px;
+                    }
+                }
+                .memberPic{
+                    text-align: center;
+                    img{
+                        width:80%;
+                        height:auto;
+                        @media (max-width:768px) {
+                            width:105px;
+                        }
+                    }
+                }
+                .memberTitle{
+                    font-size: 24px;
+                    font-weight: 600;
+                    @media (max-width:768px) {
+                        font-size: 18px;
+                    }
+                }
+                .memberContent{
+                    font-size:20px;
+                    @media (max-width:768px) {
+                        font-size: 14px;
+                        overflow: hidden;
+                        text-overflow: ellipsis;
+                        -webkit-line-clamp: 2;
+                        line-clamp: 2;
+                        display: -webkit-box;
+                        -webkit-box-orient: vertical;
+                    }
+                }
+                .detail{
+                    float:right;
+                    font-size:20px;
+                    @media (max-width:768px) {
+                        display:none;
                     }
                 }
             }
+            
            
         }
     }

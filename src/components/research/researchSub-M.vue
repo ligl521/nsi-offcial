@@ -21,9 +21,9 @@
                     <div class="swiper-slide text-center">
                         <router-link :to="{path:'/research/experts'}"><span class="iconfont icon-icon- fontLogo"></span><br/>{{$t('layoutNav.researchChild.experts')}}</router-link>
                     </div>
-                    <div class="swiper-slide text-center" style="padding-right:10px;">
+                    <!-- <div class="swiper-slide text-center" style="padding-right:10px;">
                         <router-link :to="{path:'/research/mac2020'}"><span class="iconfont icon-icon- fontLogo"></span><br/>{{$t('layoutNav.researchChild.mac2020')}}</router-link>
-                    </div>
+                    </div> -->
                 </div>
             </div>
         </div>
