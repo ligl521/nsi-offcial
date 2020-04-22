@@ -24,22 +24,22 @@
                     <div class="row">
                         <div class="col-md-8 col-xs-12">
                             <div class="picFrame">
-                                <img src="https://nsi.oss-cn-zhangjiakou.aliyuncs.com/nsi-event/FIT2019/liangqian.jpg" alt="">
-                                <span class="iconfont icon-bofang toPlay" data-toggle="modal" data-target="#myModal01"></span>
+                                <img src="https://nsi.oss-cn-zhangjiakou.aliyuncs.com/nsi-event/FIT2019/shenjun.jpg" alt="">
+                                <span class="iconfont icon-bofang toPlay" @click="toPlay" data-toggle="modal" data-target="#myModal01"></span>
                             </div>
                             <!-- Modal -->
                             <div class="modal fade" id="myModal01" tabindex="-1" role="dialog" aria-labelledby="myModalLabel01">
                                 <div class="modal-dialog modal-lg" role="document">
                                     <div class="modal-content">
                                         <div class="modal-header">
-                                            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                                            <button type="button" @click="close" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
                                             <h4 class="modal-title" id="myModalLabel01">邀请你看《FIT大赛，1号沈君》</h4>
                                         </div>
                                         <div class="modal-body">
-                                            <iframe frameborder="0" src="https://v.qq.com/txp/iframe/player.html?vid=p0927gesvhy" allowFullScreen="true"></iframe>
+                                            <iframe frameborder="0" src="" allowFullScreen="true"></iframe>
                                         </div>
                                         <div class="modal-footer">
-                                            <button type="button" class="btn btn-default" data-dismiss="modal">关闭</button>
+                                            <button type="button" @click="close" class="btn btn-default" data-dismiss="modal">关闭</button>
                                         </div>
                                     </div>
                                 </div>
@@ -47,7 +47,15 @@
                         </div>
                         <div class="col-md-4 col-xs-12 rightList">
                             <div class="rightContent">
-                                <div class="row">
+                                <div class="row" @click="openVideo1">
+                                    <div class="col-md-4 col-xs-4">
+                                        <img src="https://nsi.oss-cn-zhangjiakou.aliyuncs.com/nsi-event/FIT2019/liangqian.jpg" alt="">
+                                    </div>
+                                    <div class="col-md-8 col-xs-8">
+                                        <span>王鹏—君诚国际学校,荣获第一届FIT国际教师风采大赛精英教师奖称号。学为人师，行为世范。</span> 
+                                    </div>
+                                </div>
+                                <div class="row" @click="openVideo2">
                                     <div class="col-md-4 col-xs-4">
                                         <img src="https://nsi.oss-cn-zhangjiakou.aliyuncs.com/nsi-event/FIT2019/wangpeng.jpg" alt="">
                                     </div>
@@ -55,25 +63,17 @@
                                         <span>王鹏—君诚国际学校,荣获第一届FIT国际教师风采大赛精英教师奖称号。学为人师，行为世范。</span> 
                                     </div>
                                 </div>
-                                <div class="row">
+                                <div class="row" @click="openVideo3">
                                     <div class="col-md-4 col-xs-4">
-                                        <img src="https://nsi.oss-cn-zhangjiakou.aliyuncs.com/nsi-event/FIT2019/wangpeng.jpg" alt="">
+                                        <img src="https://nsi.oss-cn-zhangjiakou.aliyuncs.com/nsi-event/FIT2019/chenqiuling.jpg" alt="">
                                     </div>
                                     <div class="col-md-8 col-xs-8">
                                         <span>王鹏—君诚国际学校,荣获第一届FIT国际教师风采大赛精英教师奖称号。学为人师，行为世范。</span> 
                                     </div>
                                 </div>
-                                <div class="row">
+                                <div class="row" @click="openVideo4">
                                     <div class="col-md-4 col-xs-4">
-                                        <img src="https://nsi.oss-cn-zhangjiakou.aliyuncs.com/nsi-event/FIT2019/wangpeng.jpg" alt="">
-                                    </div>
-                                    <div class="col-md-8 col-xs-8">
-                                        <span>王鹏—君诚国际学校,荣获第一届FIT国际教师风采大赛精英教师奖称号。学为人师，行为世范。</span> 
-                                    </div>
-                                </div>
-                                <div class="row">
-                                    <div class="col-md-4 col-xs-4">
-                                        <img src="https://nsi.oss-cn-zhangjiakou.aliyuncs.com/nsi-event/FIT2019/wangpeng.jpg" alt="">
+                                        <img src="https://nsi.oss-cn-zhangjiakou.aliyuncs.com/nsi-event/FIT2019/chenyuting.jpg" alt="">
                                     </div>
                                     <div class="col-md-8 col-xs-8">
                                         <span>王鹏—君诚国际学校,荣获第一届FIT国际教师风采大赛精英教师奖称号。学为人师，行为世范。</span> 
@@ -322,15 +322,38 @@
             return{
 
             }
+        },
+        methods:{
+            toPlay(){
+                $(".modal-body").find("iframe").attr("src","https://v.qq.com/txp/iframe/player.html?vid=p0927gesvhy");
+            },
+            close(){
+                $(".modal-body").find("iframe").removeAttr("src");
+            },
+            openVideo1(){
+                window.open("https://v.qq.com/txp/iframe/player.html?vid=l09278jpx5b")
+            },
+            openVideo2(){
+                window.open("https://v.qq.com/txp/iframe/player.html?vid=l092719l7hi")
+            },
+            openVideo3(){
+                window.open("https://v.qq.com/txp/iframe/player.html?vid=g0927al717g")
+            },
+            openVideo4(){
+                window.open("https://v.qq.com/txp/iframe/player.html?vid=t0927a62jb1")
+            }
         }
     }
 </script>
 <style lang="scss" scoped>
 .fit{
-    width:65%;
+    // width:65%;
+    min-width:1200px;
+    max-width:1200px;
     margin:0 auto;
     @media (max-width:768px) {
-        width:100%;
+        min-width:100%;
+        max-width:100%;
     }
     .introduce{
         margin-top:30px;
