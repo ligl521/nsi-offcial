@@ -90,9 +90,9 @@
                                                         <el-dropdown-item>
                                                             <router-link :to="{path:'/event/subject'}">&nbsp;<span class="iconfont icon-zhuanti logoFont"></span>{{$t('layoutNav.eventChild.subject')}}</router-link>
                                                         </el-dropdown-item>
-                                                        <el-dropdown-item>
+                                                        <!-- <el-dropdown-item>
                                                             <router-link :to="{path:'/event/videoList'}">&nbsp;<span class="iconfont icon-bofang1 logoFont"></span>{{$t('layoutNav.eventChild.videoList')}}</router-link>
-                                                        </el-dropdown-item>
+                                                        </el-dropdown-item> -->
                                                          <!-- <el-dropdown-item>
                                                             <router-link :to="{path:'/event/fit'}">&nbsp;<span class="iconfont icon-bofang1 logoFont"></span>{{$t('layoutNav.eventChild.fit')}}</router-link>
                                                         </el-dropdown-item> -->

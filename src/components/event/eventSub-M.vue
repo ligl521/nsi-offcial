@@ -13,9 +13,9 @@
                     <div class="swiper-slide text-center">
                         <router-link :to="{path:'/event/subject'}"><span class="iconfont icon-zhuanti fontlogo"></span><br/>{{$t('layoutNav.eventChild.subject')}}</router-link>
                     </div>
-                    <div class="swiper-slide text-center">
+                    <!-- <div class="swiper-slide text-center">
                         <router-link :to="{path:'/event/videoList'}"><span class="iconfont icon-bofang1 fontlogo"></span><br/>{{$t('layoutNav.eventChild.videoList')}}</router-link>
-                    </div>
+                    </div> -->
                     <!-- <div class="swiper-slide text-center">
                         <router-link :to="{path:'/event/fit'}"><span class="iconfont icon-bofang1 fontlogo"></span><br/>{{$t('layoutNav.eventChild.fit')}}</router-link>
                     </div> -->
