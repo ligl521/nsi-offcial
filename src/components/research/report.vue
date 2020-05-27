@@ -157,6 +157,7 @@ export default {
                 -webkit-box-orient: vertical;
                 min-height: 45px;
                 max-height: 45px;
+                cursor: pointer;
 
             }
             .internalRefer-box{
@@ -188,6 +189,7 @@ export default {
                 letter-spacing: 2px;
                 border-radius: 5px;
                 margin-bottom: 30px;
+                cursor: pointer;
             }
         }
         .erweima{

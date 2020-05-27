@@ -91,7 +91,7 @@ module.exports = {
     },
     // 底部
     layoutFooter: {
-        tel: "联系电话：010-52468286",
+        tel: "联系：010-52468286",
         email: "邮箱：info@xinxueshuo.cn",
         phone: "手机：15010927730",
         address: "地址：北京市朝阳区曙光西里时间国际A座1501",

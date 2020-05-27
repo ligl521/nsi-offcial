@@ -172,7 +172,7 @@
           <div class="container">
             <div class="row">
               <div class="col-md-4">
-                <h4 class="contact">联系我们&nbsp;<span>Contact</span></h4>
+                <h4 class="contact">联系我们&nbsp;<span>Contact Us：</span></h4>
                 <ul class="contact-info">
                   <li>{{$t('layoutFooter.tel')}}</li>
                   <li>{{$t('layoutFooter.email')}}</li>
@@ -185,7 +185,7 @@
                         <div class="col-md-6">
                             <div class="row">
                                 <div class="col-md-12">
-                                    <h4 class="blogroll">链接 <span>Links</span></h4>
+                                    <h4 class="blogroll">链接 <span>Links：</span></h4>
                                     <div class="shareHref">
                                         <a href="http://data.xinxueshuo.cn" target="_blank"><img src="https://nsi.oss-cn-zhangjiakou.aliyuncs.com/nsi-official/image/layoutImg/database.png" alt=""></a>
                                         <a href="http://class.xinxueshuo.cn" target="_blank"><img src="https://nsi.oss-cn-zhangjiakou.aliyuncs.com/nsi-official/image/layoutImg/class.png" alt=""></a>

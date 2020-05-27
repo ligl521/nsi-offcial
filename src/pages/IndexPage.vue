@@ -276,11 +276,12 @@ export default {
   margin-top: 30px;
 }
 .multiline {
-  overflow: hidden;
-  text-overflow: ellipsis;
-  display: -webkit-box;
-  -webkit-line-clamp: 2;
-  -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    /* autoprefixer: ignore next */
+    -webkit-box-orient: vertical;
 }
 .indexPage-com {
   padding-top: 52px;
@@ -381,7 +382,6 @@ export default {
   }
 }
 .newsList{
-    border:1px solid #ccc;
     width: 49%;
     height: 140px;
     margin: 10px 0;
@@ -395,13 +395,14 @@ export default {
 }
 
 .news-img {
-  display: inline-block;
-  width: 100%;
-  height: 140px;
-  background-color: #ccc;
-  position: relative;
-  left: -15px;
-  top: -1px;
+    display: inline-block;
+    width: 100%;
+    height: 130px;
+    background-color: #ccc;
+    position: relative;
+    left: -10px;
+    top: 5px;
+    box-shadow: 0px 0px 10px #ccc;
   @media (max-width: 768px) {
     height: 120px;
   }

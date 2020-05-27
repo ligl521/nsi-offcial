@@ -27,20 +27,17 @@ export default {
         adSwiperInit(){
             new Swiper('#swiperAd',{
                 notNextTick: true,
-                autoplay: {
-                    delay:3000,
-                    disableOnInteraction: false,
-                },
+                autoplay: 3000,
                 loop: true,
                 speed:600,
                 grabCursor : true,
-                effect: 'fade',
-                pagination: {
-                    el: '.swiper-pagination',
-                    clickable: true,
-                },
+                // 如果需要分页器
+                pagination:  '.swiper-pagination',
+                // prevButton:'.swiper-button-prev',
+                // nextButton:'.swiper-button-next',
                 observer:true,//修改swiper自己或子元素时，自动初始化swiper
                 observeParents:true,//修改swiper的父元素时，自动初始化swiper
+                effect: 'fade',
             })
         }
     },

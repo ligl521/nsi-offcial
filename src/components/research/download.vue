@@ -14,10 +14,10 @@
                         </el-breadcrumb>
                         <h2>{{list.fileName}}</h2>
                         <button class="btn btn-primary" @click="toDownload(list.fileUrl)"><i class="iconfont icon-download"></i>下载</button>
-                        <!-- <el-popover placement="right" title="打开微信 “扫一扫”" width="190" trigger="hover" content="微信二维码">
+                        <el-popover placement="right" title="打开微信 “扫一扫”" width="190" trigger="hover" content="微信二维码">
                             <el-button type="success" class="btn btn-success"  slot="reference"><i class="iconfont icon-fenxiang"></i>分享</el-button>
-                            <img width="150" :src="'https://api.qrserver.com/v1/create-qr-code/?size=150x150&data=' + 'http://www.xinxueshuo.cn/#/research/download?id='+list.id" alt="" >
-                        </el-popover> -->
+                            <div id="qrCode" ref="qrCodeUrl"></div>
+                        </el-popover>
                     </div>
                 </div>
             </div>
@@ -66,6 +66,7 @@
 
 <script>
 import wxShareInit from '../../assets/js/weChatShare01'
+import QRCode from 'qrcodejs2'
 export default {
     data(){
         return{
@@ -78,6 +79,8 @@ export default {
                 desc:"国际学校行业专家打造的多边媒体平台，以新媒体为载体、以行业研究为核心、以行业服务为平台"
             },
         }
+    },
+    created(){
     },
     methods:{
         // 判断微信浏览器
@@ -110,17 +113,24 @@ export default {
             }
         },
         detailList(){
-            var Id = this.$route.query.id
-            this.axios({
+            var that=this
+            var Id = that.$route.query.id
+            that.axios({
                 method:"get",
                 url: '/manager/resource/detail.do',
                 params:{
                     id:Id
                 }
             }).then((res)=>{
-                this.list=res.data.data
-                this.wxShareInfo.title= this.list.fileName
-                this.wxShareInfo.imgUrl= this.list.imageUrl
+                that.list=res.data.data
+                that.wxShareInfo.title= that.list.fileName
+                that.wxShareInfo.imgUrl= that.list.imageUrl
+                document.getElementById("qrCode").innerHTML = "";
+                var qrcode = new QRCode(that.$refs.qrCodeUrl, {
+                    text: 'http://www.xinxueshuo.cn/#/research/download?id='+that.list.id,
+                    width: 150,
+                    height: 150,
+                })
             })
         },
         bookList(){
@@ -168,9 +178,6 @@ export default {
             setTimeout(wxShareInit.wxReady(this.wxShareInfo),500)
         } 
     },
-    mounted(){
-        
-    }
 
 }
 </script>
@@ -302,4 +309,10 @@ export default {
     
 }
 </style>
+<style>
+.el-popover__title{
+    text-align: center;
+}
+</style>
+
 
