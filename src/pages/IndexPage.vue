@@ -325,11 +325,8 @@ export default {
     -webkit-line-clamp: 2;
     /* autoprefixer: ignore next */
     -webkit-box-orient: vertical;
-<<<<<<< HEAD
-=======
     text-overflow: -o-ellipsis-lastline;
     line-clamp: 2;
->>>>>>> 04dff1c88767e4046d74ad0410e755201b683dfb
 }
 .indexPage-com {
   padding-top: 52px;

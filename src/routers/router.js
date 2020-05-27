@@ -28,6 +28,7 @@ import eventApply from '../components/event/eventApply.vue'
 import videoList from '../components/event/videoList.vue'
 import video from '../components/event/video.vue'
 import fit from '../components/event/fit.vue'
+import skyClass from '../components/event/skyClass'
 
 import periodical from '../components/research/periodical.vue'
 import report from '../components/research/report.vue'
@@ -133,6 +134,9 @@ const routes = [{
             },{
                 path: 'fit',
                 component:fit
+            },{
+                path: 'skyClass',
+                component:skyClass
             }
         ]
     }, {
