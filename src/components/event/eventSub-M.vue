@@ -3,7 +3,7 @@
         <div class="container-fluid">
             <div class="swiper-container eventSwiper" id="eventSwiper">
                 <div class="swiper-wrapper">
-                    <div class="swiper-slide text-center">
+                    <div class="swiper-slide text-center Longlength">
                         <!-- <router-link :to="{path:'/event'}"><img width="35" src="../../assets/img/layoutImg/vis2018.png" alt=""><br/>VIS国际学校发展大会</router-link> -->
                         <a href="http://data.xinxueshuo.cn/nsi-class/admin/activity/meeting/vis2018.html" target="_blank"><img width="35" src="https://nsi.oss-cn-zhangjiakou.aliyuncs.com/nsi-official/image/layoutImg/vis2018.png" alt=""><br/>{{$t('layoutNav.eventChild.vis')}}</a>
                     </div>
@@ -13,6 +13,12 @@
                     <div class="swiper-slide text-center">
                         <router-link :to="{path:'/event/subject'}"><span class="iconfont icon-zhuanti fontlogo"></span><br/>{{$t('layoutNav.eventChild.subject')}}</router-link>
                     </div>
+                    <!-- <div class="swiper-slide text-center">
+                        <router-link :to="{path:'/event/videoList'}"><span class="iconfont icon-bofang1 fontlogo"></span><br/>{{$t('layoutNav.eventChild.videoList')}}</router-link>
+                    </div> -->
+                    <!-- <div class="swiper-slide text-center">
+                        <router-link :to="{path:'/event/fit'}"><span class="iconfont icon-bofang1 fontlogo"></span><br/>{{$t('layoutNav.eventChild.fit')}}</router-link>
+                    </div> -->
                      <!-- <div class="swiper-slide text-center">
                         <router-link :to="{path:'/event/apply'}"><span class="iconfont icon-baoming fontlogo"></span><br/>{{$t('layoutNav.eventChild.apply')}}</router-link>
                     </div> -->
@@ -27,13 +33,14 @@ import Swiper from 'swiper'
 export default {
     data(){
         return{
-            layoutNav:[this.$t('layoutNav.eventChild.vis'),this.$t('layoutNav.eventChild.lotus'),this.$t('layoutNav.eventChild.subject'),this.$t('layoutNav.eventChild.apply')]
+            layoutNav:[this.$t('layoutNav.eventChild.vis'),this.$t('layoutNav.eventChild.lotus'),this.$t('layoutNav.eventChild.subject'),this.$t('layoutNav.eventChild.apply'),this.$t('layoutNav.eventChild.videoList'),]
         }
     },
     methods:{
         eventSubInit(){
             var eventSwiper=new Swiper("#eventSwiper",{
                 notNextTick: true,
+                loop:false,
                 freeMode:true,
                 freeModeMomentumRatio : 5,
                 freeModeMomentum:true,
@@ -56,6 +63,11 @@ export default {
         border-bottom: 1px solid #ddd;
         .eventSwiper{
             padding: 10px 0;
+            .Longlength{
+                overflow: hidden;
+                text-overflow: ellipsis;
+                white-space: nowrap;
+            }
             a{
                 color: #333;
                 &:hover,

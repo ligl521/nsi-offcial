@@ -77,14 +77,13 @@ export default {
             const _this=this;
             var swiperM=new Swiper('#swiperM', {
                 notNextTick: true,
+                loop:false,
                 freeMode:true,
                 freeModeMomentumRatio : 5,
                 freeModeMomentum:true,
                 freeModeMomentumBounce:false,
-                // width:100,
                 slidesPerView : 4,
                 slideToClickedSlide: true,
-                // centeredSlides: true,
                 resistanceRatio:0.7,
                 observer:true,//修改swiper自己或子元素时，自动初始化swiper
                 observeParents:true,//修改swiper的父元素时，自动初始化swiper
@@ -148,10 +147,13 @@ export default {
         position: relative;
         // padding-top: 15px;
         // border-top: 3px solid $official-color;
-        padding: 10px 0 5px 0;
+        padding: 8px 0 5px 0;
         border-bottom: 1px solid #ddd;
         .navSlide{
             text-align: center;
+            &:first-of-type{
+                text-align: center;
+            }
             i,a{
                 font-style: normal;
                 display: inline-block;
@@ -162,11 +164,10 @@ export default {
                 color: #666;
             }
             .router-link-active{
-                // font-size: 20px !important;
-                font-weight: 600;
-                padding-bottom: 0 !important;
-                margin-top: 0;
-                color: $official-color
+                color: $official-color;
+                border-bottom: 2px solid #20528f;
+                padding: 5px;
+                margin-top: 0px;
             }
         }
         // 更多
@@ -174,12 +175,12 @@ export default {
             position: absolute;
             z-index: 99;
             font-weight: 700;
-            right:6px;
-            top: 11px;
+            right:15px;
+            top: 12px;
             color: #666;
             @include transitionAnimate();
             a{
-                font-size: 18px;
+                font-size: 16px;
                 color: #666;
                 text-decoration: none;
                 position: relative;
@@ -196,31 +197,24 @@ export default {
             -webkit-animation-duration: .3s;
             animation-duration:.3s;
             ul{
-                width: 100%;
-                padding: 25px 0 0px 31px;
-                background-color: rgba($color: #ffffff, $alpha: .9);
-                margin: 0;
+                background-color: #fff;
+                padding: 20px 20px 10px 20px;
                 display: flex;
                 flex-wrap: wrap;
-                // align-content:center;
                 align-items:flex-start;
                 justify-content: flex-start;
                 position: fixed;
                 box-shadow: 0 4px 8px 0 rgba(7, 17, 27, .2);
                 li{
                     list-style: none;
-                    width: 80px;
-                    text-align: center;
-                    height: 30px;
-                    line-height: 30px;
+                    padding:5px 10px;
                     color: #6e6e6e;
                     border-radius: 2px;
-                    margin-bottom: 30px;
-                    margin-right: 10px;
+                    margin:0px 13px 15px 0; 
                     background-color: #f1f1f1;
                     &.router-link-active{
                         border: 1px solid $official-color;
-                        background-color: #FFF;
+                        // background-color: #FFF;
                         color: $official-color;
                     }
                 }

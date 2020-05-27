@@ -33,7 +33,7 @@
         <div class="recommend-book">
             <div class="container">
                 <div class="row">
-                    <div class="col-xs-4" v-for="(item,index) in bookImgList" :key="index" v-if="index<3">
+                    <div class="col-xs-4" v-for="(item,index) in bookImgList" :key="index">
                         <img :src="item.imageUrl" alt="" @click="enterBook(item.id)">
                         <p @click="enterBook(item.id)">{{item.fileName}}</p>
                     </div>
@@ -44,7 +44,7 @@
             <div class="container">
                 <div class="row">
                     <div class="col-md-12">
-                        <div class="swiper-container">
+                        <div class="swiperBook swiper-container">
                             <div class="swiper-wrapper">
                                 <div class="swiper-slide" v-for="(item,index) in bookImgList" :key="index">
                                     <img :src="item.imageUrl" alt="" style="opacity:1" @click="enterBook(item.id)">
@@ -106,7 +106,7 @@ export default {
                     message: h('i', { style: 'color: #20528f'}, '请在Safari浏览器打开下载'),
                     offset: 150,
                     type:'info',
-                    duration:3000
+                    duration:5000
                 });
             }else{
                 window.open(url)
@@ -123,7 +123,7 @@ export default {
                 }
             }).then((res)=>{
                 that.list=res.data.data
-                that.wxShareInfo.title= that.list.fileName
+                that.wxShareInfo.title= '新学说-'+that.list.fileName
                 that.wxShareInfo.imgUrl= that.list.imageUrl
                 document.getElementById("qrCode").innerHTML = "";
                 var qrcode = new QRCode(that.$refs.qrCodeUrl, {
@@ -150,7 +150,7 @@ export default {
             })
         },
         swiperInit(){
-            var mySwiper = new Swiper ('.swiper-container', {
+            var mySwiper = new Swiper ('.swiperBook', {
                 loop: true,
                 autoplay:5000,
                 slidesPerView:5,//页面分组显示，这里显示为3组
@@ -278,6 +278,8 @@ export default {
             margin: 0 auto 10px;
             width: 92%;
             cursor: pointer;
+            max-height: 55px;
+            min-height: 55px;
         }
     }
     .swiper-father{

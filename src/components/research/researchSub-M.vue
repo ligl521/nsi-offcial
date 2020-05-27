@@ -4,7 +4,7 @@
             <div class="swiper-container eventSwiper" id="researchSwiper">
                 <div class="swiper-wrapper">
                     <div class="swiper-slide text-center pisomBox">
-                        <router-link :to="{path:'/research/ipa'}"><img width="75" class="classLogo pisom" src="../../images/IPA.jpg" alt=""><br/>{{$t('layoutNav.researchChild_Mob.ipa')}}</router-link>
+                        <router-link :to="{path:'/research/ipa'}"><img width="75" class="classLogo pisom" src="http://nsi-official.oss-cn-zhangjiakou.aliyuncs.com/images/IPA.jpg" alt=""><br/>{{$t('layoutNav.researchChild_Mob.ipa')}}</router-link>
                     </div>
                     <div class="swiper-slide text-center">
                         <a href="https://www.xinxueshuo.cn/nsi-shop/dist/index.html#/" target="'_'"><img width="25" height="31" class="classLogo" src="https://nsi.oss-cn-zhangjiakou.aliyuncs.com/nsi-official/image/layoutImg/classLogo.png" alt=""><br/>{{$t('layoutNav.researchChild_Mob.classOnline')}}</a>
@@ -21,6 +21,9 @@
                     <div class="swiper-slide text-center">
                         <router-link :to="{path:'/research/experts'}"><span class="iconfont icon-icon- fontLogo"></span><br/>{{$t('layoutNav.researchChild.experts')}}</router-link>
                     </div>
+                    <!-- <div class="swiper-slide text-center" style="padding-right:10px;">
+                        <router-link :to="{path:'/research/mac2020'}"><span class="iconfont icon-icon- fontLogo"></span><br/>{{$t('layoutNav.researchChild.mac2020')}}</router-link>
+                    </div> -->
                 </div>
             </div>
         </div>
@@ -39,6 +42,7 @@ export default {
         eventSubInit(){
             var eventSwiper=new Swiper("#researchSwiper",{
                 notNextTick: true,
+                loop:false,
                 freeMode:true,
                 freeModeMomentumRatio : 5,
                 freeModeMomentum:true,
@@ -46,11 +50,15 @@ export default {
                 slidesPerView : 4,
                 slideToClickedSlide: true,
                 resistanceRatio:0.4,
+                observer:true, 
+                observeParents:true,
             })
         }
     },
     mounted(){
-        this.eventSubInit()
+        this.$nextTick(()=>{
+            this.eventSubInit()
+        })
     }
 }
 </script>

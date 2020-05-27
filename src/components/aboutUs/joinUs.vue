@@ -127,7 +127,7 @@
         .about-bg{
             width: 100%;
             height: 550px;
-            background-image: url("../../images/about.jpg");
+            background-image: url("http://nsi-official.oss-cn-zhangjiakou.aliyuncs.com/images/about.jpg");
             background-size: 100%;
             background-position: center;
             position: relative;

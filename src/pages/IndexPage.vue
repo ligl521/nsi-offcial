@@ -12,21 +12,21 @@
                     <div class="index-title">
                         <span class="line left-line"></span>
                         <h3 class="text-center mb0_768">行业动态</h3>
-                        <h3 class="text-center mt0"><small>What’s New</small></h3>
+                        <h3 class="text-center mt0"><small>Industry News</small></h3>
                         <span class="line right-line"></span>
                     </div>
                     <div class="row pt50 twoNews">
                         <!-- 两则新闻概要 -->
-                        <div class="col-md-6 col-xs-6 newsList" v-for="(news,index) in recentNews" :key="index" v-if="index<6">
+                        <div class="col-xs-6 newsList" v-for="(news,index) in recentNews" :key="index" v-if="index<6">
                             <div class="row">
-                                <div class="col-md-6">
+                                <div class="col-xs-6">
                                     <div class="news-content">
                                         <a :href="news.articleUrl" class="news-title" target="_blank">
                                             <img :src="news.coverImage+'?x-oss-process=image/resize,m_fixed,h_170,w_270'" alt="" width="100%" height="200px" class="news-img">
                                         </a>
                                     </div>
                                 </div>
-                                <div class="col-md-6">
+                                <div class="col-xs-6">
                                     <div class="newsBox">
                                         <!-- <h5 class="mt0 multiline"><a href="javascript:;" class="news-title" @click="toDetail(news.id)">{{news.title}}</a></h5> -->
                                         <h5 class="mt0 multiline"><a :href="news.articleUrl" class="news-title" target="_blank">{{news.title}}</a></h5>
@@ -37,23 +37,6 @@
                             </div>
                         </div>
                     </div>
-                    <!-- 四条新闻标题 -->
-                    <!-- <div class="fourNews">
-                      <div class="row mt30">
-                          <div class="col-md-6" v-for="(news,index) in recentNews" :key="index" v-if="index>=2&&index<9">
-                              <div class="newsInfo">
-                                  <div class="row">
-                                    <div class="col-md-10">
-                                      <p class="multiline newsInfo-title"><a :href="news.articleUrl" class="newsInfo-detail" target="_blank">{{"• "+news.title}}</a></p>
-                                    </div>
-                                    <div class="col-md-2">
-                                      <span class="newsInfo-time">{{news.time}}</span>
-                                    </div>
-                                  </div>
-                              </div>
-                          </div>
-                      </div>
-                    </div> -->
                     <!-- 新闻移动端 -->
                     <news-info-m :showFourNews="recentNews" class="showInMobile mt20"></news-info-m>
                     <div class="row">
@@ -61,6 +44,46 @@
                         <router-link :to="{path:'/news'}" class="learnMore">查看更多</router-link>
                       </div>
                     </div>
+                </div>
+                <!-- 灿灿早报 -->
+                <div class="newest indexNews">
+                    <!-- title -->
+                    <div class="index-title">
+                        <span class="line left-line"></span>
+                        <h3 class="text-center mb0_768">灿灿早报</h3>
+                        <h3 class="text-center mt0"><small>Morning Newspaper</small></h3>
+                        <span class="line right-line"></span>
+                    </div>
+                    <div class="row pt50 twoNews">
+                        <!-- 两则新闻概要 -->
+                        <div class="col-xs-6 newsList" v-for="(news,index) in canNews" :key="index" v-if="index<2">
+                          <!-- <div class="container"> -->
+                            <div class="row">
+                                <div class="col-xs-6">
+                                    <div class="news-content">
+                                        <a :href="news.articleUrl" class="news-title" target="_blank">
+                                            <img :src="news.coverImage+'?x-oss-process=image/resize,m_fixed,h_170,w_270'" alt="" width="100%" height="200px" class="news-img">
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="col-xs-6">
+                                    <div class="newsBox">
+                                        <h5 class="mt0 multiline"><a :href="news.articleUrl" class="news-title" target="_blank">{{news.title}}</a></h5>
+                                        <p class="news-articel multiline" :title="news.summary">{{news.summary}}</p>
+                                        <span class="news-time">{{news.time}}</span>
+                                    </div>
+                                </div>
+                            </div>
+                          </div>  
+                        <!-- </div> -->
+                    </div>
+                    <!-- 新闻移动端 -->
+                    <can-news-m :showCanNews="canNews" class="showInMobile mt20">1111</can-news-m>
+                    <!-- <div class="row">
+                      <div class="col-md-12 text-center">
+                        <router-link :to="{path:'/news'}" class="learnMore">查看更多</router-link>
+                      </div>
+                    </div> -->
                 </div>
                 <!-- 近期活动 -->
                 <div class="activities pt50">
@@ -73,34 +96,37 @@
                     </div>
                     <!-- 活动概要 -->
                     <div class="activitiesBox pt50">
-                      <div class="row">
-                        <div class="col-md-6">
-                            <div class="activities-current animated fadeInLeft" v-for="currentEvent in activitiesCurrent" v-if="currentEvent.content06==currentSerialNum" :key="currentEvent.content06">
-                                <h1 class="activitiesTitle"><a :href="currentEvent.content07" target="_blank">{{currentEvent.content02}}</a></h1>
-                                <h1 class="activities-zh"><a :href="currentEvent.content07" target="_blank">{{currentEvent.content01}}</a></h1>
-                                <p class="activities-info">{{currentEvent.content03}}</p>
-                                <p class="activities-info bottomLine">{{currentEvent.content04}}</p>
-                                <p class="activities-article multiline">{{currentEvent.textcontent01}}</p>
-                            </div>
-                        </div>
-                        <div class="col-md-5 col-md-offset-1">
-                          <div class="othersActivities">
-                            <div class="row">
-                              <div class="col-md-6 col-xs-6 plpr0" v-for="(activities,index) in activitiesCurrent" @mouseenter="active(index)" :key="index">
-                                <a :href="activities.content07" target="_blank">
-                                  <div class="othersBox" :class="'othersBox0'+(index+1)" :style="{'background-image':'url('+activities.content05+')'}">
-                                    <!-- <div class="othersBox-bg"></div> -->
-                                    <div class="othersBox-content">
-                                      <p>{{activities.content01}}</p>
-                                      <p>{{activities.content03}}</p>
-                                    </div>
-                                  </div>
-                                </a>
+                      <div class="container">
+                        <div class="row">
+                          <div class="col-xs-6">
+                              <div class="activities-current animated fadeInLeft" v-for="currentEvent in activitiesCurrent" v-if="currentEvent.content06==currentSerialNum" :key="currentEvent.content06">
+                                  <h1 class="activitiesTitle"><a :href="currentEvent.content07" target="_blank">{{currentEvent.content02}}</a></h1>
+                                  <h1 class="activities-zh"><a :href="currentEvent.content07" target="_blank">{{currentEvent.content01}}</a></h1>
+                                  <p class="activities-info">{{currentEvent.content03}}</p>
+                                  <p class="activities-info bottomLine">{{currentEvent.content04}}</p>
+                                  <p class="activities-article multiline">{{currentEvent.textcontent01}}</p>
                               </div>
+                          </div>
+                          <div class="col-xs-5 col-xs-offset-1">
+                            <div class="othersActivities">
+                                <div class="row">
+                                  <div class="col-xs-6 plpr0" v-for="(activities,index) in activitiesCurrent" @mouseenter="active(index)" :key="index">
+                                    <a :href="activities.content07" target="_blank">
+                                      <div class="othersBox" :class="'othersBox0'+(index+1)" :style="{'background-image':'url('+activities.content05+')'}">
+                                        <!-- <div class="othersBox-bg"></div> -->
+                                        <div class="othersBox-content">
+                                          <p>{{activities.content01}}</p>
+                                          <p>{{activities.content03}}</p>
+                                        </div>
+                                      </div>
+                                    </a>
+                                  </div>
+                                </div>
                             </div>
                           </div>
                         </div>
                       </div>
+
                     </div>
 
                     
@@ -111,7 +137,7 @@
             <!-- 研究院入口 -->
             <div class="erweimaBox" :class="isShow ? 'show':'hide'">
                 <span class="close"  @click="isShowBox">×</span>
-                <img src="../images/erweima.png" alt="">
+                <img src="https://nsi-official.oss-cn-zhangjiakou.aliyuncs.com/images/erweima.png" alt="">
                 <p>国际教育研究院</p>
                 <p><span class="iconfont icon-weixin"></span>微信扫一扫</p>
             </div>
@@ -122,6 +148,7 @@
 <script>
 import Banner from "../components/index/banner.vue";
 import newsInfoM from "../components/index/newsInfo-M.vue";
+import canNewsM from "../components/index/canNews-M.vue";
 import recentEvent from "../components/index/recentEvent-M.vue";
 import bannerM from "../components/index/banner-M.vue";
 // import wxShareInit from '../assets/js/weChatShare.js'
@@ -134,7 +161,8 @@ export default {
     newsInfoM,
     recentEvent,
     bannerM,
-    nsiProduct
+    nsiProduct,
+    canNewsM
   },
   name: "carrousel",
   data() {
@@ -203,10 +231,11 @@ export default {
       // console.log(res)
       this.activitiesCurrent = res.data.data;
     });
-    // 最新动态
+    // 行业动态
     const newsList = new URLSearchParams();
     newsList.append("pageNum", 1);
     newsList.append("pageSize", 8);
+    newsList.append("siftType", "新闻")
     this.axios({
       method: "post",
       url: "/article/list.do",
@@ -215,6 +244,20 @@ export default {
       const msg = res.data.data.list;
       // console.log(msg)
       this.recentNews = msg;
+    });
+    // 灿灿早报
+    const canNews = new URLSearchParams();
+    canNews.append("pageNum", 1);
+    canNews.append("pageSize", 2);
+    canNews.append("siftType", "灿灿早报")
+    this.axios({
+      method: "post",
+      url: "/article/list.do",
+      data: canNews
+    }).then(res => {
+      const msg = res.data.data.list;
+      console.log(msg)
+      this.canNews = msg;
     });
   }
 };
@@ -244,7 +287,7 @@ export default {
 }
 .othersActivities{
     .row{
-        width:485px !important;
+        // width:485px !important;
     }
 }
 .others {
@@ -282,6 +325,11 @@ export default {
     -webkit-line-clamp: 2;
     /* autoprefixer: ignore next */
     -webkit-box-orient: vertical;
+<<<<<<< HEAD
+=======
+    text-overflow: -o-ellipsis-lastline;
+    line-clamp: 2;
+>>>>>>> 04dff1c88767e4046d74ad0410e755201b683dfb
 }
 .indexPage-com {
   padding-top: 52px;
@@ -340,7 +388,7 @@ export default {
 .line {
   display: block;
   position: absolute;
-  width: 480px;
+  width: 40%;
   height: 1px;
   background-color: #222;
   top: 30px;
@@ -385,9 +433,9 @@ export default {
     width: 49%;
     height: 140px;
     margin: 10px 0;
-    &:nth-child(even){
-        margin-left:20px;
-    }
+    // &:nth-child(even){
+    //     margin-left:20px;
+    // }
 }
 .newestPlpr0 {
   padding-left: 0;
@@ -421,10 +469,8 @@ max-height: 36px; */
   line-height: 1.5;
 }
 .news-articel {
-  -webkit-line-clamp: 5;
+  -webkit-line-clamp: 3;
   color: #93999f;
-  min-height: 97px;
-  max-height: 97px;
   @media (max-width: 768px) {
     -webkit-line-clamp: 3;
     min-height: 58px;
@@ -502,7 +548,7 @@ max-height: 36px; */
   font-size: 16px;
 }
 .othersBox {
-  height: 250px;
+  height: 200px;
   background: #ccc;
   position: relative;
   transition: all 0.3s ease;

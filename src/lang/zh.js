@@ -13,7 +13,9 @@ module.exports = {
             vis: "VIS国际学校发展大会",
             lotus: "新荷学校大会",
             subject: "地区/专题研讨会",
-            apply: "参会报名"
+            apply: "参会报名",
+            videoList:'活动直播回放',
+            fit:'FIT国际教师风采大赛'
         },
         // lotusContent: {
         //     lotusIntroTitle: '为什么创办新荷国际学校',
@@ -76,14 +78,17 @@ module.exports = {
             ipa: "国际学校高级管理研修班",
             classOnline: "国际学校职能岗位课程",
             apply: "课程报名",
-            experts: "专家智库"
+            experts: "专家智库",
+            mac2020: "市场招生课",
         },
         researchChild_Mob: {
             magazine: "国际学校内参",
             report: "研究报告",
             ipa: "高级管理研修班",
             classOnline: "教育研究院",
-            apply: "课程报名"
+            apply: "课程报名",
+            experts: "专家智库",
+            mac2020: "市场招生课"
         },
         consult: "咨询服务",
         ges: "G E S",

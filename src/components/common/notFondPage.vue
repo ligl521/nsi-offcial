@@ -12,9 +12,9 @@ export default {
 
 <style lang="scss">
     .isContruct-com{
-        margin-top: 100px;
+        // margin-top: 100px;
         @media (max-width: 768px) {
-            margin-top: 50px;
+            // margin-top: 50px;
         }
         img{
             display: inline-block;

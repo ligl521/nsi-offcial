@@ -24,7 +24,6 @@ export default {
 
 <style lang="scss">
     .indexBannerTop{
-        min-height: 175px;
         background-color: #eee;
     }
 </style>

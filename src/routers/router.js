@@ -25,14 +25,22 @@ import eventLatest from '../components/event/eventLatest.vue'
 import eventDetail from '../components/event/eventDetail.vue'
 import eventLotus from '../components/event/eventLotus.vue'
 import eventApply from '../components/event/eventApply.vue'
+import videoList from '../components/event/videoList.vue'
+import video from '../components/event/video.vue'
+import fit from '../components/event/fit.vue'
+
 import periodical from '../components/research/periodical.vue'
 import report from '../components/research/report.vue'
 import visPptDownload from '../components/research/visPptDownload.vue'
 import download from '../components/research/download.vue'
+import ncdownload from '../components/research/ncdownload.vue'
 import advancedClass from '../components/research/advancedClass.vue'
 import researchApply from '../components/research/researchApply.vue'
 import researchIndex from '../components/research/researchIndex.vue'
 import experts from '../components/research/experts.vue'
+import mac2020 from '../components/research/mac2020.vue'
+import classCatalog from '../components/research/classCatalog.vue'
+
 
 import consultOne from '../components/consulting/consultOne.vue'
 import consultTwo from '../components/consulting/consultTwo.vue'
@@ -116,6 +124,15 @@ const routes = [{
                 path: "detail",
                 name: "eventDetail",
                 component: eventDetail
+            },{
+                path: 'videoList',
+                component:videoList
+            },{
+                path: 'video',
+                component:video
+            },{
+                path: 'fit',
+                component:fit
             }
         ]
     }, {
@@ -157,6 +174,9 @@ const routes = [{
             },{
                 path: 'download',
                 component: download
+            },,{
+                path: 'ncdownload',
+                component: ncdownload
             },{
                 path: 'ipa',
                 component: advancedClass
@@ -166,6 +186,13 @@ const routes = [{
             }, {
                 path: 'experts',
                 component: experts
+            }, {
+                path: 'mac2020',
+                component:mac2020
+            },{
+                path: 'classCatalog',
+                component:classCatalog
+
             }
         ]
     }, {

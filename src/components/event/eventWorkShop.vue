@@ -1,7 +1,7 @@
 <template>
     <div class="isContruct-com">
         <div class="text-center">
-            <img src="../../images/yan.jpg" alt="" class="img-responsive">
+            <img src="http://nsi-official.oss-cn-zhangjiakou.aliyuncs.com/images/地区专题研讨会/yan.jpg" alt="" class="img-responsive">
         </div>
         <div class="container">
             <div class="row" style="margin-bottom: 40px;">
@@ -71,38 +71,38 @@ export default {
             areaList:[
                 {
                    title:"西北地区国际教育高峰论坛",
-                   imgSrc:require("../../images/area/西安.jpg"),
-                   imgSrcM:require("../../images/area/西安.jpg"),
+                   imgSrc:"http://nsi-official.oss-cn-zhangjiakou.aliyuncs.com/images/地区专题研讨会/西安.jpg",
+                   imgSrcM:"http://nsi-official.oss-cn-zhangjiakou.aliyuncs.com/images/地区专题研讨会/西安.jpg",
                    url:"https://mp.weixin.qq.com/s?__biz=MzA4MDg0Mzc0Mw==&mid=2651365294&idx=1&sn=50dd1de8296c02b70b4b479b042e90bc&chksm=8462391eb315b0080ef4006057d116529abf26467dd64c6cf80a356bf75fe4af595d8f576773&mpshare=1&scene=1&srcid=0113gXAjA5qFrefWoywD4P1k&sharer_sharetime=1578910530635&sharer_shareid=01b9ebf75bc29b8fa1658e0fbeef188c&key=7c352ecdd99aea7296a1b04b593bdf2569404d235869bbc222e1cd93bf79727e53c2b0f0a6e66fd8fc2fa05544db716c9bac32bdbc320119d7ae916c441aebce4e01e3feb6317f22f249b58535523661&ascene=1&uin=MTE1ODcxOTgzOQ%3D%3D&devicetype=Windows+10&version=62070158&lang=zh_CN&exportkey=Aw7AFIMiqZ15%2FTANKaotKL0%3D&pass_ticket=%2FwAqckXKJCteowTJV9pC3SCujhu1rFPiM%2Bun6kkQvwGZ%2Bli5QirYeFhh6LOYU%2FJc",
                    time:"2019.07.19"
                 },{
                     title:"浙江研讨会",
-                    imgSrc:require("../../images/area/浙江.jpg"),
-                    imgSrcM:require("../../images/area/浙江.jpg"),
+                    imgSrc:"http://nsi-official.oss-cn-zhangjiakou.aliyuncs.com/images/地区专题研讨会/浙江.jpg",
+                    imgSrcM:"http://nsi-official.oss-cn-zhangjiakou.aliyuncs.com/images/地区专题研讨会/浙江.jpg",
                     url:"https://mp.weixin.qq.com/s/iPgWVA-d2Xg3sg4-4bHxkA",
                     time:"2018.09.14"
                 },{
                    title:"山东研讨会",
-                   imgSrc:require("../../images/area/山东.jpg"),
-                   imgSrcM:require("../../images/area/山东.jpg"),
+                   imgSrc:"http://nsi-official.oss-cn-zhangjiakou.aliyuncs.com/images/地区专题研讨会/山东.jpg",
+                   imgSrcM:"http://nsi-official.oss-cn-zhangjiakou.aliyuncs.com/images/地区专题研讨会/山东.jpg",
                    url:"https://mp.weixin.qq.com/s/rZa04-7XYiCdwqErc9XurA",
                    time:"2018.02.02"
                 },{
                    title:"上海研讨会",
-                   imgSrc:require("../../images/area/上海.jpg"),
-                   imgSrcM:require("../../images/area/上海.jpg"),
+                   imgSrc:"http://nsi-official.oss-cn-zhangjiakou.aliyuncs.com/images/地区专题研讨会/上海.jpg",
+                   imgSrcM:"http://nsi-official.oss-cn-zhangjiakou.aliyuncs.com/images/地区专题研讨会/上海.jpg",
                    url:"https://mp.weixin.qq.com/s/jbGQhcNt0mLRp_IKa9OOtA",
                    time:"2018.05.26"
                 },{
                    title:"江苏研讨会",
-                   imgSrc:require("../../images/area/江苏.jpg"),
-                   imgSrcM:require("../../images/area/江苏.jpg"),
+                   imgSrc:"http://nsi-official.oss-cn-zhangjiakou.aliyuncs.com/images/地区专题研讨会/江苏.jpg",
+                   imgSrcM:"http://nsi-official.oss-cn-zhangjiakou.aliyuncs.com/images/地区专题研讨会/江苏.jpg",
                    url:"https://mp.weixin.qq.com/s/wTjFOWGbdgOeMhPzAN35Tw",
                    time:"2018.07.13"
                 },{
                    title:"湖北研讨会",
-                   imgSrc:require("../../images/area/湖北.jpg"),
-                   imgSrcM:require("../../images/area/湖北.jpg"),
+                   imgSrc:"http://nsi-official.oss-cn-zhangjiakou.aliyuncs.com/images/地区专题研讨会/湖北.jpg",
+                   imgSrcM:"http://nsi-official.oss-cn-zhangjiakou.aliyuncs.com/images/地区专题研讨会/湖北.jpg",
                    url:"https://mp.weixin.qq.com/s/UXPIiaWl0sqWN7BlvdjLEw",
                    time:"2018.03.23"
                 }
@@ -110,32 +110,32 @@ export default {
             seminarList:[
                 {
                     title:"市场招生研讨会",
-                    imgSrc:require("../../images/seminar/市场招生.jpg"),
-                    imgSrcM:require("../../images/seminar/市场招生.jpg"),
+                    imgSrc:"http://nsi-official.oss-cn-zhangjiakou.aliyuncs.com/images/地区专题研讨会/市场招生.jpg",
+                    imgSrcM:"http://nsi-official.oss-cn-zhangjiakou.aliyuncs.com/images/地区专题研讨会/市场招生.jpg",
                     url:"https://mp.weixin.qq.com/s/PIKw-Tr3hOE1ViIATmruxg",
                     time:"2019.01.12"
                 },{
                     title:"教师发展研讨会",
-                    imgSrc:require("../../images/seminar/教师发展.jpg"),
-                    imgSrcM:require("../../images/seminar/教师发展.jpg"),
+                    imgSrc:"http://nsi-official.oss-cn-zhangjiakou.aliyuncs.com/images/地区专题研讨会/教师发展.jpg",
+                    imgSrcM:"http://nsi-official.oss-cn-zhangjiakou.aliyuncs.com/images/地区专题研讨会/教师发展.jpg",
                     url:"https://mp.weixin.qq.com/s/VgxYZVxXDHpOTT0OkXad0A",
                     time:"2017.07.28"
                 },{
                     title:"HR研讨会",
-                    imgSrc:require("../../images/seminar/hr.jpg"),
-                    imgSrcM:require("../../images/seminar/hr.jpg"),
+                    imgSrc:"http://nsi-official.oss-cn-zhangjiakou.aliyuncs.com/images/地区专题研讨会/hr.jpg",
+                    imgSrcM:"http://nsi-official.oss-cn-zhangjiakou.aliyuncs.com/images/地区专题研讨会/hr.jpg",
                     url:"https://mp.weixin.qq.com/s/pTdPIpR8VQ7cMHzwb5PGeg",
                     time:"2018.07.06—07.07"
                 },{
                     title:"幼教新政线上研讨会",
-                    imgSrc:require("../../images/seminar/幼教新政.jpg"),
-                    imgSrcM:require("../../images/seminar/幼教新政.jpg"),
+                    imgSrc:"http://nsi-official.oss-cn-zhangjiakou.aliyuncs.com/images/地区专题研讨会/幼教新政.jpg",
+                    imgSrcM:"http://nsi-official.oss-cn-zhangjiakou.aliyuncs.com/images/地区专题研讨会/幼教新政.jpg",
                     url:"https://mp.weixin.qq.com/s/Pst_Y-RtpRsozyBH8eS4XQ",
                     time:"2018.11.17"
                 },{
                     title:"《民促法》意见公告线上研讨会",
-                    imgSrc:require("../../images/seminar/民促法.jpg"),
-                    imgSrcM:require("../../images/seminar/民促法.jpg"),
+                    imgSrc:"http://nsi-official.oss-cn-zhangjiakou.aliyuncs.com/images/地区专题研讨会/民促法.jpg",
+                    imgSrcM:"http://nsi-official.oss-cn-zhangjiakou.aliyuncs.com/images/地区专题研讨会/民促法.jpg",
                     url:"https://mp.weixin.qq.com/s/98sVbjgcjfw1cAigCI2sZA",
                     time:"2018.04.21-04.24"
                 },

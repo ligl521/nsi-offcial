@@ -12,11 +12,11 @@
                                     <a href="javascript:;" title="搜索"><span class="iconfont icon-sousuo search" @click="searchResult"></span></a>
                                     <el-dropdown @command="handleCommand" placement="top" trigger="click">
                                         <span class="el-dropdown-link">
-                                          <img class="activelogo" :src="logoActive" alt="" width="40">&nbsp;{{countryActive}}<i class="el-icon-arrow-down el-icon--right"></i>
+                                          <img class="activelogo" :src="logoActive" alt="" width="40"><span style="display:inline-block;margin-top:2px;">&nbsp;{{countryActive}}</span><i class="el-icon-arrow-down el-icon--right"></i>
                                         </span>
                                         <el-dropdown-menu slot="dropdown">
                                             <el-dropdown-item v-for="(logo,index) in logos" :key="index" :command="logo">
-                                              <img :src="logo.logoImg" alt="" width="30">&nbsp;{{logo.country}}
+                                              <img :src="logo.logoImg" alt="" width="30"><span>&nbsp;{{logo.country}}</span>
                                             </el-dropdown-item>
                                         </el-dropdown-menu>
                                     </el-dropdown>
@@ -32,7 +32,7 @@
             <div class="nav-bg searchBar isFixed navPC" id="searchBar">
                 <div class="container plpr0 navContainer ">
                     <div class="row">
-                        <div class="col-md-12 plpr0">
+                        <div class="col-xs-12 plpr0 navWidth">
                             <nav class="navbar navbar-default">
                                 <div class="container-fluid">
                                     <!-- Brand and toggle get grouped for better mobile display -->
@@ -90,9 +90,15 @@
                                                         <el-dropdown-item>
                                                             <router-link :to="{path:'/event/subject'}">&nbsp;<span class="iconfont icon-zhuanti logoFont"></span>{{$t('layoutNav.eventChild.subject')}}</router-link>
                                                         </el-dropdown-item>
-                                                        <el-dropdown-item>
-                                                            <!-- <router-link :to="{path:'/event/apply'}">&nbsp;<span class="iconfont icon-baoming logoFont"></span>{{$t('layoutNav.eventChild.apply')}}</router-link> -->
-                                                        </el-dropdown-item>
+                                                        <!-- <el-dropdown-item>
+                                                            <router-link :to="{path:'/event/videoList'}">&nbsp;<span class="iconfont icon-bofang1 logoFont"></span>{{$t('layoutNav.eventChild.videoList')}}</router-link>
+                                                        </el-dropdown-item> -->
+                                                         <!-- <el-dropdown-item>
+                                                            <router-link :to="{path:'/event/fit'}">&nbsp;<span class="iconfont icon-bofang1 logoFont"></span>{{$t('layoutNav.eventChild.fit')}}</router-link>
+                                                        </el-dropdown-item> -->
+                                                         <!-- <el-dropdown-item>
+                                                            <router-link :to="{path:'/event/videoList'}"><img :src="imgSrc" width="32" height="18" alt="">&nbsp;&nbsp;{{$t('layoutNav.eventChild.videoList')}}</router-link>
+                                                        </el-dropdown-item> -->
                                                     </el-dropdown-menu>
                                                 </el-dropdown>
                                             </li>
@@ -138,6 +144,12 @@
                                                          <el-dropdown-item>
                                                             <router-link :to="{path:'/research/experts'}">{{$t('layoutNav.researchChild.experts')}}</router-link>
                                                         </el-dropdown-item>
+                                                        <!-- <el-dropdown-item>
+                                                            <router-link :to="{path:'/research/mac2020'}">{{$t('layoutNav.researchChild.mac2020')}}</router-link>
+                                                        </el-dropdown-item> -->
+                                                        <!-- <el-dropdown-item>
+                                                            <router-link :to="{path:'/research/videoList'}">{{$t('layoutNav.researchChild.videoList')}}</router-link>
+                                                        </el-dropdown-item> -->
                                                     </el-dropdown-menu>
                                                 </el-dropdown>
                                             </li>
@@ -249,7 +261,9 @@
               </div>
               <div class="col-md-12 text-center">
                 <div class="copyright">
-                  <p>Copyright © 2018 xinxueshuo.cn All Rights Reserved 京ICP备 16031987号-1</p>
+                  <p>Copyright © 2018 xinxueshuo.cn All Rights Reserved 
+                     <a href="http://beian.miit.gov.cn" target="_blank" class="jingNumber">京ICP备 16031987号-1</a>
+                  </p>
                 </div>
               </div>
             </div>
@@ -338,6 +352,12 @@ export default {
     $nationDay-footerColor:#ce343c;
     $nationDay-footerFontColor:#db7378;
     $nationDay-otherColor:#d3656a;
+    .jingNumber{
+        color: #337ab7;
+        &:hover{
+            color:#fff;
+        }
+    }
     .fontLogo{
         font-size: 25px !important;
         position: relative;
@@ -443,7 +463,9 @@ export default {
             margin-left: -25px;
         }
     }
-
+    .navWidth{
+        min-width:1100px !important;
+    }
     .nav-bg{
         // background-color: $official-color;
         background-color: rgb(33,80,137);
@@ -541,7 +563,7 @@ export default {
     /* 选择语言*/
     .selectLang{
         position: absolute;
-        right: 15px;
+        right: 0px;
         top: 12px;
         .search{
             font-size: 30px;
@@ -563,15 +585,27 @@ export default {
         }
         @media (max-width:768px) {
             top: 10px;
+            border: 1px solid #ddd;
+            padding: 4px 6px;
+            border-radius: 5px;
         }
         a{
             color: #777;
         }
         .activelogo{
             border: none;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.28);
             border-radius: 50%;
-            margin-right:5px;
+            margin-right:2px;
+            margin-top:-2px;
+            width: 25px;
+            height: 25px;
+        }
+        // span{
+        //     display:inline-block;
+        //     margin-top:3px;
+        // }
+        .el-icon--right {
+            vertical-align: middle;
         }
     }
     .el-dropdown-menu{
@@ -736,7 +770,8 @@ export default {
             height: 35px;
             width: 135px;
             position: relative;
-            left: 45px;
+            left: 20px;
+            top:2px;
         }
       }
     }
@@ -754,6 +789,7 @@ export default {
         padding-left: 15px;
         padding-right: 1px;
     }
+    
     .content{
         padding-top: 52px;
         @media (max-width:768px) {
