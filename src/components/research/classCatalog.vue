@@ -24,34 +24,34 @@
                     <h3><span class="listLine"></span>课程目录</h3>
                     <p class="divider"></p>
                     <div class="part">
-                        <p class="number">第一章 市场招生策略篇</p>
+                        <p class="number">第一章 市场招生战略篇</p>
                         <p>01 《新建校定位：市场定位、品牌定位、产品定位》- 李远</p>
                         <p>02 《如何科学管理市场目标：定目标、玩方法、抓过程、等结果》- 张南</p>
                         <p>03 《2020，信心胜过一切——新谈K12学校招生策略》- 陈泽芳</p>
-                        <p>04 《疫情之下市场招生的坚守与变革》- 童晓白</p>
+                        <p>04 《如何让锻造市场招生队伍战斗力》- 许凌可</p>
                     </div>
                     <p class="divider"></p>
                     <div class="part">
-                        <p class="number">第二章 市场招生战略篇</p>
+                        <p class="number">第二章 市场招生策略篇</p>
                         <p>01 《如何改变现有市场招生策略应对线上教育的崛起》- 乔拯克</p>
-                        <p>02 《特殊时期如何开展有效招生推广》- 吴峥</p>
-                        <p>03 《有限市场预算下的市场招生工作如何增效》- 乔拯克</p>
-                        <p>04 《如何锻造市场招生队伍战斗力》- 许凌可</p>
+                        <p>02 《K12学校品牌推广与自媒体运营》- 吴峥</p>
+                        <p>03 《市场部如何做好实用有效的营销方案》- 黄丹</p>
+                        <p>04 《有限市场预算下的市场招生工作如何增效》- 乔拯克</p>
                         <p>05 《国际化学校宣传中视频内容的策划与制作》- 许凌可</p>
                     </div>
                     <p class="divider"></p>
                     <div class="part">
                         <p class="number">第三章 品牌与公共关系篇</p>
-                        <p>01 《集团化品牌管理的为与不为》- 童晓白</p>
-                        <p>02 《策划自媒体话题性品牌推广》- 吴峥</p>
-                        <p>03 《家校关系管理如何高效提升新招率和留存率》- 吴越</p>
+                        <p>01 《如何构建市场招生业务标准化》- Cindy</p>
+                        <p>02 《新形势下的民办学校招生观》- 杨飞</p>
+                        <p>03 《国际学校学生的招与留》- 吴越</p>
                     </div>
                 </el-tab-pane>
-                <el-tab-pane label="课程介绍" name="second">
+                <!-- <el-tab-pane label="课程介绍" name="second">
                     <img src="http://nsi-official.oss-cn-zhangjiakou.aliyuncs.com/images/市场招生课/classInt.jpg" alt="" width="100%">
-                </el-tab-pane>
+                </el-tab-pane> -->
                 <el-tab-pane label="讲师介绍" name="third">
-                    <img src="http://nsi-official.oss-cn-zhangjiakou.aliyuncs.com/images/市场招生课/lecturerInt.jpg" alt="" width="100%">
+                    <img src="https://nsi-official.oss-cn-zhangjiakou.aliyuncs.com/images/%E5%B8%82%E5%9C%BA%E6%8B%9B%E7%94%9F%E8%AF%BE/teacherInfo.jpg" alt="" width="100%">
                 </el-tab-pane>
             </el-tabs>
         </div>
@@ -142,7 +142,7 @@ export default {
 }
 .tabBox{
     width:55%;
-    margin:0 auto 80px;
+    margin:20px auto 80px;
     @media (max-width: 768px) {
         width:100%;
     }

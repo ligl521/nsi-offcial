@@ -83,11 +83,11 @@
                 </div>
                 <div class="rightContent">
                     <span class="courseLine"></span>
-                    <span class="courseTitle">市场招生策略篇</span>
+                    <span class="courseTitle">市场招生战略篇</span>
                     <p>新建校定位：市场定位、品牌定位、产品定位 - 李远</p>
-                    <p>如何科学管理市场目标：定目标、玩方法、抓过程、等结果 - 张楠</p>
+                    <p>如何科学管理市场目标：定目标、玩方法、抓过程、等结果 - 张南</p>
                     <p>2020，信心胜过一切——新谈K12学校招生策略 - 陈泽芳</p>
-                    <p>疫情之下市场招生的坚守与变革 - 童晓白</p>
+                    <p>如何让锻造市场招生队伍战斗力 - 许凌可</p>
                 </div>
                 <div class="clear"></div>
             </div>
@@ -96,12 +96,12 @@
                     <img src="http://nsi-official.oss-cn-zhangjiakou.aliyuncs.com/images/市场招生课/市场招生战略篇.png" alt="">
                 </div>
                 <div class="leftContent">
-                    <span class="courseTitle">市场招生战略篇</span>
+                    <span class="courseTitle">市场招生策略篇</span>
                     <span class="courseLine"></span>
                     <p>如何改变现有市场招生策略应对线上教育的崛起 - 乔拯克</p>
-                    <p>特殊时期如何开展有效招生推广 - 吴峥</p>
+                    <p>K12学校品牌推广与自媒体运营 - 吴&nbsp;&nbsp;&nbsp;&nbsp;峥</p>
+                    <p>市场部如何做好实用有效的营销方案 - 黄&nbsp;&nbsp;&nbsp;&nbsp;丹</p>
                     <p>有限市场预算下的市场招生工作如何增效 - 乔拯克</p>
-                    <p>如何锻造市场招生队伍战斗力 - 许凌可</p>
                     <p>国际化学校宣传中视频内容的策划与制作 - 许凌可</p>
                 </div>
                 <div class="clear"></div>
@@ -113,9 +113,9 @@
                 <div class="rightContent">
                     <span class="courseLine"></span>
                     <span class="courseTitle">品牌与公共关系篇</span>
-                    <p>集团化品牌管理的为与不为 - 童晓白</p>
-                    <p>策划自媒体话题性品牌推广 - 吴峥</p>
-                    <p>家校关系管理如何高效提升新招率和留存率 - 吴越</p>
+                    <p>如何构建市场招生业务标准化 - Cindy</p>
+                    <p>新形势下的民办学校招生观 - 杨飞</p>
+                    <p>国际学校学生的招与留 - 吴越</p>
                 </div>
                 <div class="clear"></div>
 
@@ -140,13 +140,13 @@
                             <div class="lecturerBox">
                                 <img src="http://nsi-official.oss-cn-zhangjiakou.aliyuncs.com/images/市场招生课/李远.png">
                                 <p class="lecturerName">李远</p>
-                                <p class="lecturerPost">雅力教育副总裁兼阿德科特学校总校长</p>
+                                <p class="lecturerPost">雅力集团副总裁兼<br>阿德科特学校总校长</p>
                             </div>
                         </div>
                         <div class="col-md-3 col-xs-6">
                             <div class="lecturerBox">
                                 <img src="http://nsi-official.oss-cn-zhangjiakou.aliyuncs.com/images/市场招生课/张南.png">
-                                <p class="lecturerName">张楠</p>
+                                <p class="lecturerName">张南</p>
                                 <p class="lecturerPost">雅力教育副总裁</p>
                             </div>
                         </div>
@@ -154,14 +154,21 @@
                             <div class="lecturerBox">
                                 <img src="http://nsi-official.oss-cn-zhangjiakou.aliyuncs.com/images/市场招生课/陈泽芳.png">
                                 <p class="lecturerName">陈泽芳</p>
-                                <p class="lecturerPost">华南师范大学附属外国语学校总校长</p>
+                                <p class="lecturerPost">华南师范大学附属外国语<br>学校总校长</p>
                             </div>
                         </div>
                         <div class="col-md-3 col-xs-6">
                             <div class="lecturerBox">
                                 <img src="http://nsi-official.oss-cn-zhangjiakou.aliyuncs.com/images/市场招生课/许凌可.png">
                                 <p class="lecturerName">许凌可</p>
-                                <p class="lecturerPost">德普外国语学校副校长</p>
+                                <p class="lecturerPost">重庆德普外国语学校副校长</p>
+                            </div>
+                        </div>
+                         <div class="col-md-3 col-xs-6">
+                            <div class="lecturerBox">
+                                <img src="http://nsi-official.oss-cn-zhangjiakou.aliyuncs.com/images/市场招生课/乔拯克.png">
+                                <p class="lecturerName">乔拯克</p>
+                                <p class="lecturerPost">教育集团总经理助理</p>
                             </div>
                         </div>
                         <div class="col-md-3 col-xs-6">
@@ -173,23 +180,23 @@
                         </div>
                         <div class="col-md-3 col-xs-6">
                             <div class="lecturerBox">
+                                <img src="https://nsi-official.oss-cn-zhangjiakou.aliyuncs.com/images/%E5%B8%82%E5%9C%BA%E6%8B%9B%E7%94%9F%E8%AF%BE/qiaozhenke.png">
+                                <p class="lecturerName">黄丹</p>
+                                <p class="lecturerPost">一思科技创始人</p>
+                            </div>
+                        </div>
+                         <div class="col-md-3 col-xs-6">
+                            <div class="lecturerBox">
+                                <img src="https://nsi-official.oss-cn-zhangjiakou.aliyuncs.com/images/%E5%B8%82%E5%9C%BA%E6%8B%9B%E7%94%9F%E8%AF%BE/yangfei.png">
+                                <p class="lecturerName">杨飞</p>
+                                <p class="lecturerPost">新学说联合发起人</p>
+                            </div>
+                        </div>
+                        <div class="col-md-3 col-xs-6">
+                            <div class="lecturerBox">
                                 <img src="http://nsi-official.oss-cn-zhangjiakou.aliyuncs.com/images/市场招生课/吴越.png">
                                 <p class="lecturerName">吴越</p>
                                 <p class="lecturerPost">新学说 CEO</p>
-                            </div>
-                        </div>
-                        <div class="col-md-3 col-xs-6">
-                            <div class="lecturerBox">
-                                <img src="http://nsi-official.oss-cn-zhangjiakou.aliyuncs.com/images/市场招生课/童晓白.png">
-                                <p class="lecturerName">童晓白</p>
-                                <p class="lecturerPost">义格教育市场招生总监</p>
-                            </div>
-                        </div>
-                        <div class="col-md-3 col-xs-6">
-                            <div class="lecturerBox">
-                                <img src="http://nsi-official.oss-cn-zhangjiakou.aliyuncs.com/images/市场招生课/乔拯克.png">
-                                <p class="lecturerName">乔拯克</p>
-                                <p class="lecturerPost">教育集团总经理助理</p>
                             </div>
                         </div>
                     </div>
@@ -198,7 +205,7 @@
             </div>
         </div>
         <div class="courseArrangement">
-            <div class="index-title">
+            <!-- <div class="index-title">
                 <p class="text-center chinese-title">
                     <span class="lecturerLine"></span>
                     课程安排
@@ -226,7 +233,7 @@
                         </div>
                     </div>
                 </div>
-            </div>
+            </div> -->
             <div class="scan">
                 <div class="leftContent">
                     <img src="http://nsi-official.oss-cn-zhangjiakou.aliyuncs.com/images/市场招生课/scan.png" alt="">
@@ -234,11 +241,11 @@
                 </div>
                 <div class="rightContent">
                     <div class="contentBox">
-                        <div class="content">
+                        <!-- <div class="content">
                             <span class="titleLine"></span>
                             <span class="title">报名流程</span>
                             <p class="desc">添加助教微信 → 填写报名表 → 线上面试 → 接收录取通知书 → 成功缴费 → 报名完成</p>
-                        </div>
+                        </div> -->
                         <div class="content">
                             <span class="titleLine"></span>
                             <span class="title">课程费用</span>
@@ -259,11 +266,11 @@
                 </div>
                 <div class="bottomContent">
                     <div class="contentBox">
-                        <div class="content">
+                        <!-- <div class="content">
                             <span class="titleLine"></span>
                             <span class="title">报名流程</span>
                             <p class="desc">添加助教微信 → 填写报名表 → 线上面试 → 接收录取通知书 → 成功缴费 → 报名完成</p>
-                        </div>
+                        </div> -->
                         <div class="content">
                             <span class="titleLine"></span>
                             <span class="title">课程费用</span>
@@ -523,7 +530,7 @@ export default {
         }    
     } 
     .courseBox{
-        width:60%;
+        width:50%;
         margin:0 auto 20px;
         background:#fff;
         border-radius: 8px;
@@ -798,6 +805,7 @@ export default {
         width:60%;
         height:260px;
         margin:0 auto;
+        padding-top:20px;
         @media (max-width: 768px) {
             display:none;
         }
@@ -855,6 +863,7 @@ export default {
                     padding:5px;
                 }
                 .content{
+                    margin-bottom:30px;
                     .titleLine{
                         width: 3px;
                         height: 16px;
@@ -895,7 +904,8 @@ export default {
             display:block;
         }
         .topContent{
-            text-align: center;;
+            text-align: center;
+            padding-top:20px;
             img{
                 width:50%;
                 margin:0 auto;
@@ -913,7 +923,7 @@ export default {
         .bottomContent{
             background:#133E79;
             color:#fff;
-            margin-top:40px; 
+            margin-top:20px; 
             .contentBox{
                 padding:15px;
                 .content{
