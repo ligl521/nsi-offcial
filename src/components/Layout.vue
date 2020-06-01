@@ -145,9 +145,10 @@
                                             <li class="dropdown">
                                                 <router-link :to="{path:'/vip'}">{{$t('layoutNav.vip')}}</router-link>
                                             </li>
-                                            <li><a href="https://www.xinxueshuo.cn/data/dist/index.html#/" target="_blank">{{$t('layoutFooter.database')}}</a></li>
-                                            <!-- <li><a href="https://data.xinxueshuo.cn/nsi-class/index.html" target="_blank">{{$t('layoutFooter.classOnline')}}</a></li> -->
-                                            <li class="hasSubmenu">
+                                            <li><a href="http://data.xinxueshuo.cn" target="_blank">{{$t('layoutFooter.database')}}</a></li>
+                                            <li><a href="https://data.xinxueshuo.cn/nsi-class/index.html" target="_blank">{{$t('layoutFooter.classOnline')}}</a></li>
+                                            
+                                            <!-- <li class="hasSubmenu">
                                                 <el-dropdown placement="top">
                                                     <span class="el-dropdown-link">
                                                         <a href="https://data.xinxueshuo.cn/nsi-class/index.html" target="_blank" >{{$t('layoutFooter.classOnline')}}<span class="caret"></span></a>
@@ -158,11 +159,11 @@
                                                             <router-link :to="{path:'/research/mac2020'}">{{$t('layoutNav.researchChild.mac2020')}}</router-link>
                                                         </el-dropdown-item>
                                                          <el-dropdown-item>
-                                                            <router-link :to="{path:'/research/mac2020'}">人力资源</router-link>
+                                                            <router-link :to="{path:'/research/mac2020'}">{{$t('layoutNav.researchChild.mac2020')}}</router-link>
                                                         </el-dropdown-item>
                                                     </el-dropdown-menu>
                                                 </el-dropdown>
-                                            </li>
+                                            </li> -->
                                         </ul>
                                     </div><!-- /.navbar-collapse -->
                                 </div><!-- /.container-fluid -->
