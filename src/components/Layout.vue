@@ -105,24 +105,6 @@
                                                     </el-dropdown-menu>
                                                 </el-dropdown>
                                             </li>
-                                            <!-- <li class="hasSubmenu">
-                                                <el-dropdown placement="top">
-                                                    <span class="el-dropdown-link">
-                                                        <a href="http://data.xinxueshuo.cn/nsi-event/Lotus2018/lotus.html" target="_blank">{{$t('layoutNav.lotus')}}<span class="caret"></span></a>
-                                                    </span>
-                                                    <el-dropdown-menu slot="dropdown">
-                                                        <el-dropdown-item>
-                                                            <a href="http://data.xinxueshuo.cn/nsi-event/Lotus2018/lotus.html" target="_blank">{{$t('layoutNav.lotusChild.gunagzhou')}}</a>
-                                                        </el-dropdown-item>
-                                                        <el-dropdown-item>
-                                                            <a href="https://jinshuju.net/f/L4Iz9D" target="_blank">{{$t('layoutNav.lotusChild.shanghai')}}</a>
-                                                        </el-dropdown-item>
-                                                        <el-dropdown-item>
-                                                            <a href="https://jinshuju.net/f/L4Iz9D" target="_blank">{{$t('layoutNav.lotusChild.beijing')}}</a>
-                                                        </el-dropdown-item>
-                                                    </el-dropdown-menu>
-                                                </el-dropdown>
-                                            </li> -->
                                             <li class="hasSubmenu">
                                                 <el-dropdown placement="top">
                                                     <span class="el-dropdown-link">
@@ -163,8 +145,24 @@
                                             <li class="dropdown">
                                                 <router-link :to="{path:'/vip'}">{{$t('layoutNav.vip')}}</router-link>
                                             </li>
-                                            <li><a href="http://data.xinxueshuo.cn" target="_blank">{{$t('layoutFooter.database')}}</a></li>
-                                            <li><a href="https://data.xinxueshuo.cn/nsi-class/index.html" target="_blank">{{$t('layoutFooter.classOnline')}}</a></li>
+                                            <li><a href="https://www.xinxueshuo.cn/data/dist/index.html#/" target="_blank">{{$t('layoutFooter.database')}}</a></li>
+                                            <!-- <li><a href="https://data.xinxueshuo.cn/nsi-class/index.html" target="_blank">{{$t('layoutFooter.classOnline')}}</a></li> -->
+                                            <li class="hasSubmenu">
+                                                <el-dropdown placement="top">
+                                                    <span class="el-dropdown-link">
+                                                        <a href="https://data.xinxueshuo.cn/nsi-class/index.html" target="_blank" >{{$t('layoutFooter.classOnline')}}<span class="caret"></span></a>
+                                                        <i class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"></i>
+                                                    </span>
+                                                    <el-dropdown-menu slot="dropdown">
+                                                        <el-dropdown-item>
+                                                            <router-link :to="{path:'/research/mac2020'}">{{$t('layoutNav.researchChild.mac2020')}}</router-link>
+                                                        </el-dropdown-item>
+                                                         <el-dropdown-item>
+                                                            <router-link :to="{path:'/research/mac2020'}">人力资源</router-link>
+                                                        </el-dropdown-item>
+                                                    </el-dropdown-menu>
+                                                </el-dropdown>
+                                            </li>
                                         </ul>
                                     </div><!-- /.navbar-collapse -->
                                 </div><!-- /.container-fluid -->
