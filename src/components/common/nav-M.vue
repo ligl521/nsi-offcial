@@ -31,11 +31,17 @@
                         <router-link tag="i" :to="{path:'/vip'}">{{$t('layoutNav.vip')}}</router-link>
                     </div>
                     <div class="swiper-slide navSlide">
-                        <a href="http://data.xinxueshuo.cn" target="_blank">{{$t('layoutFooter.databaseM')}}</a>
+                        <a href="http://www.xinxueshuo.cn/data/dist/index.html" target="_blank">{{$t('layoutFooter.databaseM')}}</a>
                     </div>
                     <div class="swiper-slide navSlide">
                         <a href="https://data.xinxueshuo.cn/nsi-class/index.html" target="_blank">{{$t('layoutFooter.classOnline')}}</a>
                     </div>
+                    <!-- <div class="swiper-slide navSlide">
+                        <router-link :to="{path:'/research/mac2020'}" >{{$t('layoutNav.researchChild.mac2020')}}</router-link>
+                    </div>
+                    <div class="swiper-slide navSlide">
+                        <router-link :to="{path:'/research/humanResources'}">{{$t('layoutNav.researchChild.humanResources')}}</router-link>
+                    </div> -->
                 </div>
             </div>
         </div>
@@ -54,9 +60,12 @@
                     <router-link :to="{path:'/consulting'}" tag="li" @click.native="hidePanel(6)">{{$t('layoutNav.consult')}}</router-link>
                     <router-link :to="{path:'/ges'}" tag="li" @click.native="hidePanel(7)">{{$t('layoutNav.ges')}}</router-link>
                     <router-link :to="{path:'/vip'}" tag="li" @click.native="hidePanel(8)">{{$t('layoutNav.vip')}}</router-link>
-                    <li><a style="color:#6e6e6e" href="http://data.xinxueshuo.cn" target="_blank">{{$t('layoutFooter.databaseM')}}</a></li>
-                    <li><a style="color:#6e6e6e" href="https://data.xinxueshuo.cn/nsi-class/index.html" target="_blank">{{$t('layoutFooter.classOnline')}}</a></li>
-                </ul>
+                    <li><a style="color:#6e6e6e" href="https://www.xinxueshuo.cn/data/dist/index.html#/" target="_blank">{{$t('layoutFooter.databaseM')}}</a></li>
+                    <router-link :to="{path:'/event/skyclass'}" tag="li" @click.native="hidePanel(8)">{{$t('layoutFooter.classOnline')}}</router-link>
+                    <!-- <li><a style="color:#6e6e6e" href="https://data.xinxueshuo.cn/nsi-class/index.html" target="_blank">{{$t('layoutFooter.classOnline')}}</a></li> -->
+                    <!-- <router-link :to="{path:'/research/mac2020'}" tag="li" @click.native="hidePanel(9)">{{$t('layoutNav.researchChild.mac2020')}}</!-->
+                    <!-- <router-link :to="{path:'/research/humanResources'}" tag="li" @click.native="hidePanel(9)">{{$t('layoutNav.researchChild.humanResources')}}</!-->
+               </ul>
             </div>
         </transition>
     </div>

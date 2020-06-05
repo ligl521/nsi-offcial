@@ -81,6 +81,7 @@ module.exports = {
             apply: "课程报名",
             experts: "专家智库",
             mac2020: "市场招生课",
+            humanResources:"人力资源课"
         },
         researchChild_Mob: {
             magazine: "国际学校内参",

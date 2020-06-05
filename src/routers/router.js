@@ -40,6 +40,7 @@ import researchApply from '../components/research/researchApply.vue'
 import researchIndex from '../components/research/researchIndex.vue'
 import experts from '../components/research/experts.vue'
 import mac2020 from '../components/research/mac2020.vue'
+import humanResources from '../components/research/humanResources.vue'
 import classCatalog from '../components/research/classCatalog.vue'
 
 
@@ -193,6 +194,9 @@ const routes = [{
             }, {
                 path: 'mac2020',
                 component:mac2020
+            },{
+                path: 'humanResources',
+                component:humanResources
             },{
                 path: 'classCatalog',
                 component:classCatalog

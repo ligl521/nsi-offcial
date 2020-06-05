@@ -10,12 +10,12 @@ export default {
 }
 </script>
 
-<style>
+<style scoped lang="scss">
  .oneImg{
      width:100%;
      height:100%;
- }
- .mt50 {
-    margin-top: 0px;
+     @media (max-width:768px) {
+         margin-bottom:155px;
+    }
  }
 </style>
