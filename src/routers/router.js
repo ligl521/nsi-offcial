@@ -41,6 +41,7 @@ import researchIndex from '../components/research/researchIndex.vue'
 import experts from '../components/research/experts.vue'
 import mac2020 from '../components/research/mac2020.vue'
 import humanResources from '../components/research/humanResources.vue'
+import miniMBA from '../components/research/miniMBA.vue'
 import classCatalog from '../components/research/classCatalog.vue'
 
 
@@ -197,6 +198,9 @@ const routes = [{
             },{
                 path: 'humanResources',
                 component:humanResources
+            },{
+                path: 'miniMBA',
+                component:miniMBA
             },{
                 path: 'classCatalog',
                 component:classCatalog

@@ -1,0 +1,722 @@
+<template>
+    <div>
+        <div class="banner"></div>
+        <div class="descMBA">
+           <p>面向国际学校校长及高级管理者，全面讲解国际学校运营关键板块，结合授课与访校，<br> 理论讲解与案例分析，使学员对国际学校的理解更加通透，管理更加自如。</p>
+        </div>
+        <div class="miniMBA">
+            <div class="IPAname">
+                <p>新学说2020年IPA Mini-MBA校长专业发展项目</p>
+            </div>
+            <img src="../../images/miniMBA/01.png" alt="">
+        </div>
+        <div class="courseList">
+            <div class="title">
+                <p>新学说2020年IPA Mini-MBA校长专业发展项目</p>
+                <p>课程列表</p>
+            </div>
+            <div class="courseContent">
+                <div class="firstCourse">
+                    <div class="titleName">
+                        <p class="name">开营线下培训课（必修课）</p>
+                        <p class="hrline"></p>
+                    </div>
+                    <div class="listOne">
+                        <div class="contentOne">
+                            <h3>校长俱乐部年会</h3>
+                            <p>2020中国国际学校校长俱乐部年会第一天</p>
+                            <p>2020中国国际学校校长俱乐部年会第二天</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="secondCourse">
+                    <div class="titleName">
+                        <p class="name">线上培训36讲（必修课）</p>
+                        <p class="hrline"></p>
+                    </div>
+                    <div class="listTwo">
+                        <div class="contentTwo">
+                            <h3>政策法规</h3>
+                            <p>民办国际化学校行业全面政策法规解读（民促法、公民统招摇号等）- 范桂杰</p>
+                            <p>民办国际化学校行业法务实操经验分享（公司及学校设立、合规性设计）- 范桂杰</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="thirdCourse">
+                    <div class="listThree">
+                        <div class="contentThree">
+                            <h3>战略与运营管理</h3>
+                            <p>如何从零到一进行新建校战略定位与执行(上/下篇）- 陈泽芳</p>
+                            <p>集团化办学如何制定战略定位与执行（上/下篇）- 李远</p>
+                            <p>国内外学校品牌合作办学全攻略(上/下篇）- 杨飞</p>
+                            <p>国际化学校品牌战略定位与建设方法论（上/下篇）- 许凌可</p>
+                            <p>集团化招生和品牌管理的方法论经验分享（上/下篇）- 吴峥</p>
+                            <p>政府关系如何助力学校运营管理提升（上/下篇）- 赵新</p>
+                            <p>如何全面保障学校校园安全（上/下篇）- 徐未华</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="fourCourse">
+                    <div class="listFour">
+                        <div class="contentFour">
+                            <h3>组织与人才管理</h3>
+                            <p>集团化办学如何进行组织架构设计与管控 - 卢慧文</p>
+                            <p>集团化办学如何构建业务流程标准化 - 卢慧文</p>
+                            <p>集团化办学如何进行组织变革管理（上篇）(上/下篇）- 杨飞</p>
+                            <p>集团化办学如何打造高效能人才梯队（上/下篇）- 任鸿鸽</p>
+                            <p>校长如何进行中外方团队跨文化高效协作（上/下篇）- 周宪明</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="fiveCourse">
+                    <div class="listFive">
+                        <div class="contentFive">
+                            <h3>学术管理</h3>
+                            <p>如何通过IB课程认证提升学校学术质量保障(上/下篇）- 沈建军</p>
+                            <p>如何通过学校管理认证提升学校学术质量保障（上/下篇）- 徐涛</p>
+                            <p>如何从零到一设计双语融合课程(上/下篇）- 崔建设</p>
+                            <p>如何设计符合中外方教师队伍的考核制度与流程 - 卓金香</p>
+                            <p>如何高效构建国际化学校的教师专业发展体系 - 神秘嘉宾</p>
+                            <p>教育科技工具如何赋能教务与教学管理（上/下篇）- 神秘嘉宾</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="sixCourse">
+                    <div class="listSix">
+                        <div class="contentSix">
+                            <h3>财务管理</h3>
+                            <p>投资新建校你需要的一门财务实践课 - 杨飞</p>
+                            <p>如何通过财务报表分析提升学校运营效率 - 杨飞</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="teacherList">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-3 col-xs-6 teacherBox" v-for="(item,index) in teacherList" :key="index">
+                            <img :src="item.photo" alt="">
+                            <p>{{item.name}}</p>
+                            <p v-html="item.title"></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="chooseCourse">
+                <div class="titleName">
+                    <p class="name">两周线下访校研学与教研（选修课）</p>
+                    <p class="hrline"></p>
+                </div>
+            </div>
+        </div>
+        <div class="deepUnderstand">
+            <p class="text-center chinese-title">
+                <span class="lecturerLine"></span>
+                深入了解校长专业发展项目
+                <span class="lecturerLine"></span>
+            </p>  
+        </div>
+        <div class="courseArrangement">
+            <div class="scan">
+                <div class="leftContent">
+                    <img src="http://nsi-official.oss-cn-zhangjiakou.aliyuncs.com/images/市场招生课/scan.png" alt="">
+                    <p>扫码添加助教微信</p>
+                </div>
+                <div class="rightContent">
+                    <div class="contentBox">
+                        <div class="content">
+                            <span class="titleLine"></span>
+                            <span class="title">报名流程</span>
+                            <p class="desc">填写报名表 → 线上面试 → 接收录取通知书 → 成功缴费 → 报名完成</p>
+                        </div>
+                        <div class="content">
+                            <span class="titleLine"></span>
+                            <span class="title">联系方式</span>
+                            <p class="desc">如有任何疑问，请联系助教小新电话：15010927730，或添加微信</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="scan-com">
+                <div class="topContent">
+                    <img src="http://nsi-official.oss-cn-zhangjiakou.aliyuncs.com/images/市场招生课/scan.png" alt="">
+                    <p>扫码添加助教微信</p>
+                </div>
+                <div class="bottomContent">
+                    <div class="contentBox">
+                        <div class="content">
+                            <span class="titleLine"></span>
+                            <span class="title">报名流程</span>
+                            <p class="desc">填写报名表 → 线上面试 → 接收录取通知书 → 成功缴费 → 报名完成</p>
+                        </div>
+                        <div class="content">
+                            <span class="titleLine"></span>
+                            <span class="title">联系方式</span>
+                            <p class="desc">如有任何疑问，请联系助教小新电话：15010927730，或添加微信</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</template>
+<script>
+import wxShareInit from '../../assets/js/weChatShare01'
+export default {
+    data() {
+      return {
+          centerDialogVisible: false,
+          wxShareInfo: {
+            title: "新学说 | 市场招生科学运营培训课",
+            imgUrl:"https://data.xinxueshuo.cn/upImage/upInstitutionImg/100062/100062-logo.jpg",
+            href: window.location.href,
+            desc:"市场招生科学运营培训课，2020年国际化学校市场招生科学运营培训课。"
+          },
+          teacherList:[
+              {
+                photo:require("../../images/miniMBA/头像/范桂杰.png"),
+                name:"范桂杰",
+                title:"北京市京师（大连）<br/>律师事务所合伙人"
+              },
+              {
+                photo:require("../../images/miniMBA/头像/陈泽芳.png"),
+                name:"陈泽芳",
+                title:"前华南师大附属外国语学校<br/>总校长"
+              },
+              {
+                photo:require("../../images/miniMBA/头像/李远.png"),
+                name:"李远",
+                title:"雅力教育集团副总裁<br/>兼阿德科特总校长"
+              },
+              {
+                photo:require("../../images/miniMBA/头像/杨飞.png"),
+                name:"杨飞",
+                title:"新学说联合发起人"
+              },
+              {
+                photo:require("../../images/miniMBA/头像/许凌可.png"),
+                name:"许凌可",
+                title:"重庆德普外国语学校<br/>副校长"
+              },
+              {
+                photo:require("../../images/miniMBA/头像/吴峥.png"),
+                name:"吴峥",
+                title:"建业教育集团副总裁"
+              },
+              {
+                photo:require("../../images/miniMBA/头像/赵新.png"),
+                name:"赵新",
+                title:"北京哈罗英国学校助理校长兼<br/>哈罗亚洲管理集团公共事务总监"
+              },
+              {
+                photo:require("../../images/miniMBA/头像/徐未华.png"),
+                name:"徐未华",
+                title:"宁波赫威斯肯特学校校长"
+              },
+              {
+                photo:require("../../images/miniMBA/头像/卢惠文.png"),
+                name:"卢惠文",
+                title:"上海协和教育集团<br/>总校长"
+              },
+              {
+                photo:require("../../images/miniMBA/头像/王金英.png"),
+                name:"王金英",
+                title:"海南枫叶教育大区<br/>首席执行官兼总校长"
+              },
+              {
+                photo:require("../../images/miniMBA/头像/周宪明.png"),
+                name:"周宪明",
+                title:"北京市中芯学校执行校董"
+              },
+              {
+                photo:require("../../images/miniMBA/头像/沈建军.png"),
+                name:"沈建军",
+                title:"长沙康礼克雷格学校总校长"
+              },
+              {
+                photo:require("../../images/miniMBA/头像/徐涛.png"),
+                name:"徐涛",
+                title:"北京市朝阳凯文学校<br/>执行校长"
+              },
+              {
+                photo:require("../../images/miniMBA/头像/崔建设.png"),
+                name:"崔建设",
+                title:"中黄国际教育集团总校长"
+              },
+              {
+                photo:require("../../images/miniMBA/头像/卓金香.png"),
+                name:"卓金香",
+                title:"前绍兴博雅总校长"
+              },
+              {
+                photo:require("../../images/miniMBA/头像/林敏.png"),
+                name:"林敏",
+                title:"上海西外外国语学校<br/>创办人兼总校长"
+              },
+          ]
+      };
+    },
+    methods: {
+      enterCourse(){
+          this.$router.push({path:"./classCatalog"})
+      },
+      
+    },
+    beforeMount(){
+         // 微信分享
+        if(wxShareInit.isWeixinBrowser()){
+            setTimeout(wxShareInit.wxReady(this.wxShareInfo),500)
+        }
+    }
+
+}
+</script>
+<style lang="scss" scoped>
+.banner{
+    height: 430px;
+    background-image: url("../../images/miniMBA/banner/banner.jpg");
+    background-position: center center;
+    background-size: cover;
+    position: relative;
+    @media (max-width:768px) {
+        height: 180px;
+    }
+}
+.miniMBA{
+    width:70%;
+    margin:0 auto;
+    text-align: center;
+    .IPAname{
+        width: 70%;
+        margin: 0 auto;
+        p{
+            background: #e6bc58;
+            font-size: 35px;
+            font-weight: bold;
+            padding: 10px;
+            border-radius: 10px;
+        }
+    }
+    img{
+        width:70%; 
+        margin:50px 0;   
+    }
+}
+.descMBA{
+    width:70%;
+    margin:40px auto;
+    text-align: center;
+    letter-spacing: 1px;
+    p{
+        font-size: 22px;
+    }
+}
+.courseList{
+    background:#223f61;
+    padding-bottom:100px;
+    .title{
+        color: #fff;
+        font-size: 24px;
+        padding: 60px 0;
+        font-weight: bold;
+        letter-spacing: 1px;
+        text-align: center;
+    }
+    .courseContent{
+        width:70%;
+        margin:0 auto 50px;
+        .firstCourse{
+            .titleName{
+                width:25%;
+                text-align: center;
+                .name{
+                    background: #e6bc58;
+                    font-weight: bold;
+                    padding: 10px;
+                    font-size: 22px;
+                }
+                .hrline{
+                    border-bottom: 3px solid #e6bc58;
+                    width:93%;
+                    margin: -6px 0 0 20px;
+                }
+            }
+             .listOne{
+                background-image: url("../../images/miniMBA/课程表/1.png");
+                background-position: right;
+                background-color: #fff;
+                background-repeat: no-repeat;
+                width: 90%;
+                margin: 20px auto;
+                height: 228px;
+                color: #656565;
+                .contentOne{
+                    float:left;
+                    h3{
+                        padding: 25px 40px;
+                        font-size: 28px;
+                        font-weight: bold;
+                    }
+                    p{
+                        font-size: 24px;
+                        padding:0px 50px;
+                    }
+                }
+                img{
+                    float:right;
+                }
+            }
+        }
+         .secondCourse{
+            .titleName{
+                width:25%;
+                text-align: center;
+                margin-top:50px;
+                .name{
+                    background: #e6bc58;
+                    font-weight: bold;
+                    padding: 10px;
+                    font-size: 22px;
+                }
+                .hrline{
+                    border-bottom: 3px solid #e6bc58;
+                    width:93%;
+                    margin: -6px 0 0 20px;
+                }
+            }
+             .listTwo{
+                background-image: url("../../images/miniMBA/课程表/5.png");
+                background-position: right;
+                background-color: #fff;
+                background-repeat: no-repeat;
+                width: 90%;
+                margin: 20px auto;
+                height: 228px;
+                color: #656565;
+                .contentTwo{
+                    float:left;
+                    h3{
+                        padding: 25px 40px;
+                        font-size: 28px;
+                        font-weight: bold;
+                    }
+                    p{
+                        font-size: 24px;
+                        padding:0px 50px;
+                    }
+                }
+            }
+        }
+        .thirdCourse{
+             .listThree{
+                background-image: url("../../images/miniMBA/课程表/6.png");
+                background-position: right;
+                background-color: #fff;
+                background-repeat: no-repeat;
+                width: 90%;
+                margin: 20px auto;
+                height: 470px;
+                color: #656565;
+                .contentThree{
+                    float:left;
+                    h3{
+                        padding: 25px 40px;
+                        font-size: 28px;
+                        font-weight: bold;
+                    }
+                    p{
+                        font-size: 24px;
+                        padding:0px 50px;
+                    }
+                }
+            }
+        }
+        .fourCourse{
+             .listFour{
+                background-image: url("../../images/miniMBA/课程表/2.png");
+                background-position: right;
+                background-color: #fff;
+                background-repeat: no-repeat;
+                width: 90%;
+                margin: 20px auto;
+                height: 378px;
+                color: #656565;
+                .contentFour{
+                    float:left;
+                    h3{
+                        padding: 25px 40px;
+                        font-size: 28px;
+                        font-weight: bold;
+                    }
+                    p{
+                        font-size: 24px;
+                        padding:0px 50px;
+                    }
+                }
+            }
+        }
+        .fiveCourse{
+             .listFive{
+                background-image: url("../../images/miniMBA/课程表/3.png");
+                background-position: right;
+                background-color: #fff;
+                background-repeat: no-repeat;
+                width: 90%;
+                margin: 20px auto;
+                height: 426px;
+                color: #656565;
+                .contentFive{
+                    float:left;
+                    h3{
+                        padding: 25px 40px;
+                        font-size: 28px;
+                        font-weight: bold;
+                    }
+                    p{
+                        font-size: 24px;
+                        padding:0px 50px;
+                    }
+                }
+            }
+        }
+        .sixCourse{
+             .listSix{
+                background-image: url("../../images/miniMBA/课程表/4.png");
+                background-position: right;
+                background-color: #fff;
+                background-repeat: no-repeat;
+                width: 90%;
+                margin: 20px auto;
+                height: 228px;
+                color: #656565;
+                .contentSix{
+                    float:left;
+                    h3{
+                        padding: 25px 40px;
+                        font-size: 28px;
+                        font-weight: bold;
+                    }
+                    p{
+                        font-size: 24px;
+                        padding:0px 50px;
+                    }
+                }
+            }
+        }
+    }
+    .teacherList{
+        .teacherBox{
+            text-align: center;
+            color: #fff;
+            margin:20px 0;
+            img{
+                width:120px;
+            }
+            p{
+                &:first-of-type{
+                    font-size: 22px;
+                    margin: 10px 0;
+                    letter-spacing: 4px;
+                    font-weight: bold;
+                }
+                &:last-of-type{
+                    font-size: 18px;
+                    letter-spacing: 2px;
+                    min-height: 60px;
+                    max-height: 60px;
+                }
+            }
+        }
+    }
+    .chooseCourse{
+        width:60%;
+        margin:20px auto;
+        .titleName{
+            text-align:center;
+            .name{
+                background: #e6bc58;
+                padding: 10px;
+                font-size: 30px;
+                letter-spacing: 2px;
+            }
+            .hrline{
+                border-bottom: 3px solid #e6bc58;
+                width:98%;
+                margin: -6px 0 0 20px;
+            }
+        }
+    }
+   
+    
+}
+.deepUnderstand{
+    width:60%;
+    margin:50px auto;
+    p{
+        font-size: 30px;
+        .lecturerLine{
+            display: inline-block;
+            vertical-align: middle;
+            width:150px;
+            margin:0 5px;
+            border:2px solid rgba(112,112,112,1);
+            opacity:1;
+        }
+    }
+}
+.courseArrangement{
+    padding-bottom:110px;
+    @media (max-width: 768px) {
+        padding-bottom:20px;
+    }  
+    .scan{
+        width:60%;
+        height:260px;
+        margin:0 auto;
+        box-shadow: 0px 8px 25px 6px #ccc;
+        @media (max-width: 768px) {
+            display:none;
+        }
+        .leftContent{
+            width:25%;
+            height:260px;
+            float:left;
+            background:#fff;
+            text-align:center;
+            border-radius: 8px 0 0 8px;
+             @media (max-width: 768px) {
+                height:180px;
+                width:40%;
+            }
+            img{
+                margin: 20px 0 0px;
+                height: 190px;
+                @media (max-width: 768px) {
+                    height:140px;
+                }
+            }
+            p{
+                border:1px solid rgba(102,102,102,1);
+                border-radius:8px;
+                width: 150px;
+                height: 30px;
+                line-height: 30px;
+                margin: 0 auto;
+                font-size:12px;
+                @media (max-width: 768px) {
+                    width: 112px;
+                    height: 24px;
+                    line-height: 24px;
+                    font-size:12px;
+                }
+            }
+        }
+        .rightContent{
+            width:75%;
+            height:260px;
+            float:right;
+            background:#133E79;
+            color:#fff;
+            border-radius: 0 8px 8px 0;
+            @media (max-width: 768px) {
+                height:180px;
+                width:60%;
+            }
+            .contentBox{
+                padding-left: 35px;
+                position: relative;
+                top: 50%;
+                transform: translateY(-50%);
+                @media (max-width: 768px) {
+                    padding:5px;
+                }
+                .content{
+                    margin-bottom:30px;
+                    .titleLine{
+                        width: 3px;
+                        height: 16px;
+                        background: white;
+                        opacity: 1;
+                        display: inline-block;
+                        position:relative;
+                        top:2px;
+                        @media (max-width: 768px) {
+                            height:12px;
+                        }
+                    }
+                    .title{
+                        font-size:18px;
+                        font-weight:600;
+                        @media (max-width: 768px) {
+                            font-size:14px;
+                        }
+                    }
+                    .desc{
+                        font-size:16px;
+                        font-weight:400;
+                        margin-left:7px;
+                        margin-top:3px;
+                        @media (max-width: 768px) {
+                            font-size:12px;
+                            margin-bottom:0;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .scan-com{
+        display:none;
+        width:100%;
+        @media (max-width: 768px) {
+            display:block;
+        }
+        .topContent{
+            text-align: center;
+            padding-top:20px;
+            img{
+                width:50%;
+                margin:0 auto;
+            }
+            p{
+                border: 1px solid #666666;
+                border-radius: 8px;
+                width: 166px;
+                height: 34px;
+                line-height: 34px;
+                margin: 10px auto;
+                font-size: 16px;
+            }
+        }
+        .bottomContent{
+            background:#133E79;
+            color:#fff;
+            margin-top:20px; 
+            .contentBox{
+                padding:15px;
+                .content{
+                    .titleLine{
+                        width: 3px;
+                        height: 15px;
+                        background: white;
+                        opacity: 1;
+                        display: inline-block;
+                        position:relative;
+                        top:1px;
+                    }
+                    .title{
+                        font-size:16px;
+                        font-weight:600;
+                    }
+                    .desc{
+                        font-size:14px;
+                        font-weight:400;
+                        margin:3px 0 5px 7px;
+                    }
+                }
+            }
+        }
+    }
+}
+</style>

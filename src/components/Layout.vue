@@ -161,8 +161,11 @@
                                                         <el-dropdown-item>
                                                             <router-link :to="{path:'/research/mac2020'}">{{$t('layoutNav.researchChild.mac2020')}}</router-link>
                                                         </el-dropdown-item>
-                                                         <el-dropdown-item>
+                                                        <el-dropdown-item>
                                                             <router-link :to="{path:'/research/humanResources'}">{{$t('layoutNav.researchChild.humanResources')}}</router-link>
+                                                        </el-dropdown-item>
+                                                        <el-dropdown-item>
+                                                            <router-link :to="{path:'/research/miniMba'}">{{$t('layoutNav.researchChild.miniMba')}}</router-link>
                                                         </el-dropdown-item>
                                                     </el-dropdown-menu>
                                                 </el-dropdown>
