@@ -280,27 +280,41 @@ export default {
     background-size: cover;
     position: relative;
     @media (max-width:768px) {
-        height: 180px;
+        height: 120px;
     }
 }
 .miniMBA{
     width:70%;
     margin:0 auto;
     text-align: center;
+    @media (max-width:768px) {
+        width: 100%;
+        padding:0 10px;
+    }
     .IPAname{
         width: 70%;
         margin: 0 auto;
+        @media (max-width:768px) {
+            width: 100%;
+        }
         p{
             background: #e6bc58;
             font-size: 35px;
             font-weight: bold;
             padding: 10px;
             border-radius: 10px;
+            @media (max-width:768px) {
+                font-size: 24px;
+            }
         }
     }
     img{
         width:70%; 
-        margin:50px 0;   
+        margin:50px 0;  
+        @media (max-width:768px) {
+            width:100%;
+            margin:20px 0;
+        } 
     }
 }
 .descMBA{
@@ -308,13 +322,24 @@ export default {
     margin:40px auto;
     text-align: center;
     letter-spacing: 1px;
+    @media (max-width:768px) {
+        width: 100%;
+        padding:0 10px;
+        margin:20px auto;
+    }
     p{
         font-size: 22px;
+        @media (max-width:768px) {
+            font-size: 14px;
+        }
     }
 }
 .courseList{
     background:#223f61;
     padding-bottom:100px;
+    @media (max-width:768px) {
+        padding-bottom: 20px;
+    }
     .title{
         color: #fff;
         font-size: 24px;
@@ -322,19 +347,39 @@ export default {
         font-weight: bold;
         letter-spacing: 1px;
         text-align: center;
+        @media (max-width:768px) {
+            padding: 20px 0;
+        }
+        p{
+            &:first-child{
+                @media (max-width:768px) {
+                    display:none;
+                }
+            }
+        }
     }
     .courseContent{
         width:70%;
         margin:0 auto 50px;
+        @media (max-width:768px) {
+            width:100%;
+        }
         .firstCourse{
             .titleName{
                 width:25%;
                 text-align: center;
+                @media (max-width:768px) {
+                    width:70%;
+                    margin:0 auto;
+                } 
                 .name{
                     background: #e6bc58;
                     font-weight: bold;
                     padding: 10px;
                     font-size: 22px;
+                    @media (max-width:768px) {
+                        font-size: 18px;
+                    } 
                 }
                 .hrline{
                     border-bottom: 3px solid #e6bc58;
@@ -342,7 +387,7 @@ export default {
                     margin: -6px 0 0 20px;
                 }
             }
-             .listOne{
+            .listOne{
                 background-image: url("../../images/miniMBA/课程表/1.png");
                 background-position: right;
                 background-color: #fff;
@@ -351,16 +396,30 @@ export default {
                 margin: 20px auto;
                 height: 228px;
                 color: #656565;
+                @media (max-width:768px) {
+                    background-image:none;
+                    width:95%;
+                    height:135px;
+                }
                 .contentOne{
                     float:left;
                     h3{
                         padding: 25px 40px;
                         font-size: 28px;
                         font-weight: bold;
+                        @media (max-width:768px) {
+                            font-size: 18px;
+                            padding: 0px;
+                            margin: 20px 10px;
+                        }
                     }
                     p{
                         font-size: 24px;
                         padding:0px 50px;
+                        @media (max-width:768px) {
+                            font-size: 16px;
+                            padding: 0px 20px;
+                        }
                     }
                 }
                 img{
@@ -368,16 +427,23 @@ export default {
                 }
             }
         }
-         .secondCourse{
+        .secondCourse{
             .titleName{
                 width:25%;
                 text-align: center;
                 margin-top:50px;
+                @media (max-width:768px) {
+                    width:70%;
+                    margin:0 auto;
+                } 
                 .name{
                     background: #e6bc58;
                     font-weight: bold;
                     padding: 10px;
                     font-size: 22px;
+                    @media (max-width:768px) {
+                        font-size: 18px;
+                    }
                 }
                 .hrline{
                     border-bottom: 3px solid #e6bc58;
@@ -394,16 +460,30 @@ export default {
                 margin: 20px auto;
                 height: 228px;
                 color: #656565;
+                 @media (max-width:768px) {
+                    background-image:none;
+                    width:95%;
+                    height:175px;
+                }
                 .contentTwo{
                     float:left;
                     h3{
                         padding: 25px 40px;
                         font-size: 28px;
                         font-weight: bold;
+                        @media (max-width:768px) {
+                            font-size: 18px;
+                            padding: 0px;
+                            margin: 20px 10px;
+                        }
                     }
                     p{
                         font-size: 24px;
                         padding:0px 50px;
+                        @media (max-width:768px) {
+                            font-size: 16px;
+                            padding: 0px 20px;
+                        }
                     }
                 }
             }
@@ -418,16 +498,30 @@ export default {
                 margin: 20px auto;
                 height: 470px;
                 color: #656565;
+                 @media (max-width:768px) {
+                    background-image:none;
+                    width:95%;
+                    height:445px;
+                }
                 .contentThree{
                     float:left;
                     h3{
                         padding: 25px 40px;
                         font-size: 28px;
                         font-weight: bold;
+                        @media (max-width:768px) {
+                            font-size: 18px;
+                            padding: 0px;
+                            margin: 20px 10px;
+                        }
                     }
                     p{
                         font-size: 24px;
                         padding:0px 50px;
+                        @media (max-width:768px) {
+                            font-size: 16px;
+                            padding: 0px 20px;
+                        }
                     }
                 }
             }
@@ -442,16 +536,30 @@ export default {
                 margin: 20px auto;
                 height: 378px;
                 color: #656565;
+                @media (max-width:768px) {
+                    background-image:none;
+                    width:95%;
+                    height:335px;
+                }
                 .contentFour{
                     float:left;
                     h3{
                         padding: 25px 40px;
                         font-size: 28px;
                         font-weight: bold;
+                        @media (max-width:768px) {
+                            font-size: 18px;
+                            padding: 0px;
+                            margin: 20px 10px;
+                        }
                     }
                     p{
                         font-size: 24px;
                         padding:0px 50px;
+                        @media (max-width:768px) {
+                            font-size: 16px;
+                            padding: 0px 20px;
+                        }
                     }
                 }
             }
@@ -466,16 +574,30 @@ export default {
                 margin: 20px auto;
                 height: 426px;
                 color: #656565;
+                @media (max-width:768px) {
+                    background-image:none;
+                    width:95%;
+                    height:390px;
+                }
                 .contentFive{
                     float:left;
                     h3{
                         padding: 25px 40px;
                         font-size: 28px;
                         font-weight: bold;
+                        @media (max-width:768px) {
+                            font-size: 18px;
+                            padding: 0px;
+                            margin: 20px 10px;
+                        }
                     }
                     p{
                         font-size: 24px;
                         padding:0px 50px;
+                        @media (max-width:768px) {
+                            font-size: 16px;
+                            padding: 0px 20px;
+                        }
                     }
                 }
             }
@@ -490,16 +612,30 @@ export default {
                 margin: 20px auto;
                 height: 228px;
                 color: #656565;
+                @media (max-width:768px) {
+                    background-image:none;
+                    width:95%;
+                    height:150px;
+                }
                 .contentSix{
                     float:left;
                     h3{
                         padding: 25px 40px;
                         font-size: 28px;
                         font-weight: bold;
+                        @media (max-width:768px) {
+                            font-size: 18px;
+                            padding: 0px;
+                            margin: 20px 10px;
+                        }
                     }
                     p{
                         font-size: 24px;
                         padding:0px 50px;
+                        @media (max-width:768px) {
+                            font-size: 16px;
+                            padding: 0px 20px;
+                        }
                     }
                 }
             }
@@ -510,6 +646,9 @@ export default {
             text-align: center;
             color: #fff;
             margin:20px 0;
+            @media (max-width:768px) {
+                margin:10px 0;
+            }
             img{
                 width:120px;
             }
@@ -519,12 +658,20 @@ export default {
                     margin: 10px 0;
                     letter-spacing: 4px;
                     font-weight: bold;
+                    @media (max-width:768px) {
+                        font-size: 20px;
+                        letter-spacing: 2px;
+                    }
                 }
                 &:last-of-type{
                     font-size: 18px;
                     letter-spacing: 2px;
                     min-height: 60px;
                     max-height: 60px;
+                    @media (max-width:768px) {
+                        font-size: 16px;
+                        letter-spacing: 0px;
+                    }
                 }
             }
         }
@@ -532,6 +679,9 @@ export default {
     .chooseCourse{
         width:60%;
         margin:20px auto;
+        @media (max-width:768px) {
+            width:90%;
+        }
         .titleName{
             text-align:center;
             .name{
@@ -539,11 +689,19 @@ export default {
                 padding: 10px;
                 font-size: 30px;
                 letter-spacing: 2px;
+                @media (max-width:768px) {
+                    font-size:20px;
+                    letter-spacing:0;
+                    padding:10px 5px;
+                }
             }
             .hrline{
                 border-bottom: 3px solid #e6bc58;
                 width:98%;
                 margin: -6px 0 0 20px;
+                @media (max-width:768px) {
+                    width:94%;
+                }
             }
         }
     }
@@ -553,8 +711,15 @@ export default {
 .deepUnderstand{
     width:60%;
     margin:50px auto;
+    @media (max-width:768px) {
+        width:90%;
+        margin:20px auto;
+    }
     p{
         font-size: 30px;
+        @media (max-width:768px) {
+            font-size: 20px;
+        }
         .lecturerLine{
             display: inline-block;
             vertical-align: middle;
@@ -562,6 +727,9 @@ export default {
             margin:0 5px;
             border:2px solid rgba(112,112,112,1);
             opacity:1;
+            @media (max-width:768px) {
+                width: 30px;
+            }
         }
     }
 }
@@ -674,7 +842,6 @@ export default {
         }
         .topContent{
             text-align: center;
-            padding-top:20px;
             img{
                 width:50%;
                 margin:0 auto;
