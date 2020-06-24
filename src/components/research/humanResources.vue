@@ -131,63 +131,63 @@
                             <div class="lecturerBox">
                                 <img src="../../images/人力资源课/嘉宾/邱颖.jpg">
                                 <p class="lecturerName">邱颖</p>
-                                <p class="lecturerPost">北京海淀凯文学校运营总监</p>
+                                <p class="lecturerPost">北京海淀凯文学校<br>运营总监</p>
                             </div>
                         </div>
                         <div class="col-md-3 col-xs-6">
                             <div class="lecturerBox">
                                 <img src="../../images/人力资源课/嘉宾/徐涛.jpg">
                                 <p class="lecturerName">徐涛</p>
-                                <p class="lecturerPost">北京市朝阳凯文学校校长</p>
+                                <p class="lecturerPost">北京市朝阳凯文学校<br>校长</p>
                             </div>
                         </div>
                         <div class="col-md-3 col-xs-6">
                             <div class="lecturerBox">
                                 <img src="../../images/人力资源课/嘉宾/金赟.jpg">
                                 <p class="lecturerName">金赟</p>
-                                <p class="lecturerPost">新加坡伊顿国际教育集团<br>中国区人事行政总监</p>
+                                <p class="lecturerPost">新加坡伊顿国际教育<br>中国区人事行政总监</p>
                             </div>
                         </div>
                         <div class="col-md-3 col-xs-6">
                             <div class="lecturerBox">
                                 <img src="../../images/人力资源课/嘉宾/王常泰.jpg">
                                 <p class="lecturerName">王常泰</p>
-                                <p class="lecturerPost">雅力教育集团人力总经理</p>
+                                <p class="lecturerPost">雅力教育集团<br>人力总经理</p>
                             </div>
                         </div>
                         <div class="col-md-3 col-xs-6">
                             <div class="lecturerBox">
                                 <img src="../../images/人力资源课/嘉宾/吴真真.jpg">
                                 <p class="lecturerName">吴真真</p>
-                                <p class="lecturerPost">长沙玮希国际学校执行校长</p>
+                                <p class="lecturerPost">长沙玮希国际学校<br>执行校长</p>
                             </div>
                         </div>
                          <div class="col-md-3 col-xs-6">
                             <div class="lecturerBox">
                                 <img src="../../images/人力资源课/嘉宾/高美华.jpg">
                                 <p class="lecturerName">高美华</p>
-                                <p class="lecturerPost">前重庆耀中国际学校<br>人力资源补负责人</p>
+                                <p class="lecturerPost">前重庆耀中国际学校<br>人力资源部负责人</p>
                             </div>
                         </div>
                         <div class="col-md-3 col-xs-6">
                             <div class="lecturerBox">
                                 <img src="../../images/人力资源课/嘉宾/刘慧.jpg">
                                 <p class="lecturerName">刘慧</p>
-                                <p class="lecturerPost">成都成实外教育国际部<br>人力资源经理</p>
+                                <p class="lecturerPost">成都成实外教育国际部人力资源经理</p>
                             </div>
                         </div>
                         <div class="col-md-3 col-xs-6">
                             <div class="lecturerBox">
                                 <img src="../../images/人力资源课/嘉宾/陈亮.jpg">
                                 <p class="lecturerName">陈亮</p>
-                                <p class="lecturerPost">北京市京师律师事务所律师</p>
+                                <p class="lecturerPost">北京市京师律师事务所<br>律师</p>
                             </div>
                         </div>
                          <div class="col-md-3 col-xs-6">
                             <div class="lecturerBox">
                                 <img src="../../images/人力资源课/嘉宾/周宪明.jpg">
                                 <p class="lecturerName">周宪明</p>
-                                <p class="lecturerPost">北京中芯国际学校执行董事</p>
+                                <p class="lecturerPost">北京中芯国际学校<br>执行董事</p>
                             </div>
                         </div>
                         
@@ -579,7 +579,7 @@ export default {
     }  
     .aboutLecturer{
         .containerBox{
-            width:60%;
+            width:65%;
             @media (max-width: 768px) {
                 width:100%;
             }

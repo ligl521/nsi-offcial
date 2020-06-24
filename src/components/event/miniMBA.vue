@@ -168,10 +168,10 @@ export default {
       return {
           centerDialogVisible: false,
           wxShareInfo: {
-            title: "新学说 | 市场招生科学运营培训课",
+            title: "新学说 | 新学说2020年IPA Mini-MBA校长专业发展项目",
             imgUrl:"https://data.xinxueshuo.cn/upImage/upInstitutionImg/100062/100062-logo.jpg",
             href: window.location.href,
-            desc:"市场招生科学运营培训课，2020年国际化学校市场招生科学运营培训课。"
+            desc:"面向国际学校校长及高级管理者，全面讲解国际学校运营关键板块，使学员对国际学校的理解更加通透，管理更加自如。"
           },
           teacherList:[
               {
@@ -258,9 +258,9 @@ export default {
       };
     },
     methods: {
-      enterCourse(){
-          this.$router.push({path:"./classCatalog"})
-      },
+    //   enterCourse(){
+    //       this.$router.push({path:"./classCatalog"})
+    //   },
       
     },
     beforeMount(){
@@ -292,7 +292,7 @@ export default {
         padding:0 10px;
     }
     .IPAname{
-        width: 70%;
+        width: 800px;
         margin: 0 auto;
         @media (max-width:768px) {
             width: 100%;
@@ -366,7 +366,7 @@ export default {
         }
         .firstCourse{
             .titleName{
-                width:25%;
+                width:300px;
                 text-align: center;
                 @media (max-width:768px) {
                     width:70%;
@@ -429,7 +429,7 @@ export default {
         }
         .secondCourse{
             .titleName{
-                width:25%;
+                width:300px;
                 text-align: center;
                 margin-top:50px;
                 @media (max-width:768px) {
@@ -677,7 +677,7 @@ export default {
         }
     }
     .chooseCourse{
-        width:60%;
+        width:800px;
         margin:20px auto;
         @media (max-width:768px) {
             width:90%;
@@ -814,14 +814,14 @@ export default {
                         }
                     }
                     .title{
-                        font-size:18px;
+                        font-size:20px;
                         font-weight:600;
                         @media (max-width: 768px) {
                             font-size:14px;
                         }
                     }
                     .desc{
-                        font-size:16px;
+                        font-size:18px;
                         font-weight:400;
                         margin-left:7px;
                         margin-top:3px;

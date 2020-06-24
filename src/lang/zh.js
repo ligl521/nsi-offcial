@@ -17,6 +17,7 @@ module.exports = {
             videoList:'活动直播回放',
             fit:'FIT国际教师风采大赛',
             skyClass:'空中课堂',
+            miniMba:"校长专业发展项目"
         },
         // lotusContent: {
         //     lotusIntroTitle: '为什么创办新荷国际学校',
@@ -82,7 +83,6 @@ module.exports = {
             experts: "专家智库",
             mac2020: "市场招生课",
             humanResources:"人力资源课",
-            miniMba:"MINI-MBA"
         },
         researchChild_Mob: {
             magazine: "国际学校内参",

@@ -29,6 +29,8 @@ import videoList from '../components/event/videoList.vue'
 import video from '../components/event/video.vue'
 import fit from '../components/event/fit.vue'
 import skyClass from '../components/event/skyClass'
+import miniMBA from '../components/event/miniMBA'
+
 
 import periodical from '../components/research/periodical.vue'
 import report from '../components/research/report.vue'
@@ -41,7 +43,6 @@ import researchIndex from '../components/research/researchIndex.vue'
 import experts from '../components/research/experts.vue'
 import mac2020 from '../components/research/mac2020.vue'
 import humanResources from '../components/research/humanResources.vue'
-import miniMBA from '../components/research/miniMBA.vue'
 import classCatalog from '../components/research/classCatalog.vue'
 
 
@@ -120,6 +121,9 @@ const routes = [{
             }, {
                 path: 'lotus',
                 component: eventLotus
+            },{
+                path: 'miniMBA',
+                component:miniMBA
             }, {
                 path: 'apply',
                 component: eventApply
@@ -198,9 +202,6 @@ const routes = [{
             },{
                 path: 'humanResources',
                 component:humanResources
-            },{
-                path: 'miniMBA',
-                component:miniMBA
             },{
                 path: 'classCatalog',
                 component:classCatalog

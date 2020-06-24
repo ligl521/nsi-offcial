@@ -90,6 +90,7 @@
                                                         <el-dropdown-item>
                                                             <router-link :to="{path:'/event/subject'}">&nbsp;<span class="iconfont icon-zhuanti logoFont"></span>{{$t('layoutNav.eventChild.subject')}}</router-link>
                                                         </el-dropdown-item>
+                                                        
                                                         <!-- <el-dropdown-item>
                                                             <router-link :to="{path:'/event/skyClass'}">&nbsp;<span class="iconfont icon-zhuanti logoFont"></span>{{$t('layoutNav.eventChild.skyClass')}}</router-link>
                                                         </el-dropdown-item> -->
@@ -111,6 +112,9 @@
                                                         <router-link :to="{path:'/research'}" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">{{$t('layoutNav.research')}}<span class="caret"></span></router-link>
                                                     </span>
                                                     <el-dropdown-menu slot="dropdown">
+                                                        <el-dropdown-item>
+                                                            <router-link :to="{path:'/event/miniMba'}">{{$t('layoutNav.eventChild.miniMba')}}</router-link>
+                                                        </el-dropdown-item>
                                                         <el-dropdown-item>
                                                             <router-link :to="{path:'/research/ipa'}">{{$t('layoutNav.researchChild.ipa')}}</router-link>
                                                         </el-dropdown-item>
@@ -159,13 +163,13 @@
                                                     <!-- </span> -->
                                                     <el-dropdown-menu slot="dropdown">
                                                         <el-dropdown-item>
+                                                            <router-link :to="{path:'/event/miniMba'}">{{$t('layoutNav.eventChild.miniMba')}}</router-link>
+                                                        </el-dropdown-item>
+                                                        <el-dropdown-item>
                                                             <router-link :to="{path:'/research/mac2020'}">{{$t('layoutNav.researchChild.mac2020')}}</router-link>
                                                         </el-dropdown-item>
                                                         <el-dropdown-item>
                                                             <router-link :to="{path:'/research/humanResources'}">{{$t('layoutNav.researchChild.humanResources')}}</router-link>
-                                                        </el-dropdown-item>
-                                                        <el-dropdown-item>
-                                                            <router-link :to="{path:'/research/miniMba'}">{{$t('layoutNav.researchChild.miniMba')}}</router-link>
                                                         </el-dropdown-item>
                                                     </el-dropdown-menu>
                                                 </el-dropdown>
