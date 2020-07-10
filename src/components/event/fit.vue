@@ -24,7 +24,7 @@
                     <div class="row">
                         <div class="col-md-8 col-xs-12">
                             <div class="picFrame">
-                                <img src="https://nsi.oss-cn-zhangjiakou.aliyuncs.com/nsi-event/FIT2019/shenjun.jpg" alt="">
+                                <img src="https://nsi.oss-cn-zhangjiakou.aliyuncs.com/nsi-event/FIT2019/zhaoyangyang.jpg" alt="">
                                 <span class="iconfont icon-bofang toPlay" @click="toPlay" data-toggle="modal" data-target="#myModal01"></span>
                             </div>
                             <!-- Modal -->
@@ -33,7 +33,7 @@
                                     <div class="modal-content">
                                         <div class="modal-header">
                                             <button type="button" @click="close" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-                                            <h4 class="modal-title" id="myModalLabel01">邀请你看《FIT大赛，1号沈君》</h4>
+                                            <h4 class="modal-title" id="myModalLabel01">邀请你看《FIT大赛，赵扬扬》</h4>
                                         </div>
                                         <div class="modal-body">
                                             <iframe frameborder="0" src="" allowFullScreen="true"></iframe>
@@ -49,34 +49,34 @@
                             <div class="rightContent">
                                 <div class="row" @click="openVideo1">
                                     <div class="col-md-4 col-xs-4">
-                                        <img src="https://nsi.oss-cn-zhangjiakou.aliyuncs.com/nsi-event/FIT2019/liangqian.jpg" alt="">
+                                        <img src="https://nsi.oss-cn-zhangjiakou.aliyuncs.com/nsi-event/FIT2019/chenqiuling.jpg" alt="">
                                     </div>
                                     <div class="col-md-8 col-xs-8">
-                                        <span>王鹏—君诚国际学校,荣获第一届FIT国际教师风采大赛精英教师奖称号。学为人师，行为世范。</span> 
+                                        <span>陈秋玲-广东碧桂园学校,荣获第一届FIT国际教师风采大赛明星教师奖称号。国际教育圈子是透明的，希望有更多的命题报道和关注。</span> 
                                     </div>
                                 </div>
                                 <div class="row" @click="openVideo2">
                                     <div class="col-md-4 col-xs-4">
-                                        <img src="https://nsi.oss-cn-zhangjiakou.aliyuncs.com/nsi-event/FIT2019/wangpeng.jpg" alt="">
+                                        <img src="https://nsi.oss-cn-zhangjiakou.aliyuncs.com/nsi-event/FIT2019/zhangqian.jpg" alt="">
                                     </div>
                                     <div class="col-md-8 col-xs-8">
-                                        <span>王鹏—君诚国际学校,荣获第一届FIT国际教师风采大赛精英教师奖称号。学为人师，行为世范。</span> 
+                                        <span>张倩—宁波鄞州赫德实验学校,荣获第一届FIT国际教师风采大赛明星教师奖称号。教好音乐学科是远远不够的，要从音乐教师转变为人师。</span> 
                                     </div>
                                 </div>
                                 <div class="row" @click="openVideo3">
                                     <div class="col-md-4 col-xs-4">
-                                        <img src="https://nsi.oss-cn-zhangjiakou.aliyuncs.com/nsi-event/FIT2019/chenqiuling.jpg" alt="">
+                                        <img src="https://nsi.oss-cn-zhangjiakou.aliyuncs.com/nsi-event/FIT2019/jiangfan.jpg" alt="">
                                     </div>
                                     <div class="col-md-8 col-xs-8">
-                                        <span>王鹏—君诚国际学校,荣获第一届FIT国际教师风采大赛精英教师奖称号。学为人师，行为世范。</span> 
+                                        <span>江帆—香港德勤教育集团,荣获第一届FIT国际教师风采大赛精英教师奖称号。成就他人同样可以实现价值。</span> 
                                     </div>
                                 </div>
                                 <div class="row" @click="openVideo4">
                                     <div class="col-md-4 col-xs-4">
-                                        <img src="https://nsi.oss-cn-zhangjiakou.aliyuncs.com/nsi-event/FIT2019/chenyuting.jpg" alt="">
+                                        <img src="https://nsi.oss-cn-zhangjiakou.aliyuncs.com/nsi-event/FIT2019/wanyi.jpg" alt="">
                                     </div>
                                     <div class="col-md-8 col-xs-8">
-                                        <span>王鹏—君诚国际学校,荣获第一届FIT国际教师风采大赛精英教师奖称号。学为人师，行为世范。</span> 
+                                        <span>万一—句容碧桂园学校,荣获第一届FIT国际教师风采大赛精英教师奖称号。有创意才能活下去，做学生还是老师都同样要找对方法。</span> 
                                     </div>
                                 </div>
                             </div>
@@ -220,45 +220,10 @@
             <div class="content">
                 <div class="container">
                     <div class="row">
-                        <div class="col-md-3 col-xs-6">
-                            <img src="https://nsi.oss-cn-zhangjiakou.aliyuncs.com/nsi-event/FIT2019/wangpeng.jpg" alt="">
-                            <p>王鹏</p>
-                            <p>君诚国际学校</p>
-                        </div>
-                        <div class="col-md-3 col-xs-6">
-                            <img src="https://nsi.oss-cn-zhangjiakou.aliyuncs.com/nsi-event/FIT2019/wangpeng.jpg" alt="">
-                            <p>王鹏</p>
-                            <p>君诚国际学校</p>
-                        </div>
-                        <div class="col-md-3 col-xs-6">
-                            <img src="https://nsi.oss-cn-zhangjiakou.aliyuncs.com/nsi-event/FIT2019/wangpeng.jpg" alt="">
-                            <p>王鹏</p>
-                            <p>君诚国际学校</p>
-                        </div>
-                        <div class="col-md-3 col-xs-6">
-                            <img src="https://nsi.oss-cn-zhangjiakou.aliyuncs.com/nsi-event/FIT2019/wangpeng.jpg" alt="">
-                            <p>王鹏</p>
-                            <p>君诚国际学校</p>
-                        </div>
-                        <div class="col-md-3 col-xs-6">
-                            <img src="https://nsi.oss-cn-zhangjiakou.aliyuncs.com/nsi-event/FIT2019/wangpeng.jpg" alt="">
-                            <p>王鹏</p>
-                            <p>君诚国际学校</p>
-                        </div>
-                        <div class="col-md-3 col-xs-6">
-                            <img src="https://nsi.oss-cn-zhangjiakou.aliyuncs.com/nsi-event/FIT2019/wangpeng.jpg" alt="">
-                            <p>王鹏</p>
-                            <p>君诚国际学校</p>
-                        </div>
-                        <div class="col-md-3 col-xs-6">
-                            <img src="https://nsi.oss-cn-zhangjiakou.aliyuncs.com/nsi-event/FIT2019/wangpeng.jpg" alt="">
-                            <p>王鹏</p>
-                            <p>君诚国际学校</p>
-                        </div>
-                        <div class="col-md-3 col-xs-6">
-                            <img src="https://nsi.oss-cn-zhangjiakou.aliyuncs.com/nsi-event/FIT2019/wangpeng.jpg" alt="">
-                            <p>王鹏</p>
-                            <p>君诚国际学校</p>
+                        <div class="col-md-4 col-xs-6" v-for="(item,index) in judgeList" :key="index">
+                            <img :src="item.img" alt="">
+                            <p>{{item.name}}</p>
+                            <p>{{item.title}}</p>
                         </div>
                     </div>
                 </div>
@@ -274,41 +239,43 @@
                 <div class="container">
                     <div class="row">
                         <div class="col-md-4 col-xs-4 memberPic">
-                            <img src="https://nsi.oss-cn-zhangjiakou.aliyuncs.com/nsi-event/FIT2019/wangpeng.jpg" alt="">
+                            <img src="https://nsi.oss-cn-zhangjiakou.aliyuncs.com/nsi-event/FIT2019/zhaoyangyang.jpg" alt="">
                         </div>
                         <div class="col-md-8 col-xs-8">
-                            <p class="memberTitle">王鹏</p>
-                            <p class="memberContent">荣获第一届FIT国际教师风采大赛精英教师奖称号。学为人师。</p>
-                            <div class="detail">
+                            <p class="memberTitle">赵扬扬</p>
+                            <p class="memberContent">荣获第一届FIT国际教师风采大赛明星教师奖称号，她坚信要做一位“看见孩子需要”的老师，用自己的生命去影响孩子的生命。纵然有风雨，但要相信云上有太阳。</p>
+                            <!-- <div class="detail">
                                 <span class="iconfont icon-xiangqing-"></span>
                                 <span>查看详情</span>
-                            </div>
+                            </div> -->
                         </div>
                     </div>
                     <div class="row">
                         <div class="col-md-4 col-xs-4 memberPic">
-                            <img src="https://nsi.oss-cn-zhangjiakou.aliyuncs.com/nsi-event/FIT2019/wangpeng.jpg" alt="">
+                            <img src="https://nsi.oss-cn-zhangjiakou.aliyuncs.com/nsi-event/FIT2019/chenqiuling.jpg" alt="">
                         </div>
                         <div class="col-md-8 col-xs-8">
-                            <p class="memberTitle">王鹏</p>
-                            <p class="memberContent">荣获第一届FIT国际教师风采大赛精英教师奖称号。学为人师。荣获第一届FIT国际教师风采大赛精英教师奖称号。学为人师荣获第一届FIT国际教师风采大赛精英教师奖称号。学为人师</p>
-                            <div class="detail">
+                            <p class="memberTitle">陈秋玲</p>
+                            <p class="memberContent">荣获第一届FIT国际教师风采大赛明星教师奖称号。在大赛中，陈秋玲表示国际教育圈子是透明的，希望有更多的命题报道和关注。并向我们抛出一个问题：国际教育中的中国教师该如何找准身份认同？</p>
+                            <!-- <div class="detail">
                                 <span class="iconfont icon-xiangqing-"></span>
                                 <span>查看详情</span>
-                            </div>
+                            </div> -->
                         </div>
                     </div>
                     <div class="row">
                         <div class="col-md-4 col-xs-4 memberPic">
-                            <img src="https://nsi.oss-cn-zhangjiakou.aliyuncs.com/nsi-event/FIT2019/wangpeng.jpg" alt="">
+                            <img src="https://nsi.oss-cn-zhangjiakou.aliyuncs.com/nsi-event/FIT2019/zhangqian.jpg" alt="">
                         </div>
                         <div class="col-md-8 col-xs-8">
-                            <p class="memberTitle">王鹏</p>
-                            <p class="memberContent">荣获第一届FIT国际教师风采大赛精英教师奖称号。学为人师。</p>
-                            <div class="detail">
-                                <span class="iconfont icon-xiangqing-"></span>
-                                <span>查看详情</span>
-                            </div>
+                            <p class="memberTitle">张倩</p>
+                            <p class="memberContent">荣获第一届FIT国际教师风采大赛明星教师奖称号。她提出教好音乐学科是远远不够的，要从音乐教师转变为人师。</p>
+                            <!-- <div class="detail">
+                                <a href="https://mp.weixin.qq.com/s/CYC3HT5Xu1TwASNZLRIP6Q" target="_blank">
+                                    <span class="iconfont icon-xiangqing-"></span>
+                                    <span>查看详情</span>
+                                </a>
+                            </div> -->
                         </div>
                     </div>
                 </div>
@@ -320,27 +287,73 @@
     export default{
         data(){
             return{
-
+                judgeList:[
+                    {
+                        img:require("../../images/fit/常玮琪.jpg"),
+                        name:"常玮琪",
+                        title:"诺德安达中国区教学发展主任-中方"
+                    },
+                    {
+                        img:require("../../images/fit/陈杰妮.jpg"),
+                        name:"陈杰妮",
+                        title:"上海协和双语高级中学校长"
+                    },
+                    {
+                        img:require("../../images/fit/韩菲.jpg"),
+                        name:"韩菲",
+                        title:"珠海德威国际高中中方校长"
+                    },
+                    {
+                        img:require("../../images/fit/何道明.jpg"),
+                        name:"何道明",
+                        title:"深圳厚德书院院长"
+                    },
+                    {
+                        img:require("../../images/fit/沈建军.jpg"),
+                        name:"沈建军",
+                        title:"长沙康礼•克雷格学校总校长"
+                    },
+                    {
+                        img:require("../../images/fit/许凌可.jpg"),
+                        name:"许凌可",
+                        title:"重庆德普外国语学校校长"
+                    },
+                    {
+                        img:require("../../images/fit/俞珉.jpg"),
+                        name:"俞珉",
+                        title:"上海耀中浦东校区中方校长"
+                    },
+                    {
+                        img:require("../../images/fit/张晔.jpg"),
+                        name:"张晔",
+                        title:"北京致知学校总校长"
+                    },
+                    {
+                        img:require("../../images/fit/张婧.jpg"),
+                        name:"张婧",
+                        title:"广东实验中学AP国际课程校区主管"
+                    },
+                ]
             }
         },
         methods:{
             toPlay(){
-                $(".modal-body").find("iframe").attr("src","https://v.qq.com/txp/iframe/player.html?vid=p0927gesvhy");
+                $(".modal-body").find("iframe").attr("src","https://v.qq.com/txp/iframe/player.html?vid=x09271gnuew");
             },
             close(){
                 $(".modal-body").find("iframe").removeAttr("src");
             },
             openVideo1(){
-                window.open("https://v.qq.com/txp/iframe/player.html?vid=l09278jpx5b")
-            },
-            openVideo2(){
-                window.open("https://v.qq.com/txp/iframe/player.html?vid=l092719l7hi")
-            },
-            openVideo3(){
                 window.open("https://v.qq.com/txp/iframe/player.html?vid=g0927al717g")
             },
+            openVideo2(){
+                window.open("https://v.qq.com/txp/iframe/player.html?vid=l092780x7a2")
+            },
+            openVideo3(){
+                window.open("https://v.qq.com/txp/iframe/player.html?vid=s0927axzgsw")
+            },
             openVideo4(){
-                window.open("https://v.qq.com/txp/iframe/player.html?vid=t0927a62jb1")
+                window.open("https://v.qq.com/txp/iframe/player.html?vid=h0927h895p5")
             }
         }
     }
@@ -574,6 +587,7 @@
                         .detail{
                             float:right;
                             margin:5px 0 20px;
+                            cursor:pointer;
                         }
                     }
                     

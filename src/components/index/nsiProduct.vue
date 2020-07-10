@@ -41,10 +41,10 @@
                 <div class="col-md-3 col-xs-6">
                     <div class="productBox">
                         <div class="product-logo text-center">
-                            <a href="http://class.xinxueshuo.cn" target="_blank"><img src="https://nsi.oss-cn-zhangjiakou.aliyuncs.com/nsi-official/image/layoutImg/classLogo.png" width="50" alt="" style="padding:5px 0"></a>
+                            <a href="https://data.xinxueshuo.cn/nsi-class/index.html" target="_blank"><img src="https://nsi.oss-cn-zhangjiakou.aliyuncs.com/nsi-official/image/layoutImg/classLogo.png" width="50" alt="" style="padding:5px 0"></a>
                         </div>
                         <div class="product-name text-center">
-                            <p><a href="http://class.xinxueshuo.cn" target="_blank" class="name">新学说在线课堂&nbsp;<span class="iconfont icon-yuanjiantou"></span></a></p>
+                            <p><a href="https://data.xinxueshuo.cn/nsi-class/index.html" target="_blank" class="name">新学说在线课堂&nbsp;<span class="iconfont icon-yuanjiantou"></span></a></p>
                         </div>
                         <!-- <div class="bg">
                             <a href="http://class.xinxueshuo.cn">新学说在线课堂</a>
