@@ -94,111 +94,13 @@
             <div class="content">
                 <div class="container">
                     <div class="row">
-                        <div class="col-md-3 col-xs-6">
+                        <div class="col-md-3 col-xs-6" v-for="(item,index) in repechargeList" :key="index">
                             <div class="memberDetail">
-                                <img src="https://nsi.oss-cn-zhangjiakou.aliyuncs.com/nsi-event/FIT2019/wangpeng.jpg" alt="">
+                                <img :src="item.img" alt="">
                                 <div class="message">
-                                    <p>王鹏</p>
+                                    <p>{{item.name}}</p>
                                     <p class="hrline"></p>
-                                    <p>君诚国际学校</p>
-                                    <div class="detail">
-                                        <span class="iconfont icon-xiangqing-"></span>
-                                        <span>详情</span>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-md-3 col-xs-6">
-                            <div class="memberDetail">
-                                <img src="https://nsi.oss-cn-zhangjiakou.aliyuncs.com/nsi-event/FIT2019/wangpeng.jpg" alt="">
-                                <div class="message">
-                                    <p>王鹏</p>
-                                    <p class="hrline"></p>
-                                    <p>君诚国际学校</p>
-                                    <div class="detail">
-                                        <span class="iconfont icon-xiangqing-"></span>
-                                        <span>详情</span>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-md-3 col-xs-6">
-                            <div class="memberDetail">
-                                <img src="https://nsi.oss-cn-zhangjiakou.aliyuncs.com/nsi-event/FIT2019/wangpeng.jpg" alt="">
-                                <div class="message">
-                                    <p>王鹏</p>
-                                    <p class="hrline"></p>
-                                    <p>君诚国际学校</p>
-                                    <div class="detail">
-                                        <span class="iconfont icon-xiangqing-"></span>
-                                        <span>详情</span>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-md-3 col-xs-6">
-                            <div class="memberDetail">
-                                <img src="https://nsi.oss-cn-zhangjiakou.aliyuncs.com/nsi-event/FIT2019/wangpeng.jpg" alt="">
-                                <div class="message">
-                                    <p>王鹏</p>
-                                    <p class="hrline"></p>
-                                    <p>君诚国际学校</p>
-                                    <div class="detail">
-                                        <span class="iconfont icon-xiangqing-"></span>
-                                        <span>详情</span>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-md-3 col-xs-6">
-                            <div class="memberDetail">
-                                <img src="https://nsi.oss-cn-zhangjiakou.aliyuncs.com/nsi-event/FIT2019/wangpeng.jpg" alt="">
-                                <div class="message">
-                                    <p>王鹏</p>
-                                    <p class="hrline"></p>
-                                    <p>君诚国际学校</p>
-                                    <div class="detail">
-                                        <span class="iconfont icon-xiangqing-"></span>
-                                        <span>详情</span>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-md-3 col-xs-6">
-                            <div class="memberDetail">
-                                <img src="https://nsi.oss-cn-zhangjiakou.aliyuncs.com/nsi-event/FIT2019/wangpeng.jpg" alt="">
-                                <div class="message">
-                                    <p>王鹏</p>
-                                    <p class="hrline"></p>
-                                    <p>君诚国际学校</p>
-                                    <div class="detail">
-                                        <span class="iconfont icon-xiangqing-"></span>
-                                        <span>详情</span>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-md-3 col-xs-6">
-                            <div class="memberDetail">
-                                <img src="https://nsi.oss-cn-zhangjiakou.aliyuncs.com/nsi-event/FIT2019/wangpeng.jpg" alt="">
-                                <div class="message">
-                                    <p>王鹏</p>
-                                    <p class="hrline"></p>
-                                    <p>君诚国际学校</p>
-                                    <div class="detail">
-                                        <span class="iconfont icon-xiangqing-"></span>
-                                        <span>详情</span>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-md-3 col-xs-6">
-                            <div class="memberDetail">
-                                <img src="https://nsi.oss-cn-zhangjiakou.aliyuncs.com/nsi-event/FIT2019/wangpeng.jpg" alt="">
-                                <div class="message">
-                                    <p>王鹏</p>
-                                    <p class="hrline"></p>
-                                    <p>君诚国际学校</p>
+                                    <p>{{item.schoolName}}</p>
                                     <div class="detail">
                                         <span class="iconfont icon-xiangqing-"></span>
                                         <span>详情</span>
@@ -280,7 +182,7 @@
                     </div>
                 </div>
             </div>
-        </div>
+        </div> 
     </div>
 </template>
 <script>
@@ -332,6 +234,113 @@
                         img:require("../../images/fit/张婧.jpg"),
                         name:"张婧",
                         title:"广东实验中学AP国际课程校区主管"
+                    },
+                ],
+                repechargeList:[
+                    {
+                        img:require("../../images/fit/复赛选手/李梦阳.jpg"),
+                        name:"李梦阳",
+                        schoolName:"清澜山学校"
+                    },
+                    {
+                        img:require("../../images/fit/复赛选手/于思琪.jpg"),
+                        name:"于思琪",
+                        schoolName:"贵阳一中普瑞国际学校"
+                    },
+                    {
+                        img:require("../../images/fit/复赛选手/徐海蓉.jpg"),
+                        name:"徐海蓉",
+                        schoolName:"重庆德普外国语学校"
+                    },
+                    {
+                        img:require("../../images/fit/复赛选手/王子堰.jpg"),
+                        name:"王子堰",
+                        schoolName:"法拉古特国际学校天津校区"
+                    },
+                    {
+                        img:require("../../images/fit/复赛选手/聂君.jpg"),
+                        name:"聂君",
+                        schoolName:"武汉海淀外国语实验学校"
+                    },
+                    {
+                        img:require("../../images/fit/复赛选手/李乃欣.jpg"),
+                        name:"李乃欣",
+                        schoolName:"重庆巴蜀常春藤学校博物馆式小学"
+                    },
+                    {
+                        img:require("../../images/fit/复赛选手/邓晨.jpg"),
+                        name:"邓晨",
+                        schoolName:"北京爱迪国际学校"
+                    },
+                    {
+                        img:require("../../images/fit/复赛选手/刘洪波.jpg"),
+                        name:"刘洪波",
+                        schoolName:"清澜山学校"
+                    },
+                    {
+                        img:require("../../images/fit/复赛选手/赵扬扬.jpg"),
+                        name:"赵扬扬",
+                        schoolName:"北京市中芯学校"
+                    },
+                    {
+                        img:require("../../images/fit/复赛选手/刘芳.jpg"),
+                        name:"刘芳",
+                        schoolName:"北京市中芯学校"
+                    },
+                    {
+                        img:require("../../images/fit/复赛选手/李瑞.jpg"),
+                        name:"李瑞",
+                        schoolName:"巴川量子中学"
+                    },
+                    {
+                        img:require("../../images/fit/复赛选手/刘嘉敏.jpg"),
+                        name:"刘嘉敏",
+                        schoolName:"人大附中英国国王杭州学校"
+                    },
+                    {
+                        img:require("../../images/fit/复赛选手/湛沛洁.jpg"),
+                        name:"湛沛洁",
+                        schoolName:"慈溪市安琪儿幼稚园"
+                    },
+                    {
+                        img:require("../../images/fit/复赛选手/陈玉婷.jpg"),
+                        name:"陈玉婷",
+                        schoolName:"深圳实验承翰学校"
+                    },
+                    {
+                        img:require("../../images/fit/复赛选手/钱杨.jpg"),
+                        name:"钱杨",
+                        schoolName:"合肥瑞安公学"
+                    },
+                    {
+                        img:require("../../images/fit/复赛选手/欧敬贤.jpg"),
+                        name:"欧敬贤",
+                        schoolName:"天津英华国际学校东丽校区"
+                    },
+                    {
+                        img:require("../../images/fit/复赛选手/冉博狄.jpg"),
+                        name:"冉博狄",
+                        schoolName:"清澜山学校"
+                    },
+                    {
+                        img:require("../../images/fit/复赛选手/朱梁.jpg"),
+                        name:"朱梁",
+                        schoolName:"南京泰晤士学校"
+                    },
+                    {
+                        img:require("../../images/fit/复赛选手/张铭格.jpg"),
+                        name:"张铭格",
+                        schoolName:"北京海淀凯文学校"
+                    },
+                    {
+                        img:require("../../images/fit/复赛选手/韦超.jpg"),
+                        name:"韦超",
+                        schoolName:"合肥市第六中学国际部北美中心"
+                    },
+                    {
+                        img:require("../../images/fit/复赛选手/仇琦.jpg"),
+                        name:"仇琦",
+                        schoolName:"句容碧桂园学校"
                     },
                 ]
             }
