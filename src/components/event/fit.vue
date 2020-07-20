@@ -7,16 +7,63 @@
                         <img src="../../images/fit/logoPic.jpg" alt="">
                     </div>
                     <div class="col-md-6 col-xs-12 introduceDetail">
-                        <h2>FIT国际学校风采大赛</h2>
-                        <p>2019年9月7日，20位来自全国各地的国际学校的教师，出现在2019FIT国际教师风采大赛的决赛现场。上午9点，一场见证国际学校教师们用心浇灌未来的巅峰对决，在北京人艺菊隐剧场上演。</p>
+                        <h2>2020FIT国际教师风采大赛</h2>
+                        <p>2020FIT第二届国际教师风采大赛通过自身展示以及系统培训，多角度展现国际学校教师的教学风采的同时，挖掘国际教育行业的“明星教师”。大赛自三月启幕，吸引了近百所国际学校教师的积极参与。由组委会举办的三次线上教师培训也受到国际学校教师们的广泛好评，为教师职业发展带来更多启发与思考。历时近5个月，两轮角逐21位教师脱颖而出晋级决赛，FIT国际教师风采大赛终于迎来了决赛赛程。</p>
                     </div>
                 </div>
             </div>
         </div>
-        <div class="review">
+       
+        <div class="repecharge">
             <div class="title">
                 <span class="lineLeft"></span>
-                <span class="titleName">回顾</span>
+                <span class="titleName">2020FIT决赛选手</span>
+                <span class="lineRight"></span>
+            </div>
+            <div class="content">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-3 col-xs-6" v-for="(item,index) in repechargeList" :key="index">
+                            <div class="memberDetail">
+                                <img :src="item.img" alt="">
+                                <div class="message">
+                                    <p>{{item.name}}</p>
+                                    <p class="hrline"></p>
+                                    <p>{{item.schoolName}}</p>
+                                    <div class="detail" @click="toDetail(item.id)">
+                                        <span class="iconfont icon-xiangqing-"></span>
+                                        <span>决赛作品</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="judgingPanel">
+            <div class="title">
+                <span class="lineLeft"></span>
+                <span class="titleName">2020FIT复赛评审团</span>
+                <span class="lineRight"></span>
+            </div>
+            <div class="content">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-4 col-xs-6" v-for="(item,index) in judgeList" :key="index">
+                            <img :src="item.img" alt="">
+                            <p>{{item.name}}</p>
+                            <p>{{item.title}}</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+         <div class="review">
+            <div class="title">
+                <span class="lineLeft"></span>
+                <span class="titleName">2019FIT大赛回顾</span>
                 <span class="lineRight"></span>
             </div>
             <div class="content">
@@ -85,56 +132,10 @@
                 </div>
             </div>
         </div>
-        <div class="repecharge">
-            <div class="title">
-                <span class="lineLeft"></span>
-                <span class="titleName">复赛成员</span>
-                <span class="lineRight"></span>
-            </div>
-            <div class="content">
-                <div class="container">
-                    <div class="row">
-                        <div class="col-md-3 col-xs-6" v-for="(item,index) in repechargeList" :key="index">
-                            <div class="memberDetail">
-                                <img :src="item.img" alt="">
-                                <div class="message">
-                                    <p>{{item.name}}</p>
-                                    <p class="hrline"></p>
-                                    <p>{{item.schoolName}}</p>
-                                    <div class="detail">
-                                        <span class="iconfont icon-xiangqing-"></span>
-                                        <span>详情</span>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="judgingPanel">
-            <div class="title">
-                <span class="lineLeft"></span>
-                <span class="titleName">评审团</span>
-                <span class="lineRight"></span>
-            </div>
-            <div class="content">
-                <div class="container">
-                    <div class="row">
-                        <div class="col-md-4 col-xs-6" v-for="(item,index) in judgeList" :key="index">
-                            <img :src="item.img" alt="">
-                            <p>{{item.name}}</p>
-                            <p>{{item.title}}</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
         <div class="thirdMember">
             <div class="title">
                 <span class="lineLeft"></span>
-                <span class="titleName">上期赛事三甲成员</span>
+                <span class="titleName">2019FIT明星教师</span>
                 <span class="lineRight"></span>
             </div>
             <div class="content">
@@ -146,10 +147,6 @@
                         <div class="col-md-8 col-xs-8">
                             <p class="memberTitle">赵扬扬</p>
                             <p class="memberContent">荣获第一届FIT国际教师风采大赛明星教师奖称号，她坚信要做一位“看见孩子需要”的老师，用自己的生命去影响孩子的生命。纵然有风雨，但要相信云上有太阳。</p>
-                            <!-- <div class="detail">
-                                <span class="iconfont icon-xiangqing-"></span>
-                                <span>查看详情</span>
-                            </div> -->
                         </div>
                     </div>
                     <div class="row">
@@ -159,10 +156,6 @@
                         <div class="col-md-8 col-xs-8">
                             <p class="memberTitle">陈秋玲</p>
                             <p class="memberContent">荣获第一届FIT国际教师风采大赛明星教师奖称号。在大赛中，陈秋玲表示国际教育圈子是透明的，希望有更多的命题报道和关注。并向我们抛出一个问题：国际教育中的中国教师该如何找准身份认同？</p>
-                            <!-- <div class="detail">
-                                <span class="iconfont icon-xiangqing-"></span>
-                                <span>查看详情</span>
-                            </div> -->
                         </div>
                     </div>
                     <div class="row">
@@ -172,12 +165,6 @@
                         <div class="col-md-8 col-xs-8">
                             <p class="memberTitle">张倩</p>
                             <p class="memberContent">荣获第一届FIT国际教师风采大赛明星教师奖称号。她提出教好音乐学科是远远不够的，要从音乐教师转变为人师。</p>
-                            <!-- <div class="detail">
-                                <a href="https://mp.weixin.qq.com/s/CYC3HT5Xu1TwASNZLRIP6Q" target="_blank">
-                                    <span class="iconfont icon-xiangqing-"></span>
-                                    <span>查看详情</span>
-                                </a>
-                            </div> -->
                         </div>
                     </div>
                 </div>
@@ -237,110 +224,151 @@
                     },
                 ],
                 repechargeList:[
-                    {
+                    {   id:"0",
                         img:require("../../images/fit/复赛选手/李梦阳.jpg"),
                         name:"李梦阳",
-                        schoolName:"清澜山学校"
+                        schoolName:"清澜山学校",
+                        href:"https://url.cn/jzLzJ6fD?sf=uri"
                     },
                     {
+                        id:"1",
                         img:require("../../images/fit/复赛选手/于思琪.jpg"),
                         name:"于思琪",
-                        schoolName:"贵阳一中普瑞国际学校"
+                        schoolName:"贵阳一中普瑞国际学校",
+                        href:"https://url.cn/R5ZmSrch?sf=uri"
                     },
                     {
+                        id:"2",
                         img:require("../../images/fit/复赛选手/徐海蓉.jpg"),
                         name:"徐海蓉",
-                        schoolName:"重庆德普外国语学校"
+                        schoolName:"重庆德普外国语学校",
+                        href:"https://url.cn/M2bxlqnU?sf=uri"
                     },
                     {
+                        id:"3",
                         img:require("../../images/fit/复赛选手/王子堰.jpg"),
                         name:"王子堰",
-                        schoolName:"法拉古特国际学校天津校区"
+                        schoolName:"法拉古特国际学校天津校区",
+                        href:"https://url.cn/JRGBRmiI?sf=uri"
                     },
                     {
+                        id:"4",
                         img:require("../../images/fit/复赛选手/聂君.jpg"),
                         name:"聂君",
-                        schoolName:"武汉海淀外国语实验学校"
+                        schoolName:"武汉海淀外国语实验学校",
+                        href:"https://url.cn/Vba8QFHr?sf=uri"
                     },
                     {
+                        id:"5",
                         img:require("../../images/fit/复赛选手/李乃欣.jpg"),
                         name:"李乃欣",
-                        schoolName:"重庆巴蜀常春藤学校博物馆式小学"
+                        schoolName:"重庆巴蜀常春藤学校博物馆式小学",
+                        href:"https://url.cn/Miksac8h?sf=uri"
                     },
                     {
+                        id:"6",
                         img:require("../../images/fit/复赛选手/邓晨.jpg"),
                         name:"邓晨",
-                        schoolName:"北京爱迪国际学校"
+                        schoolName:"北京爱迪国际学校",
+                        href:"https://url.cn/mXsUaGj1?sf=uri"
                     },
                     {
+                        id:"7",
                         img:require("../../images/fit/复赛选手/刘洪波.jpg"),
                         name:"刘洪波",
-                        schoolName:"清澜山学校"
+                        schoolName:"清澜山学校",
+                        href:"https://url.cn/3MiNALhp?sf=uri"
                     },
                     {
+                        id:"8",
                         img:require("../../images/fit/复赛选手/赵扬扬.jpg"),
                         name:"赵扬扬",
-                        schoolName:"北京市中芯学校"
+                        schoolName:"北京市中芯学校",
+                        href:"https://url.cn/zuzsyzVD?sf=uri"
                     },
                     {
+                        id:"9",
                         img:require("../../images/fit/复赛选手/刘芳.jpg"),
                         name:"刘芳",
-                        schoolName:"北京市中芯学校"
+                        schoolName:"北京市中芯学校",
+                        href:"https://url.cn/cEL7LOpl?sf=uri"
                     },
                     {
+                        id:"10",
                         img:require("../../images/fit/复赛选手/李瑞.jpg"),
                         name:"李瑞",
-                        schoolName:"巴川量子中学"
+                        schoolName:"巴川量子中学",
+                        href:"https://url.cn/AdAaC9yV?sf=uri"
                     },
                     {
+                        id:"11",
                         img:require("../../images/fit/复赛选手/刘嘉敏.jpg"),
                         name:"刘嘉敏",
-                        schoolName:"人大附中英国国王杭州学校"
+                        schoolName:"人大附中英国国王杭州学校",
+                        href:"https://url.cn/O8NXawA5?sf=uri"
                     },
                     {
+                        id:"12",
                         img:require("../../images/fit/复赛选手/湛沛洁.jpg"),
                         name:"湛沛洁",
-                        schoolName:"慈溪市安琪儿幼稚园"
+                        schoolName:"慈溪市安琪儿幼稚园",
+                        href:"https://url.cn/yOJWeHC5?sf=uri"
                     },
                     {
+                        id:"13",
                         img:require("../../images/fit/复赛选手/陈玉婷.jpg"),
                         name:"陈玉婷",
-                        schoolName:"深圳实验承翰学校"
+                        schoolName:"深圳实验承翰学校",
+                        href:"https://url.cn/uRiF2Nr1?sf=uri"
                     },
                     {
+                        id:"14",
                         img:require("../../images/fit/复赛选手/钱杨.jpg"),
                         name:"钱杨",
-                        schoolName:"合肥瑞安公学"
+                        schoolName:"合肥瑞安公学",
+                        href:"https://url.cn/TMRmuFpb?sf=uri"
                     },
                     {
+                        id:"15",
                         img:require("../../images/fit/复赛选手/欧敬贤.jpg"),
                         name:"欧敬贤",
-                        schoolName:"天津英华国际学校东丽校区"
+                        schoolName:"天津英华国际学校东丽校区",
+                        href:"https://url.cn/XRmDLaIT?sf=uri"
                     },
                     {
+                        id:"16",
                         img:require("../../images/fit/复赛选手/冉博狄.jpg"),
                         name:"冉博狄",
-                        schoolName:"清澜山学校"
+                        schoolName:"清澜山学校",
+                        href:"https://url.cn/047SKleQ?sf=uri"
                     },
                     {
+                        id:"17",
                         img:require("../../images/fit/复赛选手/朱梁.jpg"),
                         name:"朱梁",
-                        schoolName:"南京泰晤士学校"
+                        schoolName:"南京泰晤士学校",
+                        href:"https://url.cn/bRHFWrzB?sf=uri"
                     },
                     {
+                        id:"18",
                         img:require("../../images/fit/复赛选手/张铭格.jpg"),
                         name:"张铭格",
-                        schoolName:"北京海淀凯文学校"
+                        schoolName:"北京海淀凯文学校",
+                        href:"https://url.cn/herrby6Z?sf=uri"
                     },
                     {
+                        id:"19",
                         img:require("../../images/fit/复赛选手/韦超.jpg"),
                         name:"韦超",
-                        schoolName:"合肥市第六中学国际部北美中心"
+                        schoolName:"合肥市第六中学国际部北美中心",
+                        href:"https://url.cn/bWr3Oja7?sf=uri"
                     },
                     {
+                        id:"20",
                         img:require("../../images/fit/复赛选手/仇琦.jpg"),
                         name:"仇琦",
-                        schoolName:"句容碧桂园学校"
+                        schoolName:"句容碧桂园学校",
+                        href:"https://url.cn/J5gNbDdR?sf=uri"
                     },
                 ]
             }
@@ -363,6 +391,9 @@
             },
             openVideo4(){
                 window.open("https://v.qq.com/txp/iframe/player.html?vid=h0927h895p5")
+            },
+            toDetail(id){
+                window.open(this.repechargeList[id].href)
             }
         }
     }
@@ -429,12 +460,12 @@
                 margin:20px 0;
             }
             .lineLeft{
-                width: 35%;
+                width: 30%;
                 display:inline-block;
                 vertical-align: middle;
                 border-bottom:4px dotted #ccc;
                 @media (max-width:768px) {
-                    width:25%;
+                    width:10%;
                 }
             }
             .titleName{
@@ -444,12 +475,12 @@
                 vertical-align: middle;
             }
             .lineRight{
-                width:35%;
+                width:30%;
                 display:inline-block;
                 vertical-align: middle;
                 border-bottom:4px dotted #ccc;
                 @media (max-width:768px) {
-                    width:25%;
+                    width:10%;
                 }
             }
         }
@@ -537,12 +568,12 @@
                 margin:20px 0;
             }
             .lineLeft{
-                width: 35%;
+                width: 30%;
                 display:inline-block;
                 vertical-align: middle;
                 border-bottom:4px dotted #ccc;
                 @media (max-width:768px) {
-                    width: 25%;
+                    width: 10%;
                 }
             }
             .titleName{
@@ -552,12 +583,12 @@
                 vertical-align: middle;
             }
             .lineRight{
-                width: 35%;
+                width: 30%;
                 display:inline-block;
                 vertical-align: middle;
                 border-bottom:4px dotted #ccc;
                 @media (max-width:768px) {
-                    width: 25%;
+                    width: 10%;
                 }
             }
         }
@@ -591,6 +622,11 @@
                             }
                             &:last-of-type{
                                 font-size: 16px;
+                                height:35px;
+                                // width: 155px;
+                                // overflow: hidden;
+                                // text-overflow: ellipsis;
+                                // white-space: nowrap;
                             }
                         }
                         .detail{
@@ -623,12 +659,12 @@
                 padding:20px 0;
             }
             .lineLeft{
-                width: 35%;
+                width: 30%;
                 display:inline-block;
                 vertical-align: middle;
                 border-bottom:4px dotted #ccc;
                 @media (max-width:768px) {
-                    width:25%;
+                    width:10%;
                 }
             }
             .titleName{
@@ -638,12 +674,12 @@
                 vertical-align: middle;
             }
             .lineRight{
-                width:35%;
+                width:30%;
                 display:inline-block;
                 vertical-align: middle;
                 border-bottom:4px dotted #ccc;
                 @media (max-width:768px) {
-                    width:25%;
+                    width:10%;
                 }
             }
         }
@@ -669,6 +705,7 @@
                     &:last-of-type{
                         margin-bottom:25px;
                         font-size:16px;
+                        height:30px;
                     }
                 }
             }
