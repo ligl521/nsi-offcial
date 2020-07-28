@@ -42,6 +42,24 @@
                 </div>
             </div>
         </div>
+        <div class="judgingPanel" style="margin-bottom:90px">
+            <div class="title">
+                <span class="lineLeft"></span>
+                <span class="titleName">2020FIT决赛评审团</span>
+                <span class="lineRight"></span>
+            </div>
+            <div class="content">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-4 col-xs-6" v-for="(item,index) in finalsList" :key="index">
+                            <img :src="item.img" alt="">
+                            <p>{{item.name}}</p>
+                            <p>{{item.title}}</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
         <div class="judgingPanel">
             <div class="title">
                 <span class="lineLeft"></span>
@@ -223,6 +241,113 @@
                         title:"广东实验中学AP国际课程校区主管"
                     },
                 ],
+                finalsList:[
+                    {
+                        img:require("../../images/fit/决赛评委/陈文国.png"),
+                        name:"陈文国",
+                        title:"上海宏润博源学校总校长"
+                    },
+                    {
+                        img:require("../../images/fit/决赛评委/高旭.png"),
+                        name:"高旭",
+                        title:"湖南广益实验中学国际部创始校长"
+                    },
+                    {
+                        img:require("../../images/fit/决赛评委/胡军.png"),
+                        name:"胡军",
+                        title:"贵阳一中普瑞国际学校执行校长"
+                    },
+                    {
+                        img:require("../../images/fit/决赛评委/李争志.png"),
+                        name:"李争志",
+                        title:"深圳瑞得福国际学校中方校长"
+                    },
+                    {
+                        img:require("../../images/fit/决赛评委/历晶.png"),
+                        name:"历晶",
+                        title:"长春师范大学国际教师教育学院副院长"
+                    },
+                    {
+                        img:require("../../images/fit/决赛评委/刘莉.png"),
+                        name:"刘莉",
+                        title:"西安梁家滩国际学校校长"
+                    },
+                    {
+                        img:require("../../images/fit/决赛评委/曲珍伊.png"),
+                        name:"曲珍伊",
+                        title:"新加坡伊顿国际教育集团山东区总校长"
+                    },
+                    {
+                        img:require("../../images/fit/决赛评委/唐毅婷.png"),
+                        name:"唐毅婷",
+                        title:"青岛梅尔顿学校执行校长"
+                    },
+                    {
+                        img:require("../../images/fit/决赛评委/万明珠.png"),
+                        name:"万明珠",
+                        title:"浙中阿德科特学校执行校长"
+                    },
+                    {
+                        img:require("../../images/fit/决赛评委/王殿军.png"),
+                        name:"王殿军",
+                        title:"清华附中校长"
+                    },
+                    {
+                        img:require("../../images/fit/决赛评委/吴真真.png"),
+                        name:"吴真真",
+                        title:"长沙玮希国际学校执行校长"
+                    },
+                    {
+                        img:require("../../images/fit/决赛评委/夏美辉.png"),
+                        name:"夏美辉",
+                        title:"北京青苗学校海淀校区小学中方校长"
+                    },
+                    {
+                        img:require("../../images/fit/决赛评委/闫潞霞.png"),
+                        name:"闫潞霞",
+                        title:"加拿大国际教育集团总校长及学术总监"
+                    },
+                    {
+                        img:require("../../images/fit/决赛评委/杨洋.png"),
+                        name:"杨洋",
+                        title:"天津惠灵顿国际学校校长"
+                    },
+                    {
+                        img:require("../../images/fit/决赛评委/叶斌.png"),
+                        name:"叶斌",
+                        title:"宁波华茂国际学校校长"
+                    },
+                    {
+                        img:require("../../images/fit/决赛评委/叶延武.png"),
+                        name:"叶延武",
+                        title:"天润国际教育集团总校长"
+                    },
+                    {
+                        img:require("../../images/fit/决赛评委/余海燕.png"),
+                        name:"余海燕",
+                        title:"合肥安生托马斯学校总校长"
+                    },
+                    {
+                        img:require("../../images/fit/决赛评委/张桂元.png"),
+                        name:"张桂元",
+                        title:"法拉古特学校天津校区校长"
+                    },
+                    {
+                        img:require("../../images/fit/决赛评委/张恒.png"),
+                        name:"张恒",
+                        title:"PGA中国总校长"
+                    },
+                    {
+                        img:require("../../images/fit/决赛评委/周宪明.png"),
+                        name:"周宪明",
+                        title:"北京市中芯学校执行校董"
+                    },
+                    {
+                        img:require("../../images/fit/决赛评委/庄胜利.png"),
+                        name:"庄胜利",
+                        title:"华东康桥国际学校校长"
+                    },
+                ],
                 repechargeList:[
                     {   id:"0",
                         img:require("../../images/fit/复赛选手/李梦阳.jpg"),
@@ -325,7 +450,7 @@
                         id:"14",
                         img:require("../../images/fit/复赛选手/钱杨.jpg"),
                         name:"钱杨",
-                        schoolName:"合肥瑞安公学",
+                        schoolName:"合肥润安公学",
                         href:"https://url.cn/TMRmuFpb?sf=uri"
                     },
                     {

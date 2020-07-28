@@ -109,11 +109,11 @@ module.exports = {
         classOnline: "在线课堂",
         databaseM: "四库全书",
 
-        mediaPartners: "媒体合作：Hilda Qin",
+        mediaPartners: "媒体合作：Mavis He",
         schoolProject: "学校项目：Hunter Su",
         researchCollaboration: "研究合作：May Wu    ",
         businessCooperation: "商务合作：Cheng Jing",
-        mediaPartnersEmail: "邮箱：qinqiaoyun@xinxueshuo.cn",
+        mediaPartnersEmail: "邮箱：hemiao@xinxueshuo.cn",
         schoolProjectEmail: "邮箱：suhengliang@xinxueshuo.cn",
         researchCollaborationEmail: "邮箱：wuyue@xinxueshuo.cn",
         businessCooperationEmail: "邮箱：chengjing@xinxueshuo.cn",
