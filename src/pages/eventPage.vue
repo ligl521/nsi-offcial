@@ -18,10 +18,10 @@ export default {
     data(){
         return{
             wxShareInfo:{
-                  title:"新学说 | 2020中国国际学校校长俱乐部年会",
+                  title:"新学说 | 2020FIT国际教师风采大赛",
                   imgUrl:"https://data.xinxueshuo.cn/upImage/upInstitutionImg/100062/100062-logo.jpg",
                   href:window.location.href,
-                  desc:"全球巨变挑战下，国际化学习如何应变升级"
+                  desc:"历时近5个月，两轮角逐21位教师脱颖而出晋级决赛，FIT国际教师风采大赛终于迎来了决赛赛程。"
               }
         }
     },

@@ -32,7 +32,7 @@
                                     <p>{{item.schoolName}}</p>
                                     <div class="detail" @click="toDetail(item.id)">
                                         <span class="iconfont icon-xiangqing-"></span>
-                                        <span>决赛作品</span>
+                                        <span>复赛作品</span>
                                     </div>
                                 </div>
                             </div>
@@ -358,7 +358,7 @@
                     {
                         id:"1",
                         img:require("../../images/fit/复赛选手/于思琪.jpg"),
-                        name:"于思琪",
+                        name:"于思琦",
                         schoolName:"贵阳一中普瑞国际学校",
                         href:"https://url.cn/R5ZmSrch?sf=uri"
                     },
