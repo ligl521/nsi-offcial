@@ -50,7 +50,8 @@
                             <p>集团化办学如何制定战略定位与执行（上/下篇）- 李远</p>
                             <p>国内外学校品牌合作办学全攻略(上/下篇）- 杨飞</p>
                             <p>国际化学校品牌战略定位与建设方法论（上/下篇）- 许凌可</p>
-                            <p>集团化招生和品牌管理的方法论经验分享（上/下篇）- 吴峥</p>
+                            <p>国际化学校信息化战略规划（上篇）- 杨秋实</p>
+                            <p>校园安全案例解析与风险防控 - 陈亮</p>
                             <p>政府关系如何助力学校运营管理提升（上/下篇）- 赵新</p>
                             <p>如何全面保障学校校园安全（上/下篇）- 徐未华</p>
                         </div>
@@ -63,7 +64,7 @@
                             <p>集团化办学如何进行组织架构设计与管控 - 卢慧文</p>
                             <p>集团化办学如何构建业务流程标准化 - 卢慧文</p>
                             <p>集团化办学如何进行组织变革管理（上篇）(上/下篇）- 杨飞</p>
-                            <p>集团化办学如何打造高效能人才梯队（上/下篇）- 任鸿鸽</p>
+                            <p>集团化办学如何打造高效能人才梯队（上/下篇）- 王金英</p>
                             <p>校长如何进行中外方团队跨文化高效协作（上/下篇）- 周宪明</p>
                         </div>
                     </div>
@@ -74,10 +75,11 @@
                             <h3>学术管理</h3>
                             <p>如何通过IB课程认证提升学校学术质量保障(上/下篇）- 沈建军</p>
                             <p>如何通过学校管理认证提升学校学术质量保障（上/下篇）- 徐涛</p>
-                            <p>如何从零到一设计双语融合课程(上/下篇）- 崔建设</p>
-                            <p>如何设计符合中外方教师队伍的考核制度与流程 - 卓金香</p>
-                            <p>如何高效构建国际化学校的教师专业发展体系 - 神秘嘉宾</p>
-                            <p>教育科技工具如何赋能教务与教学管理（上/下篇）- 神秘嘉宾</p>
+                            <p>如何从零到一设计双语融合课程（上篇）- 吴子健</p>
+                            <p>如何从零到一设计双语融合课程（下篇 - 孙月梅</p>
+                            <p>国际化学校双语融合课程新构建 - 滕珺</p>
+                            <p>如何高效构建国际化学校的教师专业发展体系 - 赵健</p>
+                            <p>教育科技工具如何赋能教务与教学管理（上/下篇）- Joyce Chen</p>
                         </div>
                     </div>
                 </div>
@@ -197,17 +199,22 @@ export default {
               {
                 photo:require("../../images/miniMBA/头像/许凌可.png"),
                 name:"许凌可",
-                title:"重庆德普外国语学校<br/>副校长"
+                title:"重庆德普外国语学校<br/>校长"
               },
               {
-                photo:require("../../images/miniMBA/头像/吴峥.png"),
-                name:"吴峥",
-                title:"建业教育集团副总裁"
+                photo:require("../../images/miniMBA/头像/杨秋实.png"),
+                name:"杨秋实",
+                title:"深圳曼彻斯通城堡学校<br/>IT负责人"
+              },
+              {
+                photo:require("../../images/miniMBA/头像/陈亮.png"),
+                name:"陈亮",
+                title:"北京市京师侓师事务所<br/>律师"
               },
               {
                 photo:require("../../images/miniMBA/头像/赵新.png"),
                 name:"赵新",
-                title:"北京哈罗英国学校助理校长兼<br/>哈罗亚洲管理集团公共事务总监"
+                title:"北京哈罗英国学校助理校长兼哈罗亚洲管理集团公共事务总监"
               },
               {
                 photo:require("../../images/miniMBA/头像/徐未华.png"),
@@ -216,7 +223,7 @@ export default {
               },
               {
                 photo:require("../../images/miniMBA/头像/卢惠文.png"),
-                name:"卢惠文",
+                name:"卢慧文",
                 title:"上海协和教育集团<br/>总校长"
               },
               {
@@ -240,28 +247,34 @@ export default {
                 title:"北京市朝阳凯文学校<br/>执行校长"
               },
               {
-                photo:require("../../images/miniMBA/头像/崔建设.png"),
-                name:"崔建设",
-                title:"中黄国际教育集团总校长"
+                photo:require("../../images/miniMBA/头像/吴子健.png"),
+                name:"吴子健",
+                title:"上海包玉刚实验学校<br/>校长"
               },
               {
-                photo:require("../../images/miniMBA/头像/卓金香.png"),
-                name:"卓金香",
-                title:"前绍兴博雅总校长"
+                photo:require("../../images/miniMBA/头像/孙月梅.png"),
+                name:"孙月梅",
+                title:"南通诺德安达双语学校<br/>中方校长"
               },
               {
-                photo:require("../../images/miniMBA/头像/林敏.png"),
-                name:"林敏",
-                title:"上海西外外国语学校<br/>创办人兼总校长"
+                photo:require("../../images/miniMBA/头像/腾珺.png"),
+                name:"腾珺",
+                title:"北京师范大学国际与比较教育研究院教授、副院长"
+              },
+              {
+                photo:require("../../images/miniMBA/头像/joyce.png"),
+                name:"Joyce Chen",
+                title:"耀华国际学校CTO"
+              },
+              {
+                photo:require("../../images/miniMBA/头像/赵健.png"),
+                name:"赵健",
+                title:"华东师范大学国际与比较教育研究所副研究员"
               },
           ]
       };
     },
     methods: {
-    //   enterCourse(){
-    //       this.$router.push({path:"./classCatalog"})
-    //   },
-      
     },
     beforeMount(){
          // 微信分享

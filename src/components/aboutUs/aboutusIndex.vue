@@ -38,6 +38,8 @@
             </div>
             <div class="container">
                 <div class="row coo-logo">
+                    <div class="col-md-1 col-xs-3">
+                    </div> 
                     <div class="col-md-2 col-xs-6">
                         <a href="http://www.brightscholar.com" target="_blank" title="博实乐教育集团">
                             <img src="https://data.xinxueshuo.cn/upImage/upInstitutionImg/100099/100099-logo.jpg" alt="" width="120">
@@ -59,14 +61,11 @@
                         </a>
                     </div>
                     <div class="col-md-2 col-xs-6">
-                        <a href="javascript:;" title="北京市君诚国际双语学校">
+                        <a href="http://www.sibs.com.cn" target="_blank" title="北京市君诚国际双语学校">
                             <img src="https://data.xinxueshuo.cn/upImage/upSchoolImg/100742/100742-logo.jpg" alt="" width="100">
                         </a>
                     </div>
-                    <div class="col-md-2 col-xs-6">
-                        <a href="http://www.chinahtedu.com" target="_blank" title="北京汉通文化有限责任公司">
-                            <img src="https://data.xinxueshuo.cn/upImage/upInstitutionImg/100163/100163-logo.jpg" alt="" width="120">
-                        </a>
+                    <div class="col-md-1 col-xs-3">
                     </div>
                 </div>
             </div>
