@@ -16,19 +16,6 @@
                 <p>课程列表</p>
             </div>
             <div class="courseContent">
-                <div class="firstCourse">
-                    <div class="titleName">
-                        <p class="name">开营线下培训课（必修课）</p>
-                        <p class="hrline"></p>
-                    </div>
-                    <div class="listOne">
-                        <div class="contentOne">
-                            <h3>校长俱乐部年会</h3>
-                            <p>2020中国国际学校校长俱乐部年会第一天</p>
-                            <p>2020中国国际学校校长俱乐部年会第二天</p>
-                        </div>
-                    </div>
-                </div>
                 <div class="secondCourse">
                     <div class="titleName">
                         <p class="name">线上培训36讲（必修课）</p>
@@ -46,11 +33,11 @@
                     <div class="listThree">
                         <div class="contentThree">
                             <h3>战略与运营管理</h3>
-                            <p>如何从零到一进行新建校战略定位与执行(上/下篇）- 陈泽芳</p>
+                            <p>如何从零到一进行新建校战略定位与执行（上/下篇）- 陈泽芳</p>
                             <p>集团化办学如何制定战略定位与执行（上/下篇）- 李远</p>
-                            <p>国内外学校品牌合作办学全攻略(上/下篇）- 杨飞</p>
+                            <p>国内外学校品牌合作办学全攻略（上/下篇）- 杨飞</p>
                             <p>国际化学校品牌战略定位与建设方法论（上/下篇）- 许凌可</p>
-                            <p>国际化学校信息化战略规划（上篇）- 杨秋实</p>
+                            <p>国际化学校信息化战略规划 - 杨秋实</p>
                             <p>校园安全案例解析与风险防控 - 陈亮</p>
                             <p>政府关系如何助力学校运营管理提升（上/下篇）- 赵新</p>
                             <p>如何全面保障学校校园安全（上/下篇）- 徐未华</p>
@@ -63,7 +50,7 @@
                             <h3>组织与人才管理</h3>
                             <p>集团化办学如何进行组织架构设计与管控 - 卢慧文</p>
                             <p>集团化办学如何构建业务流程标准化 - 卢慧文</p>
-                            <p>集团化办学如何进行组织变革管理（上篇）(上/下篇）- 杨飞</p>
+                            <p>集团化办学如何进行组织变革管理（上篇/下篇）- 杨飞</p>
                             <p>集团化办学如何打造高效能人才梯队（上/下篇）- 王金英</p>
                             <p>校长如何进行中外方团队跨文化高效协作（上/下篇）- 周宪明</p>
                         </div>
@@ -73,10 +60,10 @@
                     <div class="listFive">
                         <div class="contentFive">
                             <h3>学术管理</h3>
-                            <p>如何通过IB课程认证提升学校学术质量保障(上/下篇）- 沈建军</p>
+                            <p>如何通过IB课程认证提升学校学术质量保障（上/下篇）- 沈建军</p>
                             <p>如何通过学校管理认证提升学校学术质量保障（上/下篇）- 徐涛</p>
                             <p>如何从零到一设计双语融合课程（上篇）- 吴子健</p>
-                            <p>如何从零到一设计双语融合课程（下篇 - 孙月梅</p>
+                            <p>如何从零到一设计双语融合课程（下篇）- 孙月梅</p>
                             <p>国际化学校双语融合课程新构建 - 滕珺</p>
                             <p>如何高效构建国际化学校的教师专业发展体系 - 赵健</p>
                             <p>教育科技工具如何赋能教务与教学管理（上/下篇）- Joyce Chen</p>
@@ -214,7 +201,7 @@ export default {
               {
                 photo:require("../../images/miniMBA/头像/赵新.png"),
                 name:"赵新",
-                title:"北京哈罗英国学校助理校长兼哈罗亚洲管理集团公共事务总监"
+                title:"北京哈罗英国学校助理校长哈罗亚洲管理集团公共事务总监"
               },
               {
                 photo:require("../../images/miniMBA/头像/徐未华.png"),
@@ -258,7 +245,7 @@ export default {
               },
               {
                 photo:require("../../images/miniMBA/头像/腾珺.png"),
-                name:"腾珺",
+                name:"滕珺",
                 title:"北京师范大学国际与比较教育研究院教授、副院长"
               },
               {
@@ -444,7 +431,7 @@ export default {
             .titleName{
                 width:300px;
                 text-align: center;
-                margin-top:50px;
+                // margin-top:50px;
                 @media (max-width:768px) {
                     width:70%;
                     margin:0 auto;
@@ -669,7 +656,7 @@ export default {
                 &:first-of-type{
                     font-size: 22px;
                     margin: 10px 0;
-                    letter-spacing: 4px;
+                    // letter-spacing: 4px;
                     font-weight: bold;
                     @media (max-width:768px) {
                         font-size: 20px;
