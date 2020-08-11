@@ -201,7 +201,7 @@ export default {
               {
                 photo:require("../../images/miniMBA/头像/赵新.png"),
                 name:"赵新",
-                title:"北京哈罗英国学校助理校长哈罗亚洲管理集团公共事务总监"
+                title:"北京哈罗英国学校助理校长<br/>亚洲管理集团公共事务总监"
               },
               {
                 photo:require("../../images/miniMBA/头像/徐未华.png"),
