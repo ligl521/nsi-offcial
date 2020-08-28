@@ -108,7 +108,6 @@ module.exports = {
         database: "国际学校四库全书",
         classOnline: "在线课堂",
         databaseM: "四库全书",
-
         mediaPartners: "媒体合作：Mavis He",
         schoolProject: "学校项目：Hunter Su",
         researchCollaboration: "研究合作：May Wu    ",

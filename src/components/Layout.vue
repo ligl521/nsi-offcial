@@ -109,17 +109,17 @@
                                             <li class="hasSubmenu">
                                                 <el-dropdown placement="top">
                                                     <span class="el-dropdown-link">
-                                                        <router-link :to="{path:'/research'}" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">{{$t('layoutNav.research')}}<span class="caret"></span></router-link>
+                                                        <router-link :to="{path:'/event/miniMba'}" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">{{$t('layoutNav.research')}}<span class="caret"></span></router-link>
                                                     </span>
                                                     <el-dropdown-menu slot="dropdown">
                                                         <el-dropdown-item>
                                                             <router-link :to="{path:'/event/miniMba'}">{{$t('layoutNav.eventChild.miniMba')}}</router-link>
                                                         </el-dropdown-item>
-                                                        <el-dropdown-item>
+                                                        <!-- <el-dropdown-item>
                                                             <router-link :to="{path:'/research/ipa'}">{{$t('layoutNav.researchChild.ipa')}}</router-link>
-                                                        </el-dropdown-item>
+                                                        </el-dropdown-item> -->
                                                         <el-dropdown-item>
-                                                            <a href="http://class.xinxueshuo.cn" target="_blank">{{$t('layoutNav.researchChild.classOnline')}}</a>
+                                                             <router-link :to="{path:'/event/onlineClass'}">{{$t('layoutNav.researchChild.classOnline')}}</router-link>
                                                         </el-dropdown-item>
                                                         <el-dropdown-item>
                                                             <router-link :to="{path:'/research/report'}">{{$t('layoutNav.researchChild.report')}}</router-link>
@@ -156,7 +156,7 @@
                                                 <el-dropdown placement="top">
                                                     <!-- <span class="el-dropdown-link"> -->
                                                     <span class="el-dropdown-link">
-                                                        <router-link :to="{path:'/event/skyClass'}" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">{{$t('layoutFooter.classOnline')}}<span class="caret"></span></router-link>
+                                                        <router-link :to="{path:'/event/onlineClass'}" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">{{$t('layoutFooter.classOnline')}}<span class="caret"></span></router-link>
                                                     </span>
                                                         <!-- <a href="https://data.xinxueshuo.cn/nsi-class/index.html" target="_blank" >{{$t('layoutFooter.classOnline')}}<span class="caret"></span></a> -->
                                                         <!-- <i class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"></i> -->
@@ -212,7 +212,10 @@
                                     <h4 class="blogroll">链接 <span>Links：</span></h4>
                                     <div class="shareHref">
                                         <a href="https://www.xinxueshuo.cn/data/dist/index.html#/" target="_blank"><img src="https://nsi.oss-cn-zhangjiakou.aliyuncs.com/nsi-official/image/layoutImg/database.png" alt=""></a>
-                                        <a href="http://class.xinxueshuo.cn" target="_blank"><img src="https://nsi.oss-cn-zhangjiakou.aliyuncs.com/nsi-official/image/layoutImg/class.png" alt=""></a>
+                                        <!-- <a href="http://class.xinxueshuo.cn" target="_blank"><img src="https://nsi.oss-cn-zhangjiakou.aliyuncs.com/nsi-official/image/layoutImg/class.png" alt=""></a> -->
+                                        <router-link :to="{path:'/event/onlineClass'}">
+                                           <img src="https://nsi.oss-cn-zhangjiakou.aliyuncs.com/nsi-official/image/layoutImg/class.png" alt="">
+                                        </router-link>
                                         <!-- <a href="http://data.xinxueshuo.cn" target="_blank">{{$t('layoutFooter.database')}}</a>
                                         <a href="http://class.xinxueshuo.cn" target="_blank">{{$t('layoutFooter.classOnline')}}</a> -->
                                     </div>

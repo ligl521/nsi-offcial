@@ -579,7 +579,7 @@ export default {
     }  
     .aboutLecturer{
         .containerBox{
-            width:65%;
+            width:60%;
             @media (max-width: 768px) {
                 width:100%;
             }

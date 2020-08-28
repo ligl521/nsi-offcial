@@ -107,7 +107,8 @@ export default {
         toDetail(id){ 
             // console.log(id)
             let routeData =this.$router.resolve({name:"detailNews",params:{id:id}})
-            window.open(routeData.href, '_blank');
+            console.log(routeData.href)
+            // window.open(routeData.href, '_blank');
         }
     },
     created(){

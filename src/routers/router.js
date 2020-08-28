@@ -30,6 +30,7 @@ import video from '../components/event/video.vue'
 import fit from '../components/event/fit.vue'
 import skyClass from '../components/event/skyClass'
 import miniMBA from '../components/event/miniMBA'
+import onlineClass from '../components/event/onlineClass'
 
 
 import periodical from '../components/research/periodical.vue'
@@ -143,6 +144,9 @@ const routes = [{
             },{
                 path: 'skyClass',
                 component:skyClass
+            },{
+                path: 'onlineClass',
+                component:onlineClass
             }
         ]
     }, {

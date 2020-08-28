@@ -3,61 +3,28 @@
         <div class="banner text-center">
             <img src="https://nsi.oss-cn-zhangjiakou.aliyuncs.com/nsi-official/image/research/banner.jpg" alt="" class="img-responsive">
         </div>
-        <div class="container">
+        <div class="container courseContent">
             <div class="row">
-                <div class="col-md-4">
-                    <div class="Item item01">
-                        <h3 class="text-center item-title">新学说<span>国际学校校长研修班</span></h3>
-                        <p class="text-cneter item-apply"><a href="https://jinshuju.net/f/a4LhEl" target="_blank">立即报名</a></p>
-                    </div>
-                    <div class="row">
-                        <div class="col-md-6 col-xs-6 subItem pr7">
-                            <img src="https://nsi.oss-cn-zhangjiakou.aliyuncs.com/nsi-official/image/research/subItem003.png" alt="">
-                            <p class="subItem-title">国际学校办学政策</p>
-                            <p class="subItem-desc">国际学校关键环节和部门的营运特质和工作要点，宏观与实操相结合</p>
-                        </div>
-                        <div class="col-md-6 col-xs-6 subItem pl7">
-                            <img src="https://nsi.oss-cn-zhangjiakou.aliyuncs.com/nsi-official/image/research/subItem004.png" alt="">
-                            <p class="subItem-title">国际学校品牌和集团化发展</p>
-                            <p class="subItem-desc">对国际学校的理解更加通透，管理更加自如</p>
-                        </div>
-                    </div>
+                <div class="col-md-4 col-xs-6" style="text-align: center;">
+                    <img src="../../images/onlineClass/1.jpg" alt="">
+                    <p class="courseContent-p">站在校长的高度运营国际学校的战略和打造人才梯队。这里有摸透国际学校政策法规和搭建学术质量认证体系的不二法门。</p>
+                    <router-link :to="{path:'/event/miniMba'}">
+                        <button>更多详情</button>
+                    </router-link>
                 </div>
-                <div class="col-md-4">
-                    <div class="Item item02">
-                        <h3 class="text-center item-title">新学说<span>国际学校投资战略班</span></h3>
-                        <p class="text-cneter item-apply"><a href="https://jinshuju.net/f/UbcHrR" target="_blank">立即报名</a></p>
-                    </div>
-                    <div class="row">
-                        <div class="col-md-6 col-xs-6 subItem pr7">
-                            <img src="https://nsi.oss-cn-zhangjiakou.aliyuncs.com/nsi-official/image/research/subItem001.jpg" alt="">
-                            <p class="subItem-title">探寻本质</p>
-                            <p class="subItem-desc">国际化学校商业模式研究</p>
-                        </div>
-                        <div class="col-md-6 col-xs-6 subItem pl7">
-                            <img src="https://nsi.oss-cn-zhangjiakou.aliyuncs.com/nsi-official/image/research/subItem002.jpg" alt="">
-                            <p class="subItem-title">寻求方向</p>
-                            <p class="subItem-desc">国际化学校办学市场进入策略</p>
-                        </div>
-                    </div>
+                <div class="col-md-4 col-xs-6" style="text-align: center;">
+                    <img src="../../images/onlineClass/2.jpg" alt="">
+                    <p class="courseContent-p">教你一招玩转招生，这是扩校增员的必备课程。市场招生不仅是销售的艺术，更是一场市场营销和品宣推广。</p>
+                    <router-link :to="{path:'/research/mac2020'}">
+                        <button>更多详情</button>
+                    </router-link>
                 </div>
-                <div class="col-md-4">
-                    <div class="Item item03">
-                        <h3 class="text-center item-title">新学说<span>国际学校在线课堂</span></h3>
-                        <p class="text-cneter item-apply"><a href="http://class.xinxueshuo.cn/nsi-class/" target="_blank">立即前往</a></p>
-                    </div>
-                    <div class="row">
-                        <div class="col-md-6 col-xs-6 subItem pr7">
-                            <img src="https://nsi.oss-cn-zhangjiakou.aliyuncs.com/nsi-official/image/research/subItem08.png" alt="">
-                            <p class="subItem-title">国际学校HR管理课程</p>
-                            <p class="subItem-desc">提升学校在市场竞争中的识别度，进而实施有效的信息传播。</p>
-                        </div>
-                        <div class="col-md-6 col-xs-6 subItem pl7">
-                            <img src="https://nsi.oss-cn-zhangjiakou.aliyuncs.com/nsi-official/image/research/subItem07.jpg" alt="">
-                            <p class="subItem-title">国际学校市场招生课程</p>
-                            <p class="subItem-desc">一站式解决国际化学校运营各层面人才职业培训和能力提升</p>
-                        </div>
-                    </div>
+                <div class="col-md-4 col-xs-6" style="text-align: center;">
+                    <img src="../../images/onlineClass/3.jpg" alt="">
+                    <p class="courseContent-p">人才不是学校的核心竞争力，对人才的管理才是核心竞争力。通过精准招聘和KPI绩效考核，锻造具有全球胜任力的人才。</p>
+                    <router-link :to="{path:'/research/humanResources'}">
+                        <button>更多详情</button>
+                    </router-link>
                 </div>
             </div>
             <!-- 研究成果 -->
@@ -69,72 +36,26 @@
             <div class="row pt30">
                 <div class="col-md-3 col-xs-6 text-center reportlist">
                     <router-link :to="{path:'/research/report'}">
-                        <img src="https://nsi.oss-cn-zhangjiakou.aliyuncs.com/nsi-official/image/research/report04.jpg" alt="" class="reportImg">
-                    </router-link>
-                </div>
-                <div class="col-md-3 col-xs-6 text-center reportlist">
-                    <router-link :to="{path:'/research/report'}">
-                        <img src="https://nsi.oss-cn-zhangjiakou.aliyuncs.com/nsi-official/image/research/report02.jpg" alt="" class="reportImg">
-                    </router-link>
-                </div>
-                <div class="col-md-3 col-xs-6 text-center reportlist reportItem">
-                    <router-link :to="{path:'/research/periodical'}">
                         <img src="https://nsi.oss-cn-zhangjiakou.aliyuncs.com/nsi-official/image/research/report01.jpg" alt="" class="reportImg">
                     </router-link>
                 </div>
                 <div class="col-md-3 col-xs-6 text-center reportlist">
-                    <a href="javascript:;">
-                        <img src="https://nsi.oss-cn-zhangjiakou.aliyuncs.com/nsi-official/image/research/report03.jpg" alt="" class="reportImg">
-                    </a>
+                    <router-link :to="{path:'/research/periodical'}">
+                        <img src="https://nsi.oss-cn-zhangjiakou.aliyuncs.com/nsi-official/image/research/report02.jpg" alt="" class="reportImg">
+                    </router-link>
                 </div>
-                <!-- <div class="col-md-3 col-xs-6 reportlist">
-                    <h5 class="text-center class-title">关于研究院</h5>
-                    <p class="class-info">新学说研究院是包括行业专家共同研究编撰国际学校内参，国际学校发展报告，行业研究报告，国际学校职能课程，国际学校研修班等</p>
-                    <p class="text-center class-apply"><router-link tag="a" :to="{path:'/research/periodical'}">资源下载</router-link></p>
-                </div> -->
+                <div class="col-md-3 col-xs-6 text-center reportlist reportItem">
+                    <router-link :to="{path:'/research/report'}">
+                        <img src="https://nsi.oss-cn-zhangjiakou.aliyuncs.com/nsi-official/image/research/report03.jpg" alt="" class="reportImg">
+                    </router-link>
+                </div>
+                <div class="col-md-3 col-xs-6 text-center reportlist">
+                    <router-link :to="{path:'/research/report'}">
+                        <img src="https://nsi.oss-cn-zhangjiakou.aliyuncs.com/nsi-official/image/research/report04.jpg" alt="" class="reportImg">
+                    </router-link>
+                </div>
             </div>
             <!-- 研究成果 END-->
-            <!-- 培训课程 -->
-            <div class="row">
-                <div class="col-md-12">
-                    <h3 class="text-center research-title titleBg02">培训课程</h3>
-                </div>
-            </div>
-            <div class="row pt30">
-                <div class="col-md-3 col-xs-6 reportlist">
-                    <a href="http://class.xinxueshuo.cn/nsi-class/pages/mac.html" target="_blank">
-                        <img src="https://nsi.oss-cn-zhangjiakou.aliyuncs.com/nsi-official/image/research/subItem01.jpg" alt="">
-                    </a>
-                    <p class="subItem-title">市场分析</p>
-                    <p class="subItem-desc">中国国际学校市场现状分析以及如何做好国际学校市场的竞品分析</p>
-                    <p class="text-left class-time">开课时间：2018-09-04</p>
-                </div>
-                <div class="col-md-3 col-xs-6 reportlist">
-                    <a href="http://class.xinxueshuo.cn/nsi-class/pages/mac.html" target="_blank">
-                        <img src="https://nsi.oss-cn-zhangjiakou.aliyuncs.com/nsi-official/image/research/subItem02.jpg" alt="">
-                    </a>
-                    <p class="subItem-title">品牌建设</p>
-                    <p class="subItem-desc">国际学校的0到1--品牌定位；三生万物--品牌建设方法论 </p>
-                    <p class="text-left class-time">开课时间：2018-09-18</p>
-                </div>
-                <div class="col-md-3 col-xs-6 reportlist">
-                    <a href="http://class.xinxueshuo.cn/nsi-class/pages/mac.html" target="_blank">
-                        <img src="https://nsi.oss-cn-zhangjiakou.aliyuncs.com/nsi-official/image/research/subItem03.jpg" alt="">
-                    </a>
-                    <p class="subItem-title">招生策略</p>
-                    <p class="subItem-desc">利用合作方定位和强化自身品牌影响 ；招生人员的基本职业素养 </p>
-                    <p class="text-left class-time">开课时间：2018-10-23</p>
-                </div>
-                <div class="col-md-3 col-xs-6 reportlist">
-                    <a href="http://class.xinxueshuo.cn/nsi-class/pages/mac.html" target="_blank">
-                        <img src="https://nsi.oss-cn-zhangjiakou.aliyuncs.com/nsi-official/image/research/subItem06.jpg" alt="">
-                    </a>
-                    <p class="subItem-title">公共关系</p>
-                    <p class="subItem-desc">通过有效沟通策略实现招生转化；构建健康牢固的家校关系 </p>
-                    <p class="text-left class-time">开课时间：2018-11-20</p>
-                </div>
-            </div>
-            <!-- 培训课程 END-->
             <!-- 新学说四库全书 -->
             <div class="row">
                 <div class="col-md-12">
@@ -184,77 +105,49 @@ export default {
 
 <style lang="scss">
     .researchIndex-com{
+       .courseContent{
+        @media (max-width:768px) {
+            width:100%;
+        }
+        button{
+            width: 120px;
+            height: 40px;
+            line-height: 40px;
+            margin: 0 auto 30px;
+            background: -webkit-gradient(linear, left top, left bottom, from(#deb16c), to(#b99153));
+            background: linear-gradient(180deg, #deb16c 0%, #b99153 100%);
+            -webkit-box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.24);
+            box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.24);
+            border-radius: 34px;
+            color: #fff;
+            text-align: center;
+            cursor: pointer;
+            border: none;
+        }
+        img{
+          width: 100%;
+          height: auto;
+          border-radius: 10px;
+        }
+        .courseContent-p{
+           color: rgb(84, 84, 84);
+           text-align: left;
+           margin: 20px 0;
+           font-size: 16px;
+           padding: 0 20px;
+           line-height: 26px;
+           height: 80px;
+        }
+    }
        padding-bottom: 50px;
-       img{
-           display: inline-block;
-           max-width: 100%;
-           min-width: 100%;
-           height: auto;
-       }
-       .pl7{
-           padding-left: 7px;
-       }
-       .pr7{
-           padding-right: 7px;
-       }
        .pt30{
            padding-top: 30px;
        }
        .banner{
            padding-bottom: 50px;
        }
-       .Item{
-           background-size: 100%;
-           background-repeat: no-repeat;
-           display: flex;
-           justify-content: center;
-           align-items: center;
-           flex-direction: column;
-           min-height: 160px;
-           color: #FFF;
-           @media (max-width: 768px) {
-               margin-bottom: 10px;
-               min-height: 110px;
-               border-radius: 10px;
-           }
-           .item-title{
-               font-size: 20px;
-               font-weight: 700;
-               text-shadow: 0 4px 8px rgba(7, 17, 27, 0.6);
-               span{
-                   color: #dcb36b;
-               }
-           }
-           .item-apply{
-               a{
-                    display: inline-block;
-                    margin-top: 10px;
-                    background-color:#dcb36b;
-                    color: #FFF;
-                    padding: 5px 15px;
-                    border-radius: 20px;
-                    &:hover{
-                        text-decoration: none;
-                    }
-               }
-           }
-       }
        .reportImg{
            box-shadow: 0 5px 20px rgb(190, 190, 190);
-       }
-       .item01{
-           background-image: url('https://nsi.oss-cn-zhangjiakou.aliyuncs.com/nsi-official/image/research/item01.png')
-       }
-       .item02{
-           background-image: url('https://nsi.oss-cn-zhangjiakou.aliyuncs.com/nsi-official/image/research/item02.png')
-       }
-       .item03{
-           background-image: url('https://nsi.oss-cn-zhangjiakou.aliyuncs.com/nsi-official/image/research/researchM04.png')
-       }
-       .subItem{
-           img{
-                border-radius: 4px;
-           }
        }
        .subItem-title{
             font-weight: 700;
