@@ -5,10 +5,10 @@
                 <div class="col-md-3 col-xs-6">
                     <div class="productBox">
                         <div class="product-logo text-center">
-                            <a href="http://data.xinxueshuo.cn/nsi-event/2019Vis-activity/index.html" target="_blank"><img src="https://nsi.oss-cn-zhangjiakou.aliyuncs.com/nsi-official/image/layoutImg/vis2018.png" width="65" alt=""></a>
+                            <a href="https://www.xinxueshuo.cn/event/common-event/index_MPC.html" target="_blank"><img src="https://nsi.oss-cn-zhangjiakou.aliyuncs.com/nsi-official/image/layoutImg/vis2018.png" width="65" alt=""></a>
                         </div>
                         <div class="product-name text-center">
-                            <p><a href="http://data.xinxueshuo.cn/nsi-event/2019Vis-activity/index.html" target="_blank" class="name">VIS2019国际学校发展大会&nbsp;<span class="iconfont icon-yuanjiantou"></span></a></p>
+                            <p><a href="https://www.xinxueshuo.cn/event/common-event/index_MPC.html" target="_blank" class="name">VIS2020国际学校发展大会&nbsp;<span class="iconfont icon-yuanjiantou"></span></a></p>
                         </div>
                     </div>
                 </div>

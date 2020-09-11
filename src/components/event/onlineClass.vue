@@ -1,24 +1,24 @@
 <template>
-    <div>
+    <div class="H5">
         <div class="banner"></div>
         <div class="courseList">
             <div class="courseContent">
                 <div class="row">
-                    <div class="col-md-4 col-xs-6" style="text-align: center;">
+                    <div class="col-md-4 col-xs-6 rowH5one" style="margin-bottom:10px">
                         <img src="../../images/onlineClass/1.jpg" alt="">
                         <p>站在校长的高度运营国际学校的战略和打造人才梯队。这里有摸透国际学校政策法规和搭建学术质量认证体系的不二法门。</p>
                         <router-link :to="{path:'/event/miniMba'}">
                           <button>更多详情</button>
                         </router-link>
                     </div>
-                    <div class="col-md-4 col-xs-6" style="text-align: center;">
+                    <div class="col-md-4 col-xs-6 rowH5two" style="margin-bottom:10px">
                         <img src="../../images/onlineClass/2.jpg" alt="">
                         <p>教你一招玩转招生，这是扩校增员的必备课程。市场招生不仅是销售的艺术，更是一场市场营销和品宣推广。</p>
                         <router-link :to="{path:'/research/mac2020'}">
                           <button>更多详情</button>
                         </router-link>
                     </div>
-                    <div class="col-md-4 col-xs-6" style="text-align: center;">
+                    <div class="col-md-4 col-xs-6 rowH5">
                         <img src="../../images/onlineClass/3.jpg" alt="">
                         <p>人才不是学校的核心竞争力，对人才的管理才是核心竞争力。通过精准招聘和KPI绩效考核，锻造具有全球胜任力的人才。</p>
                         <router-link :to="{path:'/research/humanResources'}">
@@ -55,23 +55,21 @@
                     课程形式
                     <span class="lecturerLine"></span>
                 </p> 
-                <div class="container conter">
-                    <div class="row">
-                        <div class="col-md-6 col-xs-6 colMd">
+                <div class="conter">
+                        <div class="colMd colMdRIGHT">
                            <img src="../../images/onlineClass/授课方式.jpg" alt="">
                            <div class="colMdbox">
-                               <p style="font-size: 24px;">授课方式</p>
-                               <P style="font-size: 15px;color: #666;">线上视频直播<br>也可回放学习</P>
+                               <p class="colP">授课方式</p>
+                               <P class="colPtwo">线上视频直播<br>也可回放学习</P>
                            </div>
                         </div>
-                        <div class="col-md-6 col-xs-6 colMd">
+                        <div class="colMd">
                            <img src="../../images/onlineClass/质量保证.jpg" alt="">
                            <div class="colMdbox">
-                               <p style="font-size: 24px;">质量保证</p>
-                               <P style="font-size: 15px;color: #666;">行业老兵授课<br>解决疑难杂症</P>
+                               <p class="colP">质量保证</p>
+                               <P class="colPtwo">行业老兵授课<br>解决疑难杂症</P>
                            </div>
                         </div>
-                    </div>
                 </div>
             </div>
             <div class="courseArrangement">
@@ -188,6 +186,11 @@ export default {
 }
 </script>
 <style lang="scss" scoped>
+.H5{
+  @media (max-width:768px) {
+     padding: 0 10px;
+  }  
+}
 .banner{
     height: 430px;
     background-image: url("../../images/onlineClass/banner.jpg");
@@ -196,6 +199,7 @@ export default {
     position: relative;
     @media (max-width:768px) {
         height: 120px;
+        border-radius: 8px;
     }
 }
 .courseList{
@@ -209,6 +213,22 @@ export default {
         margin:60px auto ;
         @media (max-width:768px) {
             width:100%;
+            margin:10px auto ;
+        }
+        .rowH5{
+          text-align: center;
+        }
+        .rowH5one{
+            text-align: center;
+           @media (max-width:768px) {
+             padding-right: 5px;
+           } 
+        }
+        .rowH5two{
+            text-align: center;
+            @media (max-width:768px) {
+              padding-left: 5px;
+            } 
         }
         button{
             width: 120px;
@@ -238,6 +258,13 @@ export default {
            padding: 0 20px;
            line-height: 26px;
            height: 80px;
+           @media (max-width:768px) {
+             margin: 10px 0;
+             height: 110px;
+             font-size: 14px;
+              padding: 0 10px;
+              line-height: 22px;
+           }
         }
     }
     .teacherList{
@@ -300,19 +327,47 @@ export default {
         }
     }
     .conter{
-      margin: 60px 0;
+      margin: 60px auto;
+      text-align: center;
+      @media (max-width:768px) {
+        margin: 20px auto;
+      }
       .colMd{
-         text-align: center
+         display: inline-block;
+      }
+      .colMdRIGHT{
+        margin-right: 160px;
+        @media (max-width:768px) {
+          margin-right: 0;
+          margin-bottom: 10px;
+        }
       }
       img{
           width:200px;
           height:200px;
-          border-radius: 50%
+          border-radius: 50%;
+          @media (max-width:768px) {
+             width:120px;
+             height:120px;
+          }
       }
       .colMdbox{
           display: inline-block;
           vertical-align: middle;
           margin-left: 30px
+      }
+      .colP{
+         font-size: 24px;   
+         @media (max-width:768px) {
+          font-size: 18px;
+         }  
+      }
+      .colPtwo{
+         font-size: 15px;   
+         color: #666;
+         @media (max-width:768px) {
+          font-size: 12px;
+         }  
       }
     }
 }

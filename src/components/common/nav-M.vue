@@ -34,7 +34,7 @@
                         <a href="http://www.xinxueshuo.cn/data/dist/index.html" target="_blank">{{$t('layoutFooter.databaseM')}}</a>
                     </div>
                     <div class="swiper-slide navSlide">
-                        <a href="https://data.xinxueshuo.cn/nsi-class/index.html" target="_blank">{{$t('layoutFooter.classOnline')}}</a>
+                        <router-link tag="i" :to="{path:'/onlineClass'}">{{$t('layoutFooter.classOnline')}}</router-link>
                     </div>
                     <!-- <div class="swiper-slide navSlide">
                         <router-link :to="{path:'/research/mac2020'}" >{{$t('layoutNav.researchChild.mac2020')}}</router-link>
