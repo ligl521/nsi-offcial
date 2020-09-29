@@ -49,10 +49,18 @@ export default {
             isMobile:false,
             eventList:[
                 {
+                    title:"2020VIS国际学校发展大会",
+                    imgSrc:"https://nsi.oss-cn-zhangjiakou.aliyuncs.com/nsi-official/article/1568704595985.jpg",
+                    imgSrcM:"https://nsi.oss-cn-zhangjiakou.aliyuncs.com/nsi-official/article/1568704595985.jpg",
+                    url:"https://www.xinxueshuo.cn/event/2020Vis-activity/index.html",
+                    time:"2020.11.21-11.22"
+                    
+                },
+                {
                     title:"2019VIS国际学校发展大会",
                     imgSrc:"http://nsi-official.oss-cn-zhangjiakou.aliyuncs.com/images/会议活动/2019vis.jpg",
                     imgSrcM:"http://nsi-official.oss-cn-zhangjiakou.aliyuncs.com/images/会议活动/2019vis.jpg",
-                    url:"http://data.xinxueshuo.cn/nsi-event/2019Vis-activity/index.html",
+                    url:"https://www.xinxueshuo.cn/event/2019Vis-activity/index.html",
                     time:"2019.11.09-11.11"
                     
                 },
@@ -91,7 +99,7 @@ export default {
                     title:"人力资源专业课",
                     imgSrc:"https://nsi.oss-cn-zhangjiakou.aliyuncs.com/nsi-official/image/activity/hr.jpg",
                     imgSrcM:"https://nsi.oss-cn-zhangjiakou.aliyuncs.com/nsi-official/image/activity/hr.jpg",
-                    url:"https://mp.weixin.qq.com/s/AZW1YXCJyw2awk4UnWB0iA",
+                    url:"https://www.xinxueshuo.cn/#/research/humanResources",
                     time:"2019.06.14-6.16"
                     
                 },

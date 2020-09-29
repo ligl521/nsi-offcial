@@ -3,10 +3,9 @@
         <div class="container-fluid">
             <div class="swiper-container eventSwiper" id="eventSwiper">
                 <div class="swiper-wrapper">
-                    <!-- <div class="swiper-slide text-center Longlength">
-                        <router-link :to="{path:'/event'}"><img width="35" src="../../assets/img/layoutImg/vis2018.png" alt=""><br/>VIS国际学校发展大会</router-link>
-                        <a href="http://data.xinxueshuo.cn/nsi-class/admin/activity/meeting/vis2018.html" target="_blank"><img width="35" src="https://nsi.oss-cn-zhangjiakou.aliyuncs.com/nsi-official/image/layoutImg/vis2018.png" alt=""><br/>{{$t('layoutNav.eventChild.vis')}}</a>
-                    </div> -->
+                    <div class="swiper-slide text-center Longlength">
+                        <a href="https://www.xinxueshuo.cn/event/2020Vis-activity/index.html" target="_blank"><img width="35" src="https://nsi.oss-cn-zhangjiakou.aliyuncs.com/nsi-official/image/layoutImg/vis2018.png" alt=""><br/>{{$t('layoutNav.eventChild.vis')}}</a>
+                    </div>
                     <!-- <div class="swiper-slide text-center">
                         <router-link :to="{path:'/event/lotus'}"><span class="iconfont icon-huiyi fontlogo"></span><br/>{{$t('layoutNav.eventChild.lotus')}}</router-link>
                     </div> -->

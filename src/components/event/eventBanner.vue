@@ -34,11 +34,11 @@ export default {
       return {
           bannerInfo:[
             {
-                coverImage:"http://nsi-official.oss-cn-zhangjiakou.aliyuncs.com/images/会议活动/vis.jpg",
-                coverImageMob:"http://nsi-official.oss-cn-zhangjiakou.aliyuncs.com/images/会议活动/vismob.jpg"
+                coverImage:"http://nsi-official.oss-cn-zhangjiakou.aliyuncs.com/images/VIS2020.jpg",
+                coverImageMob:"http://nsi-official.oss-cn-zhangjiakou.aliyuncs.com/images/VIS2020.jpg"
             },{
-                coverImage:"http://nsi-official.oss-cn-zhangjiakou.aliyuncs.com/images/地区专题研讨会/yan.jpg",
-                coverImageMob:"http://nsi-official.oss-cn-zhangjiakou.aliyuncs.com/images/地区专题研讨会/yan.jpg"
+                coverImage:"http://nsi-official.oss-cn-zhangjiakou.aliyuncs.com/images/FIT2020.jpg",
+                coverImageMob:"http://nsi-official.oss-cn-zhangjiakou.aliyuncs.com/images/FIT2020.jpg"
             }]
       }
     },
@@ -122,15 +122,22 @@ export default {
                 display:block;
             }
         }
+        .swiper-button-prev{
+            text-align: left;
+            padding-left: 6px;
+        }
+        .swiper-button-next{
+            text-align: right;
+            padding-right: 6px;
+        }
         .swiper-button-prev,
         .swiper-button-next{
             width:60px;
             height: 60px;
-            line-height: 40px;
-            text-align: center;
-            // border-radius: 50%;
+            line-height: 54px;
+            border-radius: 50%;
             color: #222;
-            background: none;
+            background: #fff;
             font-size: 50px;
             opacity: 0;
             transition: all .3s;

@@ -81,9 +81,9 @@
                                                         <router-link :to="{path:'/event/latest'}" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">{{$t('layoutNav.event')}}<span class="caret"></span></router-link>
                                                     </span>
                                                     <el-dropdown-menu slot="dropdown">
-                                                        <!-- <el-dropdown-item>
-                                                            <a href="http://data.xinxueshuo.cn/nsi-event/2019Vis-activity/index.html" target="_blank"><img src="https://nsi.oss-cn-zhangjiakou.aliyuncs.com/nsi-official/image/layoutImg/vis2018.png" width="35" alt="">&nbsp;{{$t('layoutNav.eventChild.vis')}}</a>
-                                                        </el-dropdown-item> -->
+                                                        <el-dropdown-item>
+                                                            <a href="https://www.xinxueshuo.cn/event/2020Vis-activity/index.html" target="_blank"><img src="https://nsi.oss-cn-zhangjiakou.aliyuncs.com/nsi-official/image/layoutImg/vis2018.png" width="35" alt="">&nbsp;{{$t('layoutNav.eventChild.vis')}}</a>
+                                                        </el-dropdown-item>
                                                         <el-dropdown-item>
                                                             <!-- <router-link :to="{path:'/event/lotus'}">&nbsp;<span class="iconfont icon-huiyi1 logoFont"></span>{{$t('layoutNav.eventChild.lotus')}}</router-link> -->
                                                         </el-dropdown-item>
