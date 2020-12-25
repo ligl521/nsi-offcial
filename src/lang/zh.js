@@ -17,7 +17,8 @@ module.exports = {
             videoList:'活动直播回放',
             fit:'FIT国际教师风采大赛',
             skyClass:'空中课堂',
-            miniMba:"校长专业发展项目"
+            miniMba:"校长专业发展项目",
+            school:"最具影响力校长"
         },
         // lotusContent: {
         //     lotusIntroTitle: '为什么创办新荷国际学校',

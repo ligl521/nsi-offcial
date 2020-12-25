@@ -31,6 +31,7 @@ import fit from '../components/event/fit.vue'
 import skyClass from '../components/event/skyClass'
 import miniMBA from '../components/event/miniMBA'
 import onlineClass from '../components/event/onlineClass'
+import school from '../components/event/school.vue'
 
 
 import periodical from '../components/research/periodical.vue'
@@ -147,6 +148,9 @@ const routes = [{
             },{
                 path: 'onlineClass',
                 component:onlineClass
+            },{
+                path:'school',
+                component:school
             }
         ]
     }, {

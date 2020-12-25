@@ -13,7 +13,9 @@ module.exports = {
             vis: "Vision of International School Conference",
             lotus: "Lotus School Conference",
             subject: "Symposium",
-            apply: "Convention Apply"
+            apply: "Convention Apply",
+            fit:"2020FIT",
+            miniMba:"IPA Mini-MBA"
         },
         lotus: "Lotus",
         lotusChild: {
@@ -28,7 +30,9 @@ module.exports = {
             pisom: "Talents Training",
             classOnline: "International Education Academy",
             apply: "Class Apply",
-            experts: "Experts Database"
+            experts: "Experts Database",
+            mac2020: "Marketing&Admission Class",
+            humanResources:"Human Resource Class",
         },
         researchChild_Mob: {
             magazine: "Magazine",

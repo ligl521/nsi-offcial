@@ -103,6 +103,9 @@
                                                          <!-- <el-dropdown-item>
                                                             <router-link :to="{path:'/event/videoList'}"><img :src="imgSrc" width="32" height="18" alt="">&nbsp;&nbsp;{{$t('layoutNav.eventChild.videoList')}}</router-link>
                                                         </el-dropdown-item> -->
+                                                        <el-dropdown-item>
+                                                            <router-link :to="{path:'/event/school'}">&nbsp;<span class="iconfont icon-bofang1 logoFont"></span>{{$t('layoutNav.eventChild.school')}}</router-link>
+                                                        </el-dropdown-item>
                                                     </el-dropdown-menu>
                                                 </el-dropdown>
                                             </li>
@@ -143,9 +146,9 @@
                                                 </el-dropdown>
                                             </li>
                                             <li><router-link :to="{path:'/consulting'}">{{$t('layoutNav.consult')}}</router-link></li>
-                                            <li class="dropdown">
+                                            <!-- <li class="dropdown">
                                                 <router-link :to="{path:'/ges'}">{{$t('layoutNav.ges')}}</router-link>
-                                            </li>
+                                            </li> -->
                                             <li class="dropdown">
                                                 <router-link :to="{path:'/vip'}">{{$t('layoutNav.vip')}}</router-link>
                                             </li>
