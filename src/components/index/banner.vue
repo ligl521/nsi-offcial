@@ -6,6 +6,9 @@
                   <big-banner :bannerInfo="bannerInfoFa"/>
               </div>
               <div class="col-xs-3 pl0 pr0">
+                <div @click='getUrl()'>
+                    <img style="height: 172px;width:100%;margin-bottom:7px" src="../../images/教学管理/bg.jpg" alt="">
+                </div>
                 <small-banner-top class="bannerTop mb7" :bannerInfo="bannerInfoFa"/>
                 <small-banner-bottom class="bannerBottom" :bannerInfo="bannerInfoFa"/>
               </div>
@@ -70,6 +73,10 @@ export default {
             speed:600,
             grabCursor : true,
         })
+      },
+      getUrl(){
+        let routeData = this.$router.resolve({ path: '/research/teaching' });
+        window.open(routeData.href, '_blank');
       },
   },
   mounted(){

@@ -71,7 +71,7 @@
                 <h4>领导层猎聘与辅导</h4>
                 <p>Headhunting and Executive Coaching</p>
             </div>
-            <p style="margin-top:20px;color:#17518c;">联系邮箱(E-mail)：suhengliang@xinxueshuo.cn</p>
+            <p style="margin-top:20px;color:#17518c;">联系邮箱(E-mail)：consulting@xinxueshuo.cn</p>
         </div>
     </div>
 </template>

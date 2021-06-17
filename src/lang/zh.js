@@ -18,7 +18,7 @@ module.exports = {
             fit:'FIT国际教师风采大赛',
             skyClass:'空中课堂',
             miniMba:"校长专业发展项目",
-            school:"最具影响力校长"
+            // school:"最具影响力校长"
         },
         // lotusContent: {
         //     lotusIntroTitle: '为什么创办新荷国际学校',
@@ -110,11 +110,11 @@ module.exports = {
         classOnline: "在线课堂",
         databaseM: "四库全书",
         mediaPartners: "媒体合作：Mavis He",
-        schoolProject: "学校项目：Hunter Su",
+        schoolProject: "学校项目：May Wu",
         researchCollaboration: "研究合作：May Wu    ",
         businessCooperation: "商务合作：Cheng Jing",
         mediaPartnersEmail: "邮箱：hemiao@xinxueshuo.cn",
-        schoolProjectEmail: "邮箱：suhengliang@xinxueshuo.cn",
+        schoolProjectEmail: "邮箱：consulting@xinxueshuo.cn",
         researchCollaborationEmail: "邮箱：wuyue@xinxueshuo.cn",
         businessCooperationEmail: "邮箱：chengjing@xinxueshuo.cn",
 

@@ -12,7 +12,7 @@
             <h4 style="text-align:center;margin-top:30px;">深入了解更多针对您业务的定制化服务</h4>
             <p style="color:#333;text-align:center;">Learn more about customized services for your business and schools</p>
             <ul class='connectUsList'>
-                <li style="margin-top:20px;">邮件(E-mail)：suhengliang@xinxueshuo.cn</li>
+                <li style="margin-top:20px;">邮件(E-mail)：consulting@xinxueshuo.cn</li>
             </ul>
         </div>
     </div>

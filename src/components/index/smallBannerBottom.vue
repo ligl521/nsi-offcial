@@ -3,7 +3,7 @@
   <div class="swiper-container indexBannerBottom" id="indexBannerBottom">
         <div class="swiper-wrapper">
             <div class="swiper-slide" v-for="(bannerInfos,item) in bannerInfo" :key="item" v-if="item>=9">
-                <img :src="bannerInfos.content01" alt="" class="img-responsive" @click="linkTo(bannerInfos.content02)">
+                <img style="height: 172px;width:100%" :src="bannerInfos.content01" alt="" class="img-responsive" @click="linkTo(bannerInfos.content02)">
             </div>
         </div>
   </div>

@@ -4,12 +4,15 @@
         <div class="courseList">
             <div class="courseContent">
                 <div class="row">
+                    <div class="col-md-1 col-xs-6"></div>
                     <div class="col-md-4 col-xs-6 rowH5one" style="margin-bottom:10px">
                         <img src="../../images/onlineClass/1.jpg" alt="">
                         <p>站在校长的高度运营国际学校的战略和打造人才梯队。这里有摸透国际学校政策法规和搭建学术质量认证体系的不二法门。</p>
                         <router-link :to="{path:'/event/miniMba'}">
                           <button>更多详情</button>
                         </router-link>
+                    </div>
+                    <div class="col-md-2 col-xs-6 rowH5two" style="margin-bottom:10px">
                     </div>
                     <div class="col-md-4 col-xs-6 rowH5two" style="margin-bottom:10px">
                         <img src="../../images/onlineClass/2.jpg" alt="">
@@ -18,6 +21,24 @@
                           <button>更多详情</button>
                         </router-link>
                     </div>
+                    <div class="col-md-1 col-xs-6"></div>
+                    <!-- <div class="col-md-4 col-xs-6 rowH5">
+                        <img src="../../images/onlineClass/3.jpg" alt="">
+                        <p>人才不是学校的核心竞争力，对人才的管理才是核心竞争力。通过精准招聘和KPI绩效考核，锻造具有全球胜任力的人才。</p>
+                        <router-link :to="{path:'/research/humanResources'}">
+                          <button>更多详情</button>
+                        </router-link>
+                    </div>
+                    <div class="col-md-4 col-xs-6 rowH5">
+                        <img src="../../images/onlineClass/4.jpg" alt="">
+                        <p>通过十四节课全面讲解国际学校教学管理痛点问题，结合行业发展规律与实操要素，提高学员的专业能力和领导力。</p>
+                        <router-link :to="{path:'/research/teaching'}">
+                          <button>更多详情</button>
+                        </router-link>
+                    </div> -->
+                </div>
+                <div class="row" style="margin-top:40px">
+                    <div class="col-md-1 col-xs-6"></div>
                     <div class="col-md-4 col-xs-6 rowH5">
                         <img src="../../images/onlineClass/3.jpg" alt="">
                         <p>人才不是学校的核心竞争力，对人才的管理才是核心竞争力。通过精准招聘和KPI绩效考核，锻造具有全球胜任力的人才。</p>
@@ -25,6 +46,16 @@
                           <button>更多详情</button>
                         </router-link>
                     </div>
+                    <div class="col-md-2 col-xs-6 rowH5two" style="margin-bottom:10px">
+                    </div>
+                    <div class="col-md-4 col-xs-6 rowH5">
+                        <img src="../../images/onlineClass/4.jpg" alt="">
+                        <p>通过十四节课全面讲解国际学校教学管理痛点问题，结合行业发展规律与实操要素，提高学员的专业能力和领导力。</p>
+                        <router-link :to="{path:'/research/teaching'}">
+                          <button>更多详情</button>
+                        </router-link>
+                    </div> 
+                    <div class="col-md-1 col-xs-6"></div>
                 </div>
             </div>
             <div class="teacherList">
@@ -114,7 +145,12 @@ export default {
               {
                 photo:require("../../images/onlineClass/陈泽芳.png"),
                 name:"陈泽芳",
-                title:"前华南师大附属外国语学校<br/>总校长"
+                title:"华樱教育集团荣誉总校长"
+              },
+              {
+                photo:require("../../images/onlineClass/何道明.png"),
+                name:"何道明",
+                title:"清华附中稻香湖校区<br/>外籍校长"
               },
               {
                 photo:require("../../images/onlineClass/李远.png"),
@@ -165,6 +201,11 @@ export default {
                 photo:require("../../images/onlineClass/徐未华.png"),
                 name:"徐未华",
                 title:"宁波赫威斯肯特学校<br/>校长"
+              },
+              {
+                photo:require("../../images/onlineClass/叶斌.png"),
+                name:"叶斌",
+                title:"宁波华茂国际学校校长"
               },
               {
                 photo:require("../../images/onlineClass/周宪明.png"),

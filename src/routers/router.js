@@ -46,6 +46,7 @@ import experts from '../components/research/experts.vue'
 import mac2020 from '../components/research/mac2020.vue'
 import humanResources from '../components/research/humanResources.vue'
 import classCatalog from '../components/research/classCatalog.vue'
+import teaching from '../components/research/teaching.vue'
 
 
 import consultOne from '../components/consulting/consultOne.vue'
@@ -213,6 +214,10 @@ const routes = [{
             },{
                 path: 'classCatalog',
                 component:classCatalog
+
+            },{
+                path: 'teaching',
+                component:teaching
 
             }
         ]
