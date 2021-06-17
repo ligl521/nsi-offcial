@@ -18,6 +18,8 @@
                         <div>
                             <h3>{{$t('aboutus.aboutNSI')}}</h3>
                             <h3><small>{{$t('aboutus.aboutNSIContent')}}</small></h3>
+                            <h3><small>使命：让中国没有办不好的国际学校</small></h3>
+                            <h3><small>愿景：中国国际学校行业第一服务平台</small></h3>
                             <el-button type="info" @click="goToConnectUs" class="goToConnectUs" round>{{$t('layoutNav.aboutusChild.connectUs')}}</el-button>
                         </div>
                     </div>
